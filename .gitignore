@@ -1,0 +1,9 @@
+/_deploy.yml
+_deploy
+_site
+.bundle
+.DS_Store
+.sass-cache
+.gist-cache
+.pygments-cache
+*~
