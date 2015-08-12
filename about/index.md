@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: theme:page
 title: "About me"
 comments: false
 sharing: false
@@ -9,6 +9,7 @@ footer: true
 
 <div itemscope="" itemtype="http://schema.org/Person">
 I'm <span itemprop="name"><span itemprop="givenName">Eric</span> <span itemprop="familyName">Bouchut</span></span>.
+<img src="/images/eric_bouchut.jpg" align="right"  width="96" height="96" />
 <br />
 I write software and I'm really fond of dance and Ruby on Rails.
 <br />
@@ -20,7 +21,7 @@ I also have a solid hands-on experience in Java and a real knack for the art of 
   I’m a software developer with over 15 years of experience:</p>
   <ul>
     <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
-      5 years as a Web developer (Ruby on Rails, Java) for 
+      5 years as a Web developer (Java, GWT, Ruby on Rails) for 
       <span itemprop="name"><a href="http://www.antidot.net" itemprop="url">Antidot</a></span>, a search engine company and <span itemprop="name">LD Mobile</span> editor of netADge a mobile DSP in the Real Time Bid arena.
     </li>
     <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
@@ -55,5 +56,4 @@ Keep up with my news by following me on the Web:
   <li><a href="https://twitter.com/ebouchut" itemprop="url">Twitter</a></li>
   <li><a href="https://github.com/ebouchut"  itemprop="url">Github</a></li>
   <li><a rel="author" href="https://plus.google.com/u/0/111804446383442393632?rel=author"        itemprop="url">Google</a></li>
-  <li>My <a href="http://EricBouchut.com"    itemprop="url">blog</a></li>
 </div>

@@ -1,4 +1,5 @@
 /_deploy.yml
+/.ink-cache
 _deploy
 _site
 .bundle

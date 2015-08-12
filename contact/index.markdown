@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: theme:page
 title: "Contact"
 comments: false
 sharing: false

@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: theme:post 
 title: "Baked With Octopress"
 date: 2012-02-10 22:02
 comments: true
 author: Eric Bouchut
-categories: [blog, octopress]
+categories: octopress
 ---
 I finally decided to make the move to [Octopress][].
 

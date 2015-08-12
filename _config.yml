@@ -1,5 +1,6 @@
 # Site settings
 title: Eric Bouchut
+subtitle: 
 url:   //EricBouchut.com # the base hostname (& protocol) for your site
 email: contact@EricBouchut.com
 description:  "Java developer, Ruby switcher and Ruby on Rails aficionado."
@@ -29,3 +30,4 @@ pinboard_tag:
 
 gems:
   - jekyll-sitemap
+  - octopress-genesis-theme
