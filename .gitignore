@@ -1,6 +1,6 @@
 /_deploy.yml
 /.ink-cache
-_deploy
+/.deploy
 _site
 .bundle
 .DS_Store
