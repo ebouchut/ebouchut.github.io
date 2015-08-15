@@ -40,3 +40,4 @@ pinboard_tag:
 gems:
   - jekyll-sitemap
   - octopress-genesis-theme
+  - octopress-debugger
