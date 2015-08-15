@@ -1,5 +1,8 @@
+#~~~~~~~~~~~~~~~~
 # Site settings
+#~~~~~~~~~~~~~~~~
 title: Eric Bouchut
+author: Eric Bouchut
 subtitle: 
 url:   //EricBouchut.com # the base hostname (& protocol) for your site
 email: contact@EricBouchut.com
@@ -8,13 +11,16 @@ baseurl:   "" # the subpath of your site, e.g. /blog/
 timezone:  "Europe/Paris"
 permalink: /:year/:month/:day/:title/
 
+#~~~~~~~~~~~~~~~~
 # Build settings
+#~~~~~~~~~~~~~~~~
 markdown: redcarpet
 highlighter: pygments
 exclude: ["_plugins", "_assets", "_drafts", "Gemfile", "Gemfile.lock", ".ruby-version", ".gitignore"]
 
-
+#~~~~~~~~~~~~~~~~
 # Google Analytics
+#~~~~~~~~~~~~~~~~
 google_analytics_tracking_id: UA-610695-2
 
 twitter_username: ebouchut
@@ -28,6 +34,9 @@ pinboard_tag:
   user:       "ebouchut"
   limit:      10
 
+#~~~~~~~~~~~~~~~~
+# Gems
+#~~~~~~~~~~~~~~~~
 gems:
   - jekyll-sitemap
   - octopress-genesis-theme
