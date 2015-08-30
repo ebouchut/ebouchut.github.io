@@ -22,7 +22,7 @@ I also have a solid hands-on experience in Java and a real knack for the art of 
   <ul>
     <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
       5 years as a Web developer (Java, GWT, Ruby on Rails) for 
-      <span itemprop="name"><a href="http://www.antidot.net" itemprop="url">Antidot</a></span>, a search engine company and <span itemprop="name">LD Mobile</span> editor of netADge a mobile DSP in the Real Time Bid arena.
+      <span itemprop="name"><a href="http://www.antidot.net" itemprop="url">Antidot</a></span>, a search engine company and <span itemprop="name">LD Mobile</span> editor of <span itemprop="name"><a href="http://www.netadge.com/" itemprop="url">netADge</a></span> a mobile DSP in the Real Time Bid arena.
     </li>
     <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
       5 years of Java and Web development for 2 startups: Perform (acquired by BMC) and 
