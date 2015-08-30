@@ -38,6 +38,7 @@ pinboard_tag:
 # Gems
 #~~~~~~~~~~~~~~~~
 gems:
+  - redcarpet
   - rouge
   - jekyll-sitemap
   - octopress-genesis-theme
