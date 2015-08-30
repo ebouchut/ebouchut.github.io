@@ -163,6 +163,7 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     redcarpet (3.3.2)
+    rouge (1.9.1)
     rubypants (0.2.0)
     rubypants-unicode (0.2.5)
     safe_yaml (1.0.4)
@@ -187,8 +188,8 @@ DEPENDENCIES
   octopress-debugger
   octopress-genesis-theme
   pry
-  pygments.rb
   redcarpet
+  rouge
 
 BUNDLED WITH
    1.10.5

@@ -1,0 +1,18 @@
+---
+---
+// Theme settings
+
+$center-headings: {{ theme.center_headings }};
+
+// Stylesheets
+@import "core/index";
+@import "layout";
+@import "theme";
+@import "header";
+@import "entry";
+@import "post-nav";
+@import "social";
+@import "cover-image";
+@import "search";
+@import "mobile-nav";
+@import "syntax";

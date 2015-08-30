@@ -15,7 +15,7 @@ permalink: /:year/:month/:day/:title/
 # Build settings
 #~~~~~~~~~~~~~~~~
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 exclude: ["_plugins", "_assets", "_drafts", "Gemfile", "Gemfile.lock", ".ruby-version", ".gitignore"]
 
 #~~~~~~~~~~~~~~~~
@@ -38,6 +38,7 @@ pinboard_tag:
 # Gems
 #~~~~~~~~~~~~~~~~
 gems:
+  - rouge
   - jekyll-sitemap
   - octopress-genesis-theme
   - octopress-debugger
