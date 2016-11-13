@@ -1,8 +1,6 @@
 ---
-layout: theme:page
 title: "About me"
 comments: false
-sharing: false
 categories: [profile, job]
 footer: true
 ---
@@ -21,7 +19,7 @@ I also have a solid hands-on experience in Java and a real knack for the art of 
   I’m a software developer with over 15 years of experience:</p>
   <ul>
     <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
-      5 years as a Web developer (Java, GWT, Ruby on Rails) for 
+      5 years as a Web developer (Ruby on Rails, Java, GWT) for 
       <span itemprop="name"><a href="http://www.antidot.net" itemprop="url">Antidot</a></span>, a search engine company and <span itemprop="name">LD Mobile</span> editor of <span itemprop="name"><a href="http://www.netadge.com/" itemprop="url">netADge</a></span> a mobile DSP in the Real Time Bid arena.
     </li>
     <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
@@ -50,6 +48,12 @@ I also have a solid hands-on experience in Java and a real knack for the art of 
   as a <span itemprop="jobTitle">Ruby on Rails and Java Developer</span>.  
 </p>
 
+<p>
+<h2>Past Jobs</h2>
+<ul>
+  <li></li>
+</ul>
+</p>
 
 Keep up with my news by following me on the Web:
 <ul>

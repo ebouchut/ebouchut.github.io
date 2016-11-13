@@ -1,0 +1,11 @@
+baseurl: //EricBouchut.com
+disablePathToLower: true
+languageCode: en-us
+title: Eric Bouchut
+
+theme: hugo-tranquilpeak-theme
+
+PygmentsStyle: "monokai"
+pygmentsuseclasses: true
+PygmentsCodeFences: true
+...

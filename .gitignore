@@ -1,10 +1,5 @@
-/_deploy.yml
-/.ink-cache
-/.deploy
-_site
-.bundle
-.DS_Store
-.sass-cache
-.gist-cache
-.pygments-cache
-*~
+/themes/**
+/themes/**/*
+
+/public/**
+/public/**/*

@@ -1,9 +1,0 @@
-title: Eric Bouchut
-
-main_nav:
-  - { url: "/",         title: "Posts"}
-  - { url: "/about/",   title: "About me"}
-  - { url: "/contact/", title: "Contact"}
-
-sharing: []
-

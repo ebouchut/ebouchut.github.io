@@ -1,8 +1,5 @@
 ---
-layout: theme:page
-title: "Contact"
-comments: false
-sharing: false
+title: "Contact Eric Bouchut"
 footer: true
 ---
 You can get in touch with me via [email][], consult my professional profile and connect with me on [LinkedIn][] or [Viadeo][] and follow me on  [twitter][].
