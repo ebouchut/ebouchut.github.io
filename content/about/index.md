@@ -48,13 +48,6 @@ I also have a solid hands-on experience in Java and a real knack for the art of 
   as a <span itemprop="jobTitle">Ruby on Rails and Java Developer</span>.  
 </p>
 
-<p>
-<h2>Past Jobs</h2>
-<ul>
-  <li></li>
-</ul>
-</p>
-
 Keep up with my news by following me on the Web:
 <ul>
   <li><a href="https://twitter.com/ebouchut" itemprop="url">Twitter</a></li>

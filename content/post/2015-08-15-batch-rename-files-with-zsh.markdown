@@ -7,7 +7,6 @@ tags:
 - rename
 - file
 title: Batch File Renaming With Zsh
-url: /2015/08/15/batch-rename-files-with-zsh/
 ---
 
 I recently discovered __`zmv`__, a builtin feature of zsh that makes batch file renaming, a breeze. 

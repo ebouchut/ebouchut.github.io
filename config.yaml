@@ -1,11 +1,73 @@
 baseurl: //EricBouchut.com
+title: Eric Bouchut
+theme: hugo-tranquilpeak-theme
 disablePathToLower: true
 languageCode: en-us
-title: Eric Bouchut
+defaultContentLanguage: "en-us"
+metaDataFormat: yaml
+canonifyurls: true
+permalinks:
+  post: "/:year/:month/:title/"
+taxonomies:
+  tag: tags
+  category: categories
+editor: vim
+author:
+  name: Eric Bouchut
+  bio: Ruby on Rails aficionado
+  job: Web Developer at NetADge
+  location: France
+  gravatar_email: ericbouchut@gmail.com
+  picture: https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png
+  twitter: ebouchut
 
-theme: hugo-tranquilpeak-theme
 
-PygmentsStyle: "monokai"
+#~~~~~~~~~~~~~~~~
+# Colorize Syntax
+#~~~~~~~~~~~~~~~~
+#PygmentsStyle: "monokai"
+# Use CSS classes instead of color codes for syntax coloring
 pygmentsuseclasses: true
+# USe triple back ticks (Github Flavored Markdown) to denote a code block
 PygmentsCodeFences: true
+# enables syntax guessing for code fences without specified language
+pygmentsCodeFencesGuessSyntax: true
+
+DisqusShortname: ebouchut
+menu:
+  main:
+    - name: About
+      weight: 4
+      identifier: about
+      pre: <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      url: "/#about"
+  links:
+    - name: LinkedIn
+      weight: 1
+      identifier: linkedin
+      pre: <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+      url: https://linkedin.com/in/ebouchut
+  misc:
+    - name: RSS
+      weight: 0
+      identifier: rss
+      pre: <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      url: "/index.xml"
+
+params:
+  clear_reading: true
+  hierarchical_categories: true
+  cover_image: cover.jpg
+  image_gallery: true
+  thumbnail_image: true
+  thumbnail_image_position: bottom
+  google_analytics_id: UA-610695-2
+  comments: false
+  hierarchicalCategories: true
+  sidebar_behavior: 1
+  header:
+    right_link:
+      class: ''
+      icon: ''
+      url: "/#about"
 ...
