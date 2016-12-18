@@ -39,8 +39,13 @@ menu:
     - name: About
       weight: 4
       identifier: about
-      pre: <i class="sidebar-button-icon fa fa-lg fa-question"></i>
-      url: "/#about"
+      pre: <i class="sidebar-button-icon fa fa-lg fa-user"></i>
+      url: "/about"
+    - name: Contact
+      weight: 4
+      identifier: contact
+      pre: <i class="sidebar-button-icon fa fa-lg fa-envelope"></i>
+      url: "/contact"
   links:
     - name: LinkedIn
       weight: 1
