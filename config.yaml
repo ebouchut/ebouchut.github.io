@@ -7,7 +7,7 @@ defaultContentLanguage: "en-us"
 metaDataFormat: yaml
 canonifyurls: true
 permalinks:
-  post: "/:year/:month/:title/"
+  post: "/:year/:month/:day/:title"
 taxonomies:
   tag: tags
   category: categories
