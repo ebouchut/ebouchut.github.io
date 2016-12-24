@@ -3,6 +3,7 @@ title: "About me"
 comments: false
 categories: [profile, job]
 footer: true
+kind: section
 ---
 
 <div itemscope="" itemtype="http://schema.org/Person">

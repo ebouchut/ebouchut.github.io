@@ -15,8 +15,8 @@ editor: vim
 author:
   name: Eric Bouchut
   bio: Ruby on Rails aficionado
-  job: Web Developer at NetADge
-  location: France
+  job: Ruby on Rails developer at NetADge
+  location: Aix-en-Provence, France
   gravatar_email: ericbouchut@gmail.com
   picture: https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png
   twitter: ebouchut
@@ -37,12 +37,12 @@ DisqusShortname: ebouchut
 menu:
   main:
     - name: About
-      weight: 4
+      weight: 1
       identifier: about
       pre: <i class="sidebar-button-icon fa fa-lg fa-user"></i>
       url: "/about"
     - name: Contact
-      weight: 4
+      weight: 2
       identifier: contact
       pre: <i class="sidebar-button-icon fa fa-lg fa-envelope"></i>
       url: "/contact"
@@ -58,20 +58,35 @@ menu:
       pre: <i class="sidebar-button-icon fa fa-lg fa-github"></i>
       url: https://github.com/ebouchut
     - name: Twitter
-      weight: 2
+      weight: 3
       identifier: twitter
       pre: <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
       url: https://twitter.com/ebouchut
+    # - name: Search
+    #   weight: 3
+    #   identifier: search
+    #   pre: <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+    #   url: /#search
+    #   class: "st-search-show-outputs"
   misc:
-    - name: RSS
-      weight: 0
+    - name: "Categories"
+      identifier: "categories"
+      pre: "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
+      url: "/categories"
+      weight: 1
+    - name: "Tags"
+      weight: 1
+      identifier: "tags"
+      pre: <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      url: "/tags"
+    - name: "RSS"
       identifier: rss
       pre: <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
       url: "/index.xml"
+      weight: 99
 
 params:
   clear_reading: true
-  hierarchical_categories: true
   cover_image: cover.jpg
   image_gallery: true
   thumbnail_image: true
@@ -79,10 +94,10 @@ params:
   google_analytics_id: UA-610695-2
   comments: false
   hierarchicalCategories: true
-  sidebar_behavior: 1
-  header:
-    right_link:
-      class: ''
-      icon: ''
-      url: "/#about"
+  sidebar_behavior: 2
+  # header:
+  #   right_link:
+  #     class: 'open-algolia-search'
+  #     icon: 'search'
+  #     url: "/#search"
 ...

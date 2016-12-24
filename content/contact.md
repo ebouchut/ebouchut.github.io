@@ -1,6 +1,6 @@
 ---
 title: "Contact Eric Bouchut"
-footer: true
+footer: false
 ---
 You can get in touch with me via [email][], consult my professional profile and connect with me on [LinkedIn][] or [Viadeo][] and follow me on  [twitter][].
 
