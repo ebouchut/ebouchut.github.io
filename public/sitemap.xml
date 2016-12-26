@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>//EricBouchut.com/2015/08/15/batch-rename-files-with-zsh/</loc>
+    <lastmod>2015-08-15T20:44:39+02:00</lastmod>
+  </url>
+  <url>
+    <loc>//EricBouchut.com/2015/08/15/octopress-3-0/</loc>
+    <lastmod>2015-08-15T20:18:00+02:00</lastmod>
+  </url>
+  <url>
+    <loc>//EricBouchut.com/2012/02/10/baked-with-octopress/</loc>
+    <lastmod>2012-02-10T22:02:00+01:00</lastmod>
+  </url>
+  <url>
+    <loc>//EricBouchut.com/</loc>
+  </url>
+  <url>
+    <loc>//EricBouchut.com/contact/</loc>
+  </url>
+  <url>
+    <loc>//EricBouchut.com/about/</loc>
+  </url>
+  <url>
+    <loc>//EricBouchut.com/archive/</loc>
+  </url>
+</urlset>

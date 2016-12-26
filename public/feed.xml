@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eric Bouchut</title>
+    <description>Java developer, Ruby switcher and Ruby on Rails aficionado.</description>
+    <link>//EricBouchut.com/</link>
+    <atom:link href="//EricBouchut.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 13 Dec 2015 17:07:12 +0100</pubDate>
+    <lastBuildDate>Sun, 13 Dec 2015 17:07:12 +0100</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Batch File Renaming With Zsh</title>
+        <description>&lt;p&gt;I recently discovered &lt;strong&gt;&lt;code&gt;zmv&lt;/code&gt;&lt;/strong&gt;, a builtin feature of zsh that makes batch file renaming, a breeze. &lt;/p&gt;
+
+&lt;p&gt;To use it you need to add this to your zsh configuration file (&lt;code&gt;.zshrc&lt;/code&gt;).&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;autoload zmv&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;My blog contains several Markdown files with a &lt;code&gt;.markdown&lt;/code&gt; extension and I want to use &lt;code&gt;.md&lt;/code&gt; instead. Here is what the markdown files looks like.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;ls &lt;span class=&quot;k&quot;&gt;**&lt;/span&gt;/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.markdown  
+    ./_drafts/2012-05-06-learning-ruby-and-ruby-on-rails.markdown
+    ./_drafts/2015-07-19-welcome-to-jekyll.markdown
+    ./_posts/2012-02-10-baked-with-octopress.markdown
+    ./_posts/2015-08-15-batch-rename-files-with-zsh.markdown
+    ./_posts/2015-08-15-octopress-3-0.markdown
+    ./about/index.markdown
+    ./contact/index.markdown&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Note I used the double star zsh notation to &lt;strong&gt;recursively&lt;/strong&gt; list the files which is shorter than  &lt;code&gt;find . -name &amp;#39;*.markdown&amp;#39;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is where &lt;code&gt;zmv&lt;/code&gt; comes in handy to &lt;strong&gt;recursively&lt;/strong&gt; change the extension from &lt;code&gt;.markdown&lt;/code&gt; to &lt;code&gt;.md&lt;/code&gt;. Once more the double stars &lt;code&gt;**&lt;/code&gt; match the current directory or whatever directory beneath it.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;zmv &lt;span class=&quot;s1&quot;&gt;&#39;(**/)(*).markdown&#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;$1$2.md&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Voilà, the files are renamed!&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;ls &lt;span class=&quot;k&quot;&gt;**&lt;/span&gt;/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.md
+    ./_drafts/2012-05-06-learning-ruby-and-ruby-on-rails.md
+    ./_drafts/2015-07-19-welcome-to-jekyll.md
+    ./_posts/2012-02-10-baked-with-octopress.md
+    ./_posts/2015-08-15-batch-rename-files-with-zsh.md
+    ./_posts/2015-08-15-octopress-3-0.md
+    ./about/index.md
+    ./contact/index.md&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You can also use the &lt;code&gt;-n&lt;/code&gt; option to ask &lt;code&gt;zmv&lt;/code&gt; to print what it would do without actually doing it. This gives you an opportunity to check that everything is ok before running the command to prevent you from doing a lot of back and forth only because of typo in the command ;-).&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;zmv  -n &lt;span class=&quot;s1&quot;&gt;&#39;(**/)(*).markdown&#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;$1$2.md&#39;&lt;/span&gt;
+    mv -- _drafts/2012-05-06-learning-ruby-and-ruby-on-rails.markdown _drafts/2012-05-06-learning-ruby-and-ruby-on-rails.md
+    mv -- _drafts/2015-07-19-welcome-to-jekyll.markdown _drafts/2015-07-19-welcome-to-jekyll.md
+    mv -- _posts/2012-02-10-baked-with-octopress.markdown _posts/2012-02-10-baked-with-octopress.md
+    mv -- _posts/2015-08-15-batch-rename-files-with-zsh.markdown _posts/2015-08-15-batch-rename-files-with-zsh.md
+    mv -- _posts/2015-08-15-octopress-3-0.markdown _posts/2015-08-15-octopress-3-0.md
+    mv -- about/index.markdown about/index.md
+    mv -- contact/index.markdown contact/index.md&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I only scratched the surface of this feature. 
+If you want to read more I recommend you &lt;a href=&quot;http://www.drbunsen.org/batch-file-renaming/&quot;&gt;Seth Brown&amp;#39;s post&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 Aug 2015 20:44:39 +0200</pubDate>
+        <link>//EricBouchut.com/2015/08/15/batch-rename-files-with-zsh/</link>
+        <guid isPermaLink="true">//EricBouchut.com/2015/08/15/batch-rename-files-with-zsh/</guid>
+        
+        <category>zsh</category>
+        
+        <category>rename</category>
+        
+        <category>file</category>
+        
+        
+        <category>shell</category>
+        
+      </item>
+    
+      <item>
+        <title>Octopress 3.0</title>
+        <description>&lt;p&gt;I recently upgraded Octopress, the engine running my blog, to version &lt;a href=&quot;http://octopress.org/2015/01/15/octopress-3.0-is-coming/&quot;&gt;3.0&lt;/a&gt; with the &lt;a href=&quot;https://github.com/octopress/genesis-theme&quot;&gt;octopress-genesis-theme&lt;/a&gt;.
+Eagerly waiting for the official release!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 Aug 2015 20:18:00 +0200</pubDate>
+        <link>//EricBouchut.com/2015/08/15/octopress-3-0/</link>
+        <guid isPermaLink="true">//EricBouchut.com/2015/08/15/octopress-3-0/</guid>
+        
+        <category>octopress</category>
+        
+        <category>blog</category>
+        
+        <category>upgrade</category>
+        
+        <category>theme</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Baked With Octopress</title>
+        <description>&lt;p&gt;I finally decided to make the move to &lt;a href=&quot;http://octopress.org&quot; title=&quot;Octopress&quot;&gt;Octopress&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A lot has been said about this new blogging framework, 
+since last year when I first read about it on &lt;a href=&quot;http://news.ycombinator.com/item?id=2799081&quot; title=&quot;Hacker News&quot;&gt;Hacker News&lt;/a&gt;.
+To know more about the reasons why I decided to switch 
+my blog from Wordpress to  Octopress, you can read the posts 
+by &lt;a href=&quot;http://aijazansari.com/2011/12/12/switching-to-octopress/&quot; title=&quot;Aijaz Ansari&quot;&gt;Aijaz Ansari&lt;/a&gt;, &lt;a href=&quot;http://mattgemmell.com/2011/09/12/blogging-with-octopress/&quot; title=&quot;Matt Gemmell&quot;&gt;Matt Gemmell&lt;/a&gt; and &lt;a href=&quot;http://zanshin.net/2011/08/11/switching-to-octopress/&quot; title=&quot;Mark Nichols&quot;&gt;Mark Nichols&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I intend to use my blog to share my thoughts on all things related to programming.
+I will also keep you apprised of what I have learned so far about tech 
+and share with you blog posts and podcasts I find interesting.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 10 Feb 2012 22:02:00 +0100</pubDate>
+        <link>//EricBouchut.com/2012/02/10/baked-with-octopress/</link>
+        <guid isPermaLink="true">//EricBouchut.com/2012/02/10/baked-with-octopress/</guid>
+        
+        
+        <category>octopress</category>
+        
+      </item>
+    
+  </channel>
+</rss>
