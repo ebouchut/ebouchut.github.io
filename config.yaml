@@ -37,28 +37,28 @@ DisqusShortname: ebouchut
 menu:
   main:
     - name: About
-      weight: 1
+      weight: 10
       identifier: about
       pre: <i class="sidebar-button-icon fa fa-lg fa-user"></i>
       url: "/about"
     - name: Contact
-      weight: 2
+      weight: 20
       identifier: contact
       pre: <i class="sidebar-button-icon fa fa-lg fa-envelope"></i>
       url: "/contact"
   links:
     - name: LinkedIn
-      weight: 1
+      weight: 10
       identifier: linkedin
       pre: <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
       url: https://linkedin.com/in/ebouchut
     - name: Github
-      weight: 2
+      weight: 20
       identifier: github
       pre: <i class="sidebar-button-icon fa fa-lg fa-github"></i>
       url: https://github.com/ebouchut
     - name: Twitter
-      weight: 3
+      weight: 30
       identifier: twitter
       pre: <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
       url: https://twitter.com/ebouchut
@@ -73,9 +73,9 @@ menu:
       identifier: "categories"
       pre: "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
       url: "/categories"
-      weight: 1
+      weight: 10
     - name: "Tags"
-      weight: 1
+      weight: 20
       identifier: "tags"
       pre: <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
       url: "/tags"
@@ -86,6 +86,7 @@ menu:
       weight: 99
 
 params:
+  sidebar_behavior: 2
   clear_reading: true
   cover_image: cover.jpg
   image_gallery: true
@@ -94,7 +95,6 @@ params:
   google_analytics_id: UA-610695-2
   comments: false
   hierarchicalCategories: true
-  sidebar_behavior: 2
   # header:
   #   right_link:
   #     class: 'open-algolia-search'
