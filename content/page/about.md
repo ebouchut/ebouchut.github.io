@@ -1,9 +1,9 @@
 ---
 title: "About me"
 comments: false
-categories: [profile, job]
-footer: true
-kind: section
+showPagination: false
+showSocial: false
+showTags: false
 ---
 
 <div itemscope="" itemtype="http://schema.org/Person">

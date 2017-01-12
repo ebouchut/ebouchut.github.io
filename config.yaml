@@ -17,8 +17,8 @@ author:
   bio: Ruby on Rails aficionado
   job: Ruby on Rails developer at NetADge
   location: Aix-en-Provence, France
-  gravatar_email: ericbouchut@gmail.com
-  picture: https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png
+  gravatarEmail: ericbouchut@gmail.com
+  #  picture: https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png
   twitter: ebouchut
 
 
@@ -36,16 +36,21 @@ pygmentsCodeFencesGuessSyntax: true
 DisqusShortname: ebouchut
 menu:
   main:
-    - name: About
+    - name: Home
       weight: 10
+      identifier: home
+      pre: <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      url: "/"
+    - name: About
+      weight: 20
       identifier: about
       pre: <i class="sidebar-button-icon fa fa-lg fa-user"></i>
-      url: "/about"
+      url: "/page/about"
     - name: Contact
-      weight: 20
+      weight: 30
       identifier: contact
       pre: <i class="sidebar-button-icon fa fa-lg fa-envelope"></i>
-      url: "/contact"
+      url: "/page/contact"
   links:
     - name: LinkedIn
       weight: 10
@@ -86,17 +91,18 @@ menu:
       weight: 99
 
 params:
-  sidebar_behavior: 2
-  clear_reading: true
-  cover_image: cover.jpg
-  image_gallery: true
-  thumbnail_image: true
-  thumbnail_image_position: bottom
-  google_analytics_id: UA-610695-2
+  sidebarBehavior: 2
+  clearReading: true
+  coverImage: cover.jpg
+  imageGallery: true
+  thumbnailImage: true
+  thumbnailImagePosition: bottom
+  googleAnalytics: UA-610695-2
   comments: false
   hierarchicalCategories: true
+  footer: ""
   # header:
-  #   right_link:
+  #   rightLink:
   #     class: 'open-algolia-search'
   #     icon: 'search'
   #     url: "/#search"

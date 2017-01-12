@@ -9,8 +9,8 @@ tags:
 - file
 ---
 
-I recently discovered __`zmv`__, a builtin feature of zsh that makes batch file renaming, a breeze. 
-<!-- more -->
+I recently discovered `zmv`, a builtin feature of zsh that makes batch file renaming, a breeze. 
+{{<!-- more -->}}
 To use it you need to add this to your zsh configuration file (`.zshrc`).
 {{< highlight shell >}}
 autoload zmv
