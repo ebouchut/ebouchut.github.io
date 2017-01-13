@@ -1,6 +1,7 @@
 ---
 title: "Contact Eric Bouchut"
 comments: false
+showDate: false
 showPagination: false
 showSocial: false
 showTags: false

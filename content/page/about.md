@@ -1,6 +1,7 @@
 ---
 title: "About me"
 comments: false
+showDate: false
 showPagination: false
 showSocial: false
 showTags: false
