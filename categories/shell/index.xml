@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shell on Eric Bouchut</title>
+    <link>//ericbouchut.com/categories/shell/index.xml</link>
+    <description>Recent content in Shell on Eric Bouchut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="//ericbouchut.com/categories/shell/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Batch File Renaming With Zsh</title>
+      <link>//ericbouchut.com/2015/08/15/Batch-File-Renaming-With-Zsh/</link>
+      <pubDate>Sat, 15 Aug 2015 20:44:39 +0000</pubDate>
+      
+      <guid>//ericbouchut.com/2015/08/15/Batch-File-Renaming-With-Zsh/</guid>
+      <description>&lt;p&gt;I recently discovered &lt;code&gt;zmv&lt;/code&gt;, a builtin feature of zsh that makes batch file renaming, a breeze.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;To use it you need to add this to your zsh configuration file (&lt;code&gt;.zshrc&lt;/code&gt;).
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;autoload zmv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;My blog contains several Markdown files with a &lt;code&gt;.markdown&lt;/code&gt; extension and I want to use &lt;code&gt;.md&lt;/code&gt; instead. Here is what the markdown files looks like.
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;ls **/*.markdown  
+    ./_drafts/2012-05-06-learning-ruby-and-ruby-on-rails.markdown
+    ./_drafts/2015-07-19-welcome-to-jekyll.markdown
+    ./_posts/2012-02-10-baked-with-octopress.markdown
+    ./_posts/2015-08-15-batch-rename-files-with-zsh.markdown
+    ./_posts/2015-08-15-octopress-3-0.markdown
+    ./about/index.markdown
+    ./contact/index.markdown
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+Note I used the double star zsh notation to &lt;strong&gt;recursively&lt;/strong&gt; list the files which is shorter than  &lt;code&gt;find . -name &#39;*.markdown&#39;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is where &lt;code&gt;zmv&lt;/code&gt; comes in handy to &lt;strong&gt;recursively&lt;/strong&gt; change the extension from &lt;code&gt;.markdown&lt;/code&gt; to &lt;code&gt;.md&lt;/code&gt;. Once more the double stars &lt;code&gt;**&lt;/code&gt; match the current directory or whatever directory beneath it.
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;zmv &lt;span class=&#34;s1&#34;&gt;&amp;#39;(**/)(*).markdown&amp;#39;&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;$1$2.md&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Voilà, the files are renamed!
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;ls **/*.md
+    ./_drafts/2012-05-06-learning-ruby-and-ruby-on-rails.md
+    ./_drafts/2015-07-19-welcome-to-jekyll.md
+    ./_posts/2012-02-10-baked-with-octopress.md
+    ./_posts/2015-08-15-batch-rename-files-with-zsh.md
+    ./_posts/2015-08-15-octopress-3-0.md
+    ./about/index.md
+    ./contact/index.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;You can also use the &lt;code&gt;-n&lt;/code&gt; option to ask &lt;code&gt;zmv&lt;/code&gt; to print what it would do without actually doing it. This gives you an opportunity to check that everything is ok before running the command to prevent you from doing a lot of back and forth only because of typo in the command ;-).&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;zmv  -n &lt;span class=&#34;s1&#34;&gt;&amp;#39;(**/)(*).markdown&amp;#39;&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;$1$2.md&amp;#39;&lt;/span&gt;
+    mv -- _drafts/2012-05-06-learning-ruby-and-ruby-on-rails.markdown _drafts/2012-05-06-learning-ruby-and-ruby-on-rails.md
+    mv -- _drafts/2015-07-19-welcome-to-jekyll.markdown _drafts/2015-07-19-welcome-to-jekyll.md
+    mv -- _posts/2012-02-10-baked-with-octopress.markdown _posts/2012-02-10-baked-with-octopress.md
+    mv -- _posts/2015-08-15-batch-rename-files-with-zsh.markdown _posts/2015-08-15-batch-rename-files-with-zsh.md
+    mv -- _posts/2015-08-15-octopress-3-0.markdown _posts/2015-08-15-octopress-3-0.md
+    mv -- about/index.markdown about/index.md
+    mv -- contact/index.markdown contact/index.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I only scratched the surface of this feature.
+If you want to read more I recommend you &lt;a href=&#34;http://www.drbunsen.org/batch-file-renaming/&#34;&gt;Seth Brown&amp;rsquo;s post&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

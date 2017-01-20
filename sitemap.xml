@@ -1,27 +1,114 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
   <url>
-    <loc>//EricBouchut.com/2015/08/15/batch-rename-files-with-zsh/</loc>
-    <lastmod>2015-08-15T20:44:39+02:00</lastmod>
+    <loc>//ericbouchut.com/2015/08/15/Batch-File-Renaming-With-Zsh/</loc>
+    <lastmod>2015-08-15T20:44:39+00:00</lastmod>
   </url>
+  
   <url>
-    <loc>//EricBouchut.com/2015/08/15/octopress-3-0/</loc>
-    <lastmod>2015-08-15T20:18:00+02:00</lastmod>
+    <loc>//ericbouchut.com/2015/08/15/Octopress-3.0/</loc>
+    <lastmod>2015-08-15T00:00:02+00:00</lastmod>
   </url>
+  
   <url>
-    <loc>//EricBouchut.com/2012/02/10/baked-with-octopress/</loc>
-    <lastmod>2012-02-10T22:02:00+01:00</lastmod>
+    <loc>//ericbouchut.com/2012/02/10/Baked-With-Octopress/</loc>
+    <lastmod>2012-02-10T00:00:00+00:00</lastmod>
   </url>
+  
   <url>
-    <loc>//EricBouchut.com/</loc>
+    <loc>//ericbouchut.com/page/about/</loc>
   </url>
+  
   <url>
-    <loc>//EricBouchut.com/contact/</loc>
+    <loc>//ericbouchut.com/categories/blog/</loc>
+    <lastmod>2015-08-15T00:00:02+00:00</lastmod>
+    <priority>0</priority>
   </url>
+  
   <url>
-    <loc>//EricBouchut.com/about/</loc>
+    <loc>//ericbouchut.com/tags/blog/</loc>
+    <lastmod>2015-08-15T00:00:02+00:00</lastmod>
+    <priority>0</priority>
   </url>
+  
   <url>
-    <loc>//EricBouchut.com/archive/</loc>
+    <loc>//ericbouchut.com/categories/</loc>
+    <priority>0</priority>
   </url>
+  
+  <url>
+    <loc>//ericbouchut.com/page/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>//ericbouchut.com/</loc>
+    <lastmod>2015-08-15T20:44:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//ericbouchut.com/tags/file/</loc>
+    <lastmod>2015-08-15T20:44:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//ericbouchut.com/categories/octopress/</loc>
+    <lastmod>2012-02-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//ericbouchut.com/tags/octopress/</loc>
+    <lastmod>2015-08-15T00:00:02+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//ericbouchut.com/page/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//ericbouchut.com/post/</loc>
+    <lastmod>2015-08-15T20:44:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//ericbouchut.com/tags/rename/</loc>
+    <lastmod>2015-08-15T20:44:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//ericbouchut.com/categories/shell/</loc>
+    <lastmod>2015-08-15T20:44:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//ericbouchut.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//ericbouchut.com/tags/theme/</loc>
+    <lastmod>2015-08-15T00:00:02+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//ericbouchut.com/tags/upgrade/</loc>
+    <lastmod>2015-08-15T00:00:02+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//ericbouchut.com/tags/zsh/</loc>
+    <lastmod>2015-08-15T20:44:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
 </urlset>
