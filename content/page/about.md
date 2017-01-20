@@ -4,6 +4,20 @@ comments: false
 showDate: false
 showPagination: false
 showSocial: false
+keywords:
+- Eric Bouchut
+- ruby developer
+- rails developer
+- ruby on rails developer
+- java developer
+- programmer
+- developpeur ruby
+- developpeur ruby on rails
+- developpeur java
+- Netadge
+- LD Mobile
+- Miyowa
+- BMC Software
 showTags: false
 ---
 
@@ -21,8 +35,8 @@ I also have a solid hands-on experience in Java and a real knack for the art of 
   I’m a software developer with over 15 years of experience:</p>
   <ul>
     <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
-      5 years as a Web developer (Ruby on Rails, Java, GWT) for 
-      <span itemprop="name"><a href="http://www.antidot.net" itemprop="url">Antidot</a></span>, a search engine company and <span itemprop="name">LD Mobile</span> editor of <span itemprop="name"><a href="http://www.netadge.com/" itemprop="url">netADge</a></span> a mobile DSP in the Real Time Bid arena.
+      6 years as a Web developer (Ruby on Rails, Java, GWT) for 
+      <span itemprop="name"><a href="http://www.antidot.net" itemprop="url">Antidot</a></span>, a search engine company and <span itemprop="name">LD Mobile</span> editor of <span itemprop="name"><a href="http://www.netadge.com/" itemprop="url">netADge</a></span> a mobile DSP in the Real Time Bid arena (programmatic advertising).
     </li>
     <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
       5 years of Java and Web development for 2 startups: Perform (acquired by BMC) and 
@@ -50,9 +64,5 @@ I also have a solid hands-on experience in Java and a real knack for the art of 
   as a <span itemprop="jobTitle">Ruby on Rails and Java Developer</span>.  
 </p>
 
-Keep up with my news by following me on the Web:
-<ul>
-  <li><a href="https://twitter.com/ebouchut" itemprop="url">Twitter</a></li>
-  <li><a href="https://github.com/ebouchut"  itemprop="url">Github</a></li>
-  <li><a rel="author" href="https://plus.google.com/u/0/111804446383442393632?rel=author"        itemprop="url">Google</a></li>
 </div>
+ [Contact me](/page/contact).
