@@ -27,7 +27,7 @@ DisqusShortname: ebouchut
 #~~~~~~~~~~~~~~~~
 #PygmentsStyle: "monokai"
 # Use CSS classes instead of color codes for syntax coloring
-pygmentsuseclasses: true
+pygmentsUsecClasses: true
 # USe triple back ticks (Github Flavored Markdown) to denote a code block
 PygmentsCodeFences: true
 # enables syntax guessing for code fences without specified language
