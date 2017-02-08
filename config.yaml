@@ -23,6 +23,12 @@ author:
 disqusShortname: ebouchut
 
 #~~~~~~~~~~~~~~~~
+# Markdown Engine
+#~~~~~~~~~~~~~~~~
+blackfriday:
+  smartypants: false
+
+#~~~~~~~~~~~~~~~~
 # Colorize Syntax
 #~~~~~~~~~~~~~~~~
 #PygmentsStyle: "monokai"
