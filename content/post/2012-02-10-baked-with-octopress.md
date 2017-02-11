@@ -1,10 +1,12 @@
 ---
 date: 2012-02-10T00:00:00Z
 title: Baked With Octopress
+tags: [octopress, blog]
 categories: [octopress]
 ---
 
 I finally decided to make the move to [Octopress][].
+<!--more-->
 
 A lot has been said about this new blogging framework, 
 since last year when I first read about it on [Hacker News][].
