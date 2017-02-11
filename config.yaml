@@ -31,13 +31,13 @@ blackfriday:
 #~~~~~~~~~~~~~~~~
 # Colorize Syntax
 #~~~~~~~~~~~~~~~~
-#PygmentsStyle: "monokai"
 # Use CSS classes instead of color codes for syntax coloring
-pygmentsUsecClasses: true
-# USe triple back ticks (Github Flavored Markdown) to denote a code block
-PygmentsCodeFences: true
+# pygmentsUseClasses: true
+# pygmentsStyle: "monokai"
+# Use triple back ticks (Github Flavored Markdown) to denote a code block
+# pygmentsCodeFences: true
 # enables syntax guessing for code fences without specified language
-pygmentsCodeFencesGuessSyntax: true
+# pygmentsCodeFencesGuessSyntax: true
 
 params:
   sidebarBehavior: 2
