@@ -2,112 +2,194 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>//ericbouchut.com/2015/08/15/Batch-File-Renaming-With-Zsh/</loc>
+    <loc>//localhost:1313/2017/02/13/Change-the-case-of-filenames-with-Zsh/</loc>
+    <lastmod>2017-02-13T13:14:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/2017/02/12/My-Bookmarking-Workflow/</loc>
+    <lastmod>2017-02-12T16:17:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/2015/08/15/Batch-File-Renaming-With-Zsh/</loc>
     <lastmod>2015-08-15T20:44:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/2015/08/15/Octopress-3.0/</loc>
+    <loc>//localhost:1313/2015/08/15/Octopress-3.0/</loc>
     <lastmod>2015-08-15T00:00:02+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/2012/02/10/Baked-With-Octopress/</loc>
+    <loc>//localhost:1313/2012/02/10/Baked-With-Octopress/</loc>
     <lastmod>2012-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/page/about/</loc>
+    <loc>//localhost:1313/page/about/</loc>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/categories/blog/</loc>
+    <loc>//localhost:1313/categories/blog/</loc>
     <lastmod>2015-08-15T00:00:02+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/tags/blog/</loc>
+    <loc>//localhost:1313/tags/blog/</loc>
     <lastmod>2015-08-15T00:00:02+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/categories/</loc>
+    <loc>//localhost:1313/tags/bookmark/</loc>
+    <lastmod>2017-02-12T16:17:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/page/contact/</loc>
-  </url>
-  
-  <url>
-    <loc>//ericbouchut.com/</loc>
-    <lastmod>2015-08-15T20:44:39+00:00</lastmod>
+    <loc>//localhost:1313/tags/bookmarking/</loc>
+    <lastmod>2017-02-12T16:17:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/tags/file/</loc>
-    <lastmod>2015-08-15T20:44:39+00:00</lastmod>
+    <loc>//localhost:1313/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/categories/octopress/</loc>
+    <loc>//localhost:1313/page/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/convert/</loc>
+    <lastmod>2017-02-13T13:14:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2017-02-13T13:14:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/file/</loc>
+    <lastmod>2017-02-13T13:14:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/filename/</loc>
+    <lastmod>2017-02-13T13:14:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/lowercase/</loc>
+    <lastmod>2017-02-13T13:14:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/categories/octopress/</loc>
     <lastmod>2012-02-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/tags/octopress/</loc>
+    <loc>//localhost:1313/tags/octopress/</loc>
     <lastmod>2015-08-15T00:00:02+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/page/</loc>
+    <loc>//localhost:1313/page/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/post/</loc>
-    <lastmod>2015-08-15T20:44:39+00:00</lastmod>
+    <loc>//localhost:1313/tags/pinboard/</loc>
+    <lastmod>2017-02-12T16:17:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/tags/rename/</loc>
-    <lastmod>2015-08-15T20:44:39+00:00</lastmod>
+    <loc>//localhost:1313/tags/pocket/</loc>
+    <lastmod>2017-02-12T16:17:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/categories/shell/</loc>
-    <lastmod>2015-08-15T20:44:39+00:00</lastmod>
+    <loc>//localhost:1313/post/</loc>
+    <lastmod>2017-02-13T13:14:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/tags/</loc>
+    <loc>//localhost:1313/tags/rename/</loc>
+    <lastmod>2017-02-13T13:14:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/tags/theme/</loc>
+    <loc>//localhost:1313/categories/shell/</loc>
+    <lastmod>2017-02-13T13:14:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/shell/</loc>
+    <lastmod>2017-02-13T13:14:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/tag/</loc>
+    <lastmod>2017-02-12T16:17:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/theme/</loc>
     <lastmod>2015-08-15T00:00:02+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/tags/upgrade/</loc>
+    <loc>//localhost:1313/tags/upgrade/</loc>
     <lastmod>2015-08-15T00:00:02+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/tags/zsh/</loc>
-    <lastmod>2015-08-15T20:44:39+00:00</lastmod>
+    <loc>//localhost:1313/tags/uppercase/</loc>
+    <lastmod>2017-02-13T13:14:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/categories/workflow/</loc>
+    <lastmod>2017-02-12T16:17:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/workflow/</loc>
+    <lastmod>2017-02-12T16:17:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/zsh/</loc>
+    <lastmod>2017-02-13T13:14:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   

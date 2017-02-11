@@ -2,19 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Octopress on Eric Bouchut</title>
-    <link>//ericbouchut.com/categories/octopress/index.xml</link>
+    <link>//localhost:1313/categories/octopress/index.xml</link>
     <description>Recent content in Octopress on Eric Bouchut</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="//ericbouchut.com/categories/octopress/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/categories/octopress/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Baked With Octopress</title>
-      <link>//ericbouchut.com/2012/02/10/Baked-With-Octopress/</link>
+      <link>//localhost:1313/2012/02/10/Baked-With-Octopress/</link>
       <pubDate>Fri, 10 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>//ericbouchut.com/2012/02/10/Baked-With-Octopress/</guid>
-      <description>&lt;p&gt;I finally decided to make the move to &lt;a href=&#34;http://octopress.org&#34; title=&#34;Octopress&#34;&gt;Octopress&lt;/a&gt;.&lt;/p&gt;
+      <guid>//localhost:1313/2012/02/10/Baked-With-Octopress/</guid>
+      <description>&lt;p&gt;I finally decided to make the move to &lt;a href=&#34;http://octopress.org&#34; title=&#34;Octopress&#34;&gt;Octopress&lt;/a&gt;.
+&lt;/p&gt;
 
 &lt;p&gt;A lot has been said about this new blogging framework,
 since last year when I first read about it on &lt;a href=&#34;http://news.ycombinator.com/item?id=2799081&#34; title=&#34;Hacker News&#34;&gt;Hacker News&lt;/a&gt;.
@@ -24,8 +25,7 @@ by &lt;a href=&#34;http://aijazansari.com/2011/12/12/switching-to-octopress/&#34
 
 &lt;p&gt;I intend to use my blog to share my thoughts on all things related to programming.
 I will also keep you apprised of what I have learned so far about tech
-and share with you blog posts and podcasts I find interesting.&lt;/p&gt;
-</description>
+and share with you blog posts and podcasts I find interesting.&lt;/p&gt;</description>
     </item>
     
   </channel>

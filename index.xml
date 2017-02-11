@@ -2,30 +2,287 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eric Bouchut</title>
-    <link>//ericbouchut.com/index.xml</link>
+    <link>//localhost:1313/index.xml</link>
     <description>Recent content on Eric Bouchut</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2015 20:44:39 +0000</lastBuildDate>
-    <atom:link href="//ericbouchut.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Feb 2017 13:14:15 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Change the case of filenames with Zsh</title>
+      <link>//localhost:1313/2017/02/13/Change-the-case-of-filenames-with-Zsh/</link>
+      <pubDate>Mon, 13 Feb 2017 13:14:15 +0000</pubDate>
+      
+      <guid>//localhost:1313/2017/02/13/Change-the-case-of-filenames-with-Zsh/</guid>
+      <description>&lt;p&gt;Today, after importing photos from my iPhone to my Mac, I noticed
+their filenames were all uppercase whereas I want them to be all lowercase.
+This is a task &lt;code&gt;zsh&lt;/code&gt; can perform easily with a oneliner.
+&lt;/p&gt;
+
+&lt;p&gt;The files before the renaming.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;IMG_4575.PNG
+IMG_4576.PNG
+IMG_4577.PNG
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This oneliner iterates over the files whose name starts with &lt;code&gt;IMG&lt;/code&gt; and ends with
+&lt;code&gt;.PNG&lt;/code&gt; and rename each one to lowercase.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;for file in IMG*.PNG ; do  mv $file ${file:l}  ; done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The key trick here is &lt;code&gt;${file:l}&lt;/code&gt; (with an &#39;l&#39; as in lowercase) that outputs
+the content of the variable &lt;code&gt;file&lt;/code&gt; all lowercase.&lt;/p&gt;
+
+&lt;p&gt;The files have been successfully renamed all lowercase.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;img_4575.png
+img_4576.png
+img_4577.png
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Should you need to perform the opposite ie. convert the file names
+to &lt;strong&gt;uppercase&lt;/strong&gt;, use &lt;code&gt;${file:u}&lt;/code&gt; instead, like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;for file in img*.png ; do  mv $file ${file:u}  ; done
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>My Bookmarking Workflow</title>
+      <link>//localhost:1313/2017/02/12/My-Bookmarking-Workflow/</link>
+      <pubDate>Sun, 12 Feb 2017 16:17:18 +0000</pubDate>
+      
+      <guid>//localhost:1313/2017/02/12/My-Bookmarking-Workflow/</guid>
+      <description>&lt;p&gt;Here is how I set aside links to read them when I have time
+and classify them with tags to find them easily later on.
+&lt;/p&gt;
+
+&lt;!-- toc --&gt;
+
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/my_bookmarking_workflow/overview.png&#34; alt=&#34;bookmarking workflow overview&#34; title=&#34;Bookmarking Workflow Overview&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;My bookmarking workflow is the following:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Collect Link (URL)&lt;/li&gt;
+&lt;li&gt;Find adequate tags for the link&lt;/li&gt;
+&lt;li&gt;Tag the link&lt;/li&gt;
+&lt;li&gt;Search&lt;/li&gt;
+&lt;li&gt;Read&lt;/li&gt;
+&lt;li&gt;Listen&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The bookmarking toolset I use both on Mac and iPhone is composed of 2 online services: &lt;em&gt;Pocket&lt;/em&gt; and &lt;em&gt;Pinboard&lt;/em&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://getpocket.com&#34; title=&#34;Pocket&#34;&gt;Pocket&lt;/a&gt; to &lt;em&gt;collect links&lt;/em&gt; in a read later list&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pinboard.in&#34; title=&#34;Pinboard&#34;&gt;Pinboard&lt;/a&gt; is my tagging tool.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;collect-with-pocket&#34;&gt;Collect with Pocket&lt;/h1&gt;
+
+&lt;p&gt;When I find a Web page interesting at first glance, I add it to
+&lt;a href=&#34;https://getpocket.com&#34; title=&#34;Pocket&#34;&gt;Pocket&lt;/a&gt; without taking  too much time reading it thoroughly at this
+stage. This can also be a link in  Gmail that I want to explore later on.
+The goal is here to send links to Pocket as quickly as possible.  Even if Pocket
+offers the ability to tag links at this stage, I generally do not do this for
+two reasons. First off, because Pinboard unfortunately cannot import tags from
+Pocket. The second reason is to make this initial step of the flow as fast and
+smooth as possible. Remember  it will occur multiple times a day and must not be
+a showstopper. You probably do not want nor can read at this stage, all the
+pages you ultimately intend to bookmark. One of the great strength of Pocket is
+that you push many links to it in order to read them later on (hence the
+original name &lt;em&gt;readitlaterlist.com&lt;/em&gt;). Use it this way and you will thank
+yourself.
+What you put in Pocket will be ready for you to read or even listen
+to when you decide to do so.
+The 2 pluses of Pocket are in my opinion: &lt;strong&gt;Collect fast, read asynchronously&lt;/strong&gt;.
+Pocket (and Pinboard) give you the ability to &lt;strong&gt;decouple collecting an URL from
+reading the coresponding Web page&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://getpocket.com&#34; title=&#34;Pocket&#34;&gt;Pocket&lt;/a&gt;&lt;/strong&gt; is a web service where you store your &lt;strong&gt;read later list&lt;/strong&gt;.
+I use its desktop browser plugins and mobile application to &lt;strong&gt;save the URL
+ of&lt;/strong&gt; interesting web &lt;strong&gt;pages&lt;/strong&gt; that I want to tag, read or listen to later when
+ it is convenient for me to do so. What&#39;s more Pocket allows me to browse them
+ &lt;strong&gt;offline&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The  &lt;strong&gt;desktop browser plugin&lt;/strong&gt; adds a &lt;em&gt;Pocket&lt;/em&gt; button that saves the
+current page for later.&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;mobile application&lt;/strong&gt; for iOS adds the
+&lt;a href=&#34;https://help.getpocket.com/article/891-saving-to-pocket-on-iphone&#34; title=&#34;Saving to Pocket on iPhone&#34;&gt;Pocket Share extension&lt;/a&gt;, which is then available in
+all applications where you can share a link to Pocket.&lt;/li&gt;
+&lt;li&gt;What&#39;s more, &lt;a href=&#34;https://help.getpocket.com/category/858-category&#34; title=&#34;Famous Mobile Apps natively integrated with Pocket&#34;&gt;many mobile applications&lt;/a&gt; can &amp;quot;Save to
+Pocket&amp;quot; natively.  This is the case for &lt;a href=&#34;https://inoreader.com&#34; title=&#34;Inoreader&#34;&gt;Inoreader&lt;/a&gt; for instance,
+a cool iOS app I use to read my RSS feeds, when I want to clip an interesting
+blog post I can do that from within Inoreader itself without even using the &lt;em&gt;Pocket
+Share extension&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For those of you more visually inclined here a review of Pocket by Steve Dotto.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/zGeF5XaQ2tU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;h1 id=&#34;tag-with-pinboard&#34;&gt;Tag with Pinboard&lt;/h1&gt;
+
+&lt;p&gt;I configured &lt;strong&gt;&lt;a href=&#34;https://pinboard.in&#34; title=&#34;Pinboard&#34;&gt;Pinboard&lt;/a&gt;&lt;/strong&gt; to automatically import new links from &lt;em&gt;Pocket&lt;/em&gt; several
+times a day. Hence, every time I save a link to Pocket it also ends up in Pinboard.&lt;/p&gt;
+
+&lt;p&gt;The second step of my workflow takes place in Pinboard where I open each link
+to make a quick read  (introduction, title of the main sections, text in bold).
+Once I get a grasp of what the web page  is about, I choose the
+&lt;em&gt;adequate&lt;/em&gt; &lt;strong&gt;tags&lt;/strong&gt;  to classify it then tag the link.
+I may also remove links that I have already read in Pocket or do not want to archive.&lt;/p&gt;
+
+&lt;h2 id=&#34;choose-tags&#34;&gt;Choose tags&lt;/h2&gt;
+
+&lt;p&gt;Here are my guiding principles for &lt;strong&gt;choosing adequate tags&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Use the tags you would use the most &lt;strong&gt;intuitively&lt;/strong&gt; to &lt;strong&gt;search&lt;/strong&gt; for the link
+you are tagging. Indeed those are the ones you will use in the end when you
+do not rembember all the super extra consise and to the point tags you took
+so long to find. I&#39;m not saying that it is worthless to search for an
+adequate tag, you will need to do that at first, but keep in mind the goal
+of a tag is to be used to search for and find a link quickly.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Rule of thumb&lt;/strong&gt;: Taking the time to discover &lt;strong&gt;which tags you would use
+to search for a link&lt;/strong&gt; will greatly help you find ad-hoc tags.
+Some of them stick very easily in your muscle memory, others don&#39;t.
+Keep in the mind that the ultimate goal is to find not to have the ultra top
+notch tags.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Prefer &lt;strong&gt;singular&lt;/strong&gt; over plural for nouns&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Use all &lt;strong&gt;lowercase&lt;/strong&gt; words (easier and faster to type)&lt;/p&gt;
+
+&lt;p&gt;Depending on your bookmarking service, search may be case insensitive as
+this is the case for &lt;em&gt;Pinboard&lt;/em&gt;. But as online bookmarking services may come
+and go, you may have one day to migrate to a new one which does not offer
+this functionality.  I do not follow this principle only for acronyms like
+&lt;code&gt;HTML&lt;/code&gt;, &lt;code&gt;HTTP&lt;/code&gt; and &lt;code&gt;JSON&lt;/code&gt; for instance.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Use &lt;strong&gt;verbs&lt;/strong&gt; in the &lt;strong&gt;present tense&lt;/strong&gt;,
+for instance use &lt;code&gt;learn&lt;/code&gt; instead of &lt;code&gt;learning&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Use &lt;strong&gt;multiple words&lt;/strong&gt; instead of a single compound word (even those with a dash
+in between words).
+Use &lt;code&gt;web&lt;/code&gt; + &lt;code&gt;site&lt;/code&gt; instead of &lt;code&gt;website&lt;/code&gt; or &lt;code&gt;web-site&lt;/code&gt;, &lt;code&gt;search&lt;/code&gt; + &lt;code&gt;engine&lt;/code&gt;
+instead of &lt;code&gt;searchengine&lt;/code&gt;or &lt;code&gt;search-engine&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Define a &lt;strong&gt;core set of tags&lt;/strong&gt; that is meaningful for you and stick to it.
+For instance &lt;code&gt;list&lt;/code&gt; when a web site or a page contains a list &lt;em&gt;things&lt;/em&gt;,
+&lt;code&gt;mutiple&lt;/code&gt; instead of &lt;code&gt;several&lt;/code&gt; &lt;code&gt;search&lt;/code&gt;, &lt;code&gt;find&lt;/code&gt; &lt;code&gt;speed&lt;/code&gt;, &lt;code&gt;fast&lt;/code&gt;, &lt;code&gt;slow&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Tag &lt;strong&gt;consistently&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This last piece of advice will help your future self searching for a link
+when you can rely on a well known set of core tags.  This is the reason why
+you need to experiment and adjust your taxonomy over time according to your
+domain and usage.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;pinboard&#34;&gt;Pinboard&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Pinboard&lt;/strong&gt; is a paid online bookmarking service.
+I switched to Pinboard because &lt;em&gt;del.icio.us&lt;/em&gt;
+shifted gears completely when Yahoo sold it to AVOS, it morphed into something
+that was no longer useful nor efficient for me.
+Ultimately, it was
+&lt;a href=&#34;https://del.icio.us/url/1bb6ae4db9f129b3670c7ba1d1e85c5f&#34;&gt;way too slow&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I can tag links with both Pocket and Pinboard, but I find it considerably easier
+with Pinboard which has been conceived with this mind from day one and offers
+far more tagging related features as you can see in this  &lt;strong&gt;review&lt;/strong&gt; of Pinboard
+by Rhinofeed.&lt;/p&gt;
+
+&lt;p&gt;Pinboard Review - Part 1
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/mqphSmguiFY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Pinboard Review - Part 2
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/QFTjdEUrYCk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Back in 2010, Leo Laporte and Amber MacArthur interviewed Maciej Ceglowski the creator
+of Pinboard. You can &lt;a href=&#34;https://youtu.be/rQ6lW3WlA8s?t=30m30s&#34;&gt;watch the interview on Youtube&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;read&#34;&gt;Read&lt;/h1&gt;
+
+&lt;p&gt;I open the links afterwards in Pinboard, when I have plenty of time to read the
+the bookmarked web pages entirely this time. This gives me the occasion to
+refine existing tags or add new ones.&lt;/p&gt;
+
+&lt;h1 id=&#34;listen&#34;&gt;Listen&lt;/h1&gt;
+
+&lt;p&gt;The reason why I keep using &lt;strong&gt;Pocket&lt;/strong&gt; as an intermediary in between me and
+Pinboard is two folds.&lt;/p&gt;
+
+&lt;p&gt;First off, it is a browser plugin which makes adding a link a breeze.
+It is &lt;strong&gt;fast&lt;/strong&gt;, just one click away.
+There is no pop up that takes time to load, (nor form fields to fill in)
+and no submit button to press, as this is the case when I bookmark a page with
+Pinboard&#39;s bookmarklet.&lt;/p&gt;
+
+&lt;p&gt;Pocket also has a key feature that makes it shine: &lt;a href=&#34;https://help.getpocket.com/article/1081-listening-to-articles-in-pocket-with-text-to-speech&#34;&gt;&lt;strong&gt;Text To
+Speech&lt;/strong&gt;&lt;/a&gt; (TTS). It can &lt;strong&gt;read out loud&lt;/strong&gt; saved web pages.
+I use this  often during my daily commute to keep apprised of interesting news
+and tech articles.
+I pick an article from Pocket &lt;em&gt;read later list&lt;/em&gt;,click a button and boom!
+I&#39;m both  learning something that I&#39;m passionate about but I also improve my
+understanding of the English language while listening to a realistic English
+voice &lt;a href=&#34;https://help.getpocket.com/article/982-using-the-high-quality-alex-voice-on-ios&#34;&gt;&lt;strong&gt;Alex&lt;/strong&gt;&lt;/a&gt;.
+I guess it is based on the built-in TTS functionality of iOS, but adds more on
+top of that, it &lt;strong&gt;scrolls&lt;/strong&gt; the page to hightlight the current word and make
+sure it is always visible.&lt;/p&gt;
+
+&lt;p&gt;This is the only thing that keeps me from using Pinboard exclusively, such
+a handy functionality!&lt;/p&gt;
+
+&lt;h1 id=&#34;search&#34;&gt;Search&lt;/h1&gt;
+
+&lt;p&gt;You can use Pinboard to search for links by tags, title,
+description or a combination of those.
+The search is case insensitive and match partial words.&lt;/p&gt;
+
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;I hope you picked something new to discover in this article wether it is a tool
+or a way to collect and process your bookmarks that may improve your workflow.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Batch File Renaming With Zsh</title>
-      <link>//ericbouchut.com/2015/08/15/Batch-File-Renaming-With-Zsh/</link>
+      <link>//localhost:1313/2015/08/15/Batch-File-Renaming-With-Zsh/</link>
       <pubDate>Sat, 15 Aug 2015 20:44:39 +0000</pubDate>
       
-      <guid>//ericbouchut.com/2015/08/15/Batch-File-Renaming-With-Zsh/</guid>
+      <guid>//localhost:1313/2015/08/15/Batch-File-Renaming-With-Zsh/</guid>
       <description>&lt;p&gt;I recently discovered &lt;code&gt;zmv&lt;/code&gt;, a builtin feature of zsh that makes batch file renaming, a breeze.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;To use it you need to add this to your zsh configuration file (&lt;code&gt;.zshrc&lt;/code&gt;).
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;autoload zmv
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;autoload zmv
+&lt;/pre&gt;&lt;/div&gt;
 &lt;/p&gt;
 
 &lt;p&gt;My blog contains several Markdown files with a &lt;code&gt;.markdown&lt;/code&gt; extension and I want to use &lt;code&gt;.md&lt;/code&gt; instead. Here is what the markdown files looks like.
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;ls **/*.markdown  
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;ls **/*.markdown  
     ./_drafts/2012-05-06-learning-ruby-and-ruby-on-rails.markdown
     ./_drafts/2015-07-19-welcome-to-jekyll.markdown
     ./_posts/2012-02-10-baked-with-octopress.markdown
@@ -33,17 +290,17 @@
     ./_posts/2015-08-15-octopress-3-0.markdown
     ./about/index.markdown
     ./contact/index.markdown
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
 Note I used the double star zsh notation to &lt;strong&gt;recursively&lt;/strong&gt; list the files which is shorter than  &lt;code&gt;find . -name &#39;*.markdown&#39;&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;This is where &lt;code&gt;zmv&lt;/code&gt; comes in handy to &lt;strong&gt;recursively&lt;/strong&gt; change the extension from &lt;code&gt;.markdown&lt;/code&gt; to &lt;code&gt;.md&lt;/code&gt;. Once more the double stars &lt;code&gt;**&lt;/code&gt; match the current directory or whatever directory beneath it.
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;zmv &lt;span class=&#34;s1&#34;&gt;&amp;#39;(**/)(*).markdown&amp;#39;&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;$1$2.md&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;zmv &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;(**/)(*).markdown&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;$1$2.md&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Voilà, the files are renamed!
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;ls **/*.md
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;ls **/*.md
     ./_drafts/2012-05-06-learning-ruby-and-ruby-on-rails.md
     ./_drafts/2015-07-19-welcome-to-jekyll.md
     ./_posts/2012-02-10-baked-with-octopress.md
@@ -51,12 +308,12 @@ Note I used the double star zsh notation to &lt;strong&gt;recursively&lt;/strong
     ./_posts/2015-08-15-octopress-3-0.md
     ./about/index.md
     ./contact/index.md
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;/p&gt;
 
 &lt;p&gt;You can also use the &lt;code&gt;-n&lt;/code&gt; option to ask &lt;code&gt;zmv&lt;/code&gt; to print what it would do without actually doing it. This gives you an opportunity to check that everything is ok before running the command to prevent you from doing a lot of back and forth only because of typo in the command ;-).&lt;/p&gt;
 
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;zmv  -n &lt;span class=&#34;s1&#34;&gt;&amp;#39;(**/)(*).markdown&amp;#39;&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;$1$2.md&amp;#39;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;zmv  -n &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;(**/)(*).markdown&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;$1$2.md&amp;#39;&lt;/span&gt;
     mv -- _drafts/2012-05-06-learning-ruby-and-ruby-on-rails.markdown _drafts/2012-05-06-learning-ruby-and-ruby-on-rails.md
     mv -- _drafts/2015-07-19-welcome-to-jekyll.markdown _drafts/2015-07-19-welcome-to-jekyll.md
     mv -- _posts/2012-02-10-baked-with-octopress.markdown _posts/2012-02-10-baked-with-octopress.md
@@ -64,19 +321,19 @@ Note I used the double star zsh notation to &lt;strong&gt;recursively&lt;/strong
     mv -- _posts/2015-08-15-octopress-3-0.markdown _posts/2015-08-15-octopress-3-0.md
     mv -- about/index.markdown about/index.md
     mv -- contact/index.markdown contact/index.md
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;I only scratched the surface of this feature.
-If you want to read more I recommend you &lt;a href=&#34;http://www.drbunsen.org/batch-file-renaming/&#34;&gt;Seth Brown&amp;rsquo;s post&lt;/a&gt;.&lt;/p&gt;</description>
+If you want to read more I recommend you &lt;a href=&#34;http://www.drbunsen.org/batch-file-renaming/&#34;&gt;Seth Brown&#39;s post&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Octopress 3.0</title>
-      <link>//ericbouchut.com/2015/08/15/Octopress-3.0/</link>
+      <link>//localhost:1313/2015/08/15/Octopress-3.0/</link>
       <pubDate>Sat, 15 Aug 2015 00:00:02 +0000</pubDate>
       
-      <guid>//ericbouchut.com/2015/08/15/Octopress-3.0/</guid>
+      <guid>//localhost:1313/2015/08/15/Octopress-3.0/</guid>
       <description>&lt;p&gt;I recently upgraded Octopress, the engine running my blog, to version &lt;a href=&#34;http://octopress.org/2015/01/15/octopress-3.0-is-coming/&#34;&gt;3.0&lt;/a&gt; with the &lt;a href=&#34;https://github.com/octopress/genesis-theme&#34;&gt;octopress-genesis-theme&lt;/a&gt;.
 Eagerly waiting for the official release!&lt;/p&gt;
 </description>
@@ -84,11 +341,12 @@ Eagerly waiting for the official release!&lt;/p&gt;
     
     <item>
       <title>Baked With Octopress</title>
-      <link>//ericbouchut.com/2012/02/10/Baked-With-Octopress/</link>
+      <link>//localhost:1313/2012/02/10/Baked-With-Octopress/</link>
       <pubDate>Fri, 10 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>//ericbouchut.com/2012/02/10/Baked-With-Octopress/</guid>
-      <description>&lt;p&gt;I finally decided to make the move to &lt;a href=&#34;http://octopress.org&#34; title=&#34;Octopress&#34;&gt;Octopress&lt;/a&gt;.&lt;/p&gt;
+      <guid>//localhost:1313/2012/02/10/Baked-With-Octopress/</guid>
+      <description>&lt;p&gt;I finally decided to make the move to &lt;a href=&#34;http://octopress.org&#34; title=&#34;Octopress&#34;&gt;Octopress&lt;/a&gt;.
+&lt;/p&gt;
 
 &lt;p&gt;A lot has been said about this new blogging framework,
 since last year when I first read about it on &lt;a href=&#34;http://news.ycombinator.com/item?id=2799081&#34; title=&#34;Hacker News&#34;&gt;Hacker News&lt;/a&gt;.
@@ -98,21 +356,20 @@ by &lt;a href=&#34;http://aijazansari.com/2011/12/12/switching-to-octopress/&#34
 
 &lt;p&gt;I intend to use my blog to share my thoughts on all things related to programming.
 I will also keep you apprised of what I have learned so far about tech
-and share with you blog posts and podcasts I find interesting.&lt;/p&gt;
-</description>
+and share with you blog posts and podcasts I find interesting.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>About me</title>
-      <link>//ericbouchut.com/page/about/</link>
+      <link>//localhost:1313/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//ericbouchut.com/page/about/</guid>
+      <guid>//localhost:1313/page/about/</guid>
       <description>&lt;p&gt;&lt;div itemscope=&#34;&#34; itemtype=&#34;http://schema.org/Person&#34;&gt;
-I&amp;rsquo;m &lt;span itemprop=&#34;name&#34;&gt;&lt;span itemprop=&#34;givenName&#34;&gt;Eric&lt;/span&gt; &lt;span itemprop=&#34;familyName&#34;&gt;Bouchut&lt;/span&gt;&lt;/span&gt;.
-&lt;img src=&#34;//EricBouchut.com/images/eric_bouchut.jpg&#34; align=&#34;right&#34;  width=&#34;96&#34; height=&#34;96&#34; /&gt;
+I&#39;m &lt;span itemprop=&#34;name&#34;&gt;&lt;span itemprop=&#34;givenName&#34;&gt;Eric&lt;/span&gt; &lt;span itemprop=&#34;familyName&#34;&gt;Bouchut&lt;/span&gt;&lt;/span&gt;.
+&lt;img src=&#34;//localhost:1313/images/eric_bouchut.jpg&#34; align=&#34;right&#34;  width=&#34;96&#34; height=&#34;96&#34; /&gt;
 &lt;br /&gt;
-I write software and I&amp;rsquo;m really fond of dance and Ruby on Rails.
+I write software and I&#39;m really fond of dance and Ruby on Rails.
 &lt;br /&gt;
 My focus is on Web Development.&lt;br /&gt;
 &lt;br /&gt;
@@ -152,16 +409,16 @@ I also have a solid hands-on experience in Java and a real knack for the art of 
 &lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;
- &lt;a href=&#34;//EricBouchut.com/page/contact&#34;&gt;Contact me&lt;/a&gt;.&lt;/p&gt;
+ &lt;a href=&#34;//localhost:1313/page/contact&#34;&gt;Contact me&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Contact Eric Bouchut</title>
-      <link>//ericbouchut.com/page/contact/</link>
+      <link>//localhost:1313/page/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//ericbouchut.com/page/contact/</guid>
+      <guid>//localhost:1313/page/contact/</guid>
       <description>&lt;p&gt;You can get in touch with me via &lt;a href=&#34;mailto:EricBouchut@gmail.com&#34;&gt;email&lt;/a&gt;,
 &lt;br /&gt;consult my professional profile on &lt;a href=&#34;https://www.linkedin.com/in/ebouchut&#34;&gt;LinkedIn&lt;/a&gt; or &lt;a href=&#34;https://viadeo.com/fr/profile/eric.bouchut&#34;&gt;Viadeo&lt;/a&gt;
 &lt;br /&gt;and keep up with my news on  &lt;a href=&#34;https://twitter.com/ebouchut&#34;&gt;Twitter&lt;/a&gt;, &lt;a href=&#34;https://github.com/ebouchut&#34;&gt;Github&lt;/a&gt; and &lt;a href=&#34;https://plus.google.com/u/0/111804446383442393632?rel=author&#34;&gt;Google+&lt;/a&gt;.&lt;/p&gt;

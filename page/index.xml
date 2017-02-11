@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Eric Bouchut</title>
-    <link>//ericbouchut.com/page/index.xml</link>
+    <link>//localhost:1313/page/index.xml</link>
     <description>Recent content in Pages on Eric Bouchut</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="//ericbouchut.com/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About me</title>
-      <link>//ericbouchut.com/page/about/</link>
+      <link>//localhost:1313/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//ericbouchut.com/page/about/</guid>
+      <guid>//localhost:1313/page/about/</guid>
       <description>&lt;p&gt;&lt;div itemscope=&#34;&#34; itemtype=&#34;http://schema.org/Person&#34;&gt;
-I&amp;rsquo;m &lt;span itemprop=&#34;name&#34;&gt;&lt;span itemprop=&#34;givenName&#34;&gt;Eric&lt;/span&gt; &lt;span itemprop=&#34;familyName&#34;&gt;Bouchut&lt;/span&gt;&lt;/span&gt;.
-&lt;img src=&#34;//EricBouchut.com/images/eric_bouchut.jpg&#34; align=&#34;right&#34;  width=&#34;96&#34; height=&#34;96&#34; /&gt;
+I&#39;m &lt;span itemprop=&#34;name&#34;&gt;&lt;span itemprop=&#34;givenName&#34;&gt;Eric&lt;/span&gt; &lt;span itemprop=&#34;familyName&#34;&gt;Bouchut&lt;/span&gt;&lt;/span&gt;.
+&lt;img src=&#34;//localhost:1313/images/eric_bouchut.jpg&#34; align=&#34;right&#34;  width=&#34;96&#34; height=&#34;96&#34; /&gt;
 &lt;br /&gt;
-I write software and I&amp;rsquo;m really fond of dance and Ruby on Rails.
+I write software and I&#39;m really fond of dance and Ruby on Rails.
 &lt;br /&gt;
 My focus is on Web Development.&lt;br /&gt;
 &lt;br /&gt;
@@ -58,16 +58,16 @@ I also have a solid hands-on experience in Java and a real knack for the art of 
 &lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;
- &lt;a href=&#34;//EricBouchut.com/page/contact&#34;&gt;Contact me&lt;/a&gt;.&lt;/p&gt;
+ &lt;a href=&#34;//localhost:1313/page/contact&#34;&gt;Contact me&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Contact Eric Bouchut</title>
-      <link>//ericbouchut.com/page/contact/</link>
+      <link>//localhost:1313/page/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//ericbouchut.com/page/contact/</guid>
+      <guid>//localhost:1313/page/contact/</guid>
       <description>&lt;p&gt;You can get in touch with me via &lt;a href=&#34;mailto:EricBouchut@gmail.com&#34;&gt;email&lt;/a&gt;,
 &lt;br /&gt;consult my professional profile on &lt;a href=&#34;https://www.linkedin.com/in/ebouchut&#34;&gt;LinkedIn&lt;/a&gt; or &lt;a href=&#34;https://viadeo.com/fr/profile/eric.bouchut&#34;&gt;Viadeo&lt;/a&gt;
 &lt;br /&gt;and keep up with my news on  &lt;a href=&#34;https://twitter.com/ebouchut&#34;&gt;Twitter&lt;/a&gt;, &lt;a href=&#34;https://github.com/ebouchut&#34;&gt;Github&lt;/a&gt; and &lt;a href=&#34;https://plus.google.com/u/0/111804446383442393632?rel=author&#34;&gt;Google+&lt;/a&gt;.&lt;/p&gt;

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Convert on Eric Bouchut</title>
+    <link>//localhost:1313/tags/convert/index.xml</link>
+    <description>Recent content in Convert on Eric Bouchut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/tags/convert/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Change the case of filenames with Zsh</title>
+      <link>//localhost:1313/2017/02/13/Change-the-case-of-filenames-with-Zsh/</link>
+      <pubDate>Mon, 13 Feb 2017 13:14:15 +0000</pubDate>
+      
+      <guid>//localhost:1313/2017/02/13/Change-the-case-of-filenames-with-Zsh/</guid>
+      <description>&lt;p&gt;Today, after importing photos from my iPhone to my Mac, I noticed
+their filenames were all uppercase whereas I want them to be all lowercase.
+This is a task &lt;code&gt;zsh&lt;/code&gt; can perform easily with a oneliner.
+&lt;/p&gt;
+
+&lt;p&gt;The files before the renaming.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;IMG_4575.PNG
+IMG_4576.PNG
+IMG_4577.PNG
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This oneliner iterates over the files whose name starts with &lt;code&gt;IMG&lt;/code&gt; and ends with
+&lt;code&gt;.PNG&lt;/code&gt; and rename each one to lowercase.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;for file in IMG*.PNG ; do  mv $file ${file:l}  ; done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The key trick here is &lt;code&gt;${file:l}&lt;/code&gt; (with an &#39;l&#39; as in lowercase) that outputs
+the content of the variable &lt;code&gt;file&lt;/code&gt; all lowercase.&lt;/p&gt;
+
+&lt;p&gt;The files have been successfully renamed all lowercase.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;img_4575.png
+img_4576.png
+img_4577.png
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Should you need to perform the opposite ie. convert the file names
+to &lt;strong&gt;uppercase&lt;/strong&gt;, use &lt;code&gt;${file:u}&lt;/code&gt; instead, like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;for file in img*.png ; do  mv $file ${file:u}  ; done
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
