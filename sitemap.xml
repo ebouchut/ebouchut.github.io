@@ -2,193 +2,193 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>//localhost:1313/2017/02/13/Change-the-case-of-filenames-with-Zsh/</loc>
+    <loc>//ericbouchut.com/2017/02/13/Change-the-case-of-filenames-with-Zsh/</loc>
     <lastmod>2017-02-13T13:14:15+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//localhost:1313/2017/02/12/My-Bookmarking-Workflow/</loc>
+    <loc>//ericbouchut.com/2017/02/12/My-Bookmarking-Workflow/</loc>
     <lastmod>2017-02-12T16:17:18+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//localhost:1313/2015/08/15/Batch-File-Renaming-With-Zsh/</loc>
+    <loc>//ericbouchut.com/2015/08/15/Batch-File-Renaming-With-Zsh/</loc>
     <lastmod>2015-08-15T20:44:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//localhost:1313/2015/08/15/Octopress-3.0/</loc>
+    <loc>//ericbouchut.com/2015/08/15/Octopress-3.0/</loc>
     <lastmod>2015-08-15T00:00:02+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//localhost:1313/2012/02/10/Baked-With-Octopress/</loc>
+    <loc>//ericbouchut.com/2012/02/10/Baked-With-Octopress/</loc>
     <lastmod>2012-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//localhost:1313/page/about/</loc>
+    <loc>//ericbouchut.com/page/about/</loc>
   </url>
   
   <url>
-    <loc>//localhost:1313/categories/blog/</loc>
+    <loc>//ericbouchut.com/categories/blog/</loc>
     <lastmod>2015-08-15T00:00:02+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/blog/</loc>
+    <loc>//ericbouchut.com/tags/blog/</loc>
     <lastmod>2015-08-15T00:00:02+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/bookmark/</loc>
+    <loc>//ericbouchut.com/tags/bookmark/</loc>
     <lastmod>2017-02-12T16:17:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/bookmarking/</loc>
+    <loc>//ericbouchut.com/tags/bookmarking/</loc>
     <lastmod>2017-02-12T16:17:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>//ericbouchut.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/page/contact/</loc>
+    <loc>//ericbouchut.com/page/contact/</loc>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/convert/</loc>
+    <loc>//ericbouchut.com/tags/convert/</loc>
     <lastmod>2017-02-13T13:14:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/</loc>
+    <loc>//ericbouchut.com/</loc>
     <lastmod>2017-02-13T13:14:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/file/</loc>
+    <loc>//ericbouchut.com/tags/file/</loc>
     <lastmod>2017-02-13T13:14:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/filename/</loc>
+    <loc>//ericbouchut.com/tags/filename/</loc>
     <lastmod>2017-02-13T13:14:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/lowercase/</loc>
+    <loc>//ericbouchut.com/tags/lowercase/</loc>
     <lastmod>2017-02-13T13:14:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/categories/octopress/</loc>
+    <loc>//ericbouchut.com/categories/octopress/</loc>
     <lastmod>2012-02-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/octopress/</loc>
+    <loc>//ericbouchut.com/tags/octopress/</loc>
     <lastmod>2015-08-15T00:00:02+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/page/</loc>
+    <loc>//ericbouchut.com/page/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/pinboard/</loc>
+    <loc>//ericbouchut.com/tags/pinboard/</loc>
     <lastmod>2017-02-12T16:17:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/pocket/</loc>
+    <loc>//ericbouchut.com/tags/pocket/</loc>
     <lastmod>2017-02-12T16:17:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/post/</loc>
+    <loc>//ericbouchut.com/post/</loc>
     <lastmod>2017-02-13T13:14:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/rename/</loc>
+    <loc>//ericbouchut.com/tags/rename/</loc>
     <lastmod>2017-02-13T13:14:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/categories/shell/</loc>
+    <loc>//ericbouchut.com/categories/shell/</loc>
     <lastmod>2017-02-13T13:14:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/shell/</loc>
+    <loc>//ericbouchut.com/tags/shell/</loc>
     <lastmod>2017-02-13T13:14:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/tag/</loc>
+    <loc>//ericbouchut.com/tags/tag/</loc>
     <lastmod>2017-02-12T16:17:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>//ericbouchut.com/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/theme/</loc>
+    <loc>//ericbouchut.com/tags/theme/</loc>
     <lastmod>2015-08-15T00:00:02+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/upgrade/</loc>
+    <loc>//ericbouchut.com/tags/upgrade/</loc>
     <lastmod>2015-08-15T00:00:02+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/uppercase/</loc>
+    <loc>//ericbouchut.com/tags/uppercase/</loc>
     <lastmod>2017-02-13T13:14:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/categories/workflow/</loc>
+    <loc>//ericbouchut.com/categories/workflow/</loc>
     <lastmod>2017-02-12T16:17:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/workflow/</loc>
+    <loc>//ericbouchut.com/tags/workflow/</loc>
     <lastmod>2017-02-12T16:17:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//localhost:1313/tags/zsh/</loc>
+    <loc>//ericbouchut.com/tags/zsh/</loc>
     <lastmod>2017-02-13T13:14:15+00:00</lastmod>
     <priority>0</priority>
   </url>

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shell on Eric Bouchut</title>
-    <link>//localhost:1313/categories/shell/index.xml</link>
+    <link>//ericbouchut.com/categories/shell/index.xml</link>
     <description>Recent content in Shell on Eric Bouchut</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="//localhost:1313/categories/shell/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//ericbouchut.com/categories/shell/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Change the case of filenames with Zsh</title>
-      <link>//localhost:1313/2017/02/13/Change-the-case-of-filenames-with-Zsh/</link>
+      <link>//ericbouchut.com/2017/02/13/Change-the-case-of-filenames-with-Zsh/</link>
       <pubDate>Mon, 13 Feb 2017 13:14:15 +0000</pubDate>
       
-      <guid>//localhost:1313/2017/02/13/Change-the-case-of-filenames-with-Zsh/</guid>
+      <guid>//ericbouchut.com/2017/02/13/Change-the-case-of-filenames-with-Zsh/</guid>
       <description>&lt;p&gt;Today, after importing photos from my iPhone to my Mac, I noticed
 their filenames were all uppercase whereas I want them to be all lowercase.
 This is a task &lt;code&gt;zsh&lt;/code&gt; can perform easily with a oneliner.
@@ -51,10 +51,10 @@ to &lt;strong&gt;uppercase&lt;/strong&gt;, use &lt;code&gt;${file:u}&lt;/code&gt
     
     <item>
       <title>Batch File Renaming With Zsh</title>
-      <link>//localhost:1313/2015/08/15/Batch-File-Renaming-With-Zsh/</link>
+      <link>//ericbouchut.com/2015/08/15/Batch-File-Renaming-With-Zsh/</link>
       <pubDate>Sat, 15 Aug 2015 20:44:39 +0000</pubDate>
       
-      <guid>//localhost:1313/2015/08/15/Batch-File-Renaming-With-Zsh/</guid>
+      <guid>//ericbouchut.com/2015/08/15/Batch-File-Renaming-With-Zsh/</guid>
       <description>&lt;p&gt;I recently discovered &lt;code&gt;zmv&lt;/code&gt;, a builtin feature of zsh that makes batch file renaming, a breeze.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
