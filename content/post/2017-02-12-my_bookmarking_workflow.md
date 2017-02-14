@@ -34,7 +34,7 @@ Introduction
 My bookmarking workflow is the following:
 
 1. Collect Link (URL)
-1. Find adequate tags for the link
+1. Find tags for the link
 1. Tag the link
 1. Search
 1. Read
@@ -98,21 +98,21 @@ times a day. Hence, every time I save a link to Pocket it also ends up in Pinboa
 
 The second step of my workflow takes place in Pinboard where I open each link 
 to make a quick read  (introduction, title of the main sections, text in bold).
-Once I get a grasp of what the web page  is about, I choose the
-*adequate* **tags**  to classify it then tag the link. 
+Once I get a grasp of what the web page  is about, I choose then set **tags** 
+to classify it.
 I may also remove links that I have already read in Pocket or do not want to archive.
 
 
 Choose tags
 -----------
 
-Here are my guiding principles for **choosing adequate tags**:
+Here are my guiding principles for **choosing tags**:
 
 * Use the tags you would use the most **intuitively** to **search** for the link
     you are tagging. Indeed those are the ones you will use in the end when you
     do not rembember all the super extra consise and to the point tags you took 
     so long to find. I'm not saying that it is worthless to search for an
-    adequate tag, you will need to do that at first, but keep in mind the goal 
+    tag, you will need to do that at first, but keep in mind the goal 
     of a tag is to be used to search for and find a link quickly. 
 
     **Rule of thumb**: Taking the time to discover **which tags you would use 
@@ -156,7 +156,7 @@ Ultimately, it was
 [way too slow](https://del.icio.us/url/1bb6ae4db9f129b3670c7ba1d1e85c5f).
 
 I can tag links with both Pocket and Pinboard, but I find it considerably easier
-with Pinboard which has been conceived with this mind from day one and offers
+with Pinboard which has been conceived with this in mind from day one and offers
 far more tagging related features as you can see in this  **review** of Pinboard
 by Rhinofeed.
 
