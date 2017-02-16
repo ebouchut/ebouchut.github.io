@@ -136,7 +136,7 @@ Here are my guiding principles for **choosing tags**:
     Use `web` + `site` instead of `website` or `web-site`, `search` + `engine`
     instead of `searchengine`or `search-engine`
 * Define a **core set of tags** that is meaningful for you and stick to it.
-    For instance `list` when a web site or a page contains a list *things*,
+    For instance `list` when a web site or a page contains a list of *things*,
     `mutiple` instead of `several` `search`, `find` `speed`, `fast`, `slow`.
 * Tag **consistently**.
 
@@ -174,7 +174,7 @@ Read
 ====
 
 I open the links afterwards in Pinboard, when I have plenty of time to read the
-the bookmarked web pages entirely this time. This gives me the occasion to
+the bookmarked web pages entirely this time. This gives me the opportunity to
 refine existing tags or add new ones.
 
 Listen
