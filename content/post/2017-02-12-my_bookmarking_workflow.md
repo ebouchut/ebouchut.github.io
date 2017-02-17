@@ -18,7 +18,6 @@ tags:
   - pinboard
   - pocket
 comments: true
-disqusIdentifier: "20170212-my_bookmarking_workfloww"
 title: My Bookmarking Workflow
 ---
 
