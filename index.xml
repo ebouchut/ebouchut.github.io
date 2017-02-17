@@ -70,7 +70,7 @@ and classify them with tags to find them easily later on.
 
 &lt;ol&gt;
 &lt;li&gt;Collect Link (URL)&lt;/li&gt;
-&lt;li&gt;Find adequate tags for the link&lt;/li&gt;
+&lt;li&gt;Find tags for the link&lt;/li&gt;
 &lt;li&gt;Tag the link&lt;/li&gt;
 &lt;li&gt;Search&lt;/li&gt;
 &lt;li&gt;Read&lt;/li&gt;
@@ -139,20 +139,20 @@ times a day. Hence, every time I save a link to Pocket it also ends up in Pinboa
 
 &lt;p&gt;The second step of my workflow takes place in Pinboard where I open each link
 to make a quick read  (introduction, title of the main sections, text in bold).
-Once I get a grasp of what the web page  is about, I choose the
-&lt;em&gt;adequate&lt;/em&gt; &lt;strong&gt;tags&lt;/strong&gt;  to classify it then tag the link.
+Once I get a grasp of what the web page  is about, I choose then set &lt;strong&gt;tags&lt;/strong&gt;
+to classify it.
 I may also remove links that I have already read in Pocket or do not want to archive.&lt;/p&gt;
 
 &lt;h2 id=&#34;choose-tags&#34;&gt;Choose tags&lt;/h2&gt;
 
-&lt;p&gt;Here are my guiding principles for &lt;strong&gt;choosing adequate tags&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;Here are my guiding principles for &lt;strong&gt;choosing tags&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Use the tags you would use the most &lt;strong&gt;intuitively&lt;/strong&gt; to &lt;strong&gt;search&lt;/strong&gt; for the link
 you are tagging. Indeed those are the ones you will use in the end when you
 do not rembember all the super extra consise and to the point tags you took
 so long to find. I&#39;m not saying that it is worthless to search for an
-adequate tag, you will need to do that at first, but keep in mind the goal
+tag, you will need to do that at first, but keep in mind the goal
 of a tag is to be used to search for and find a link quickly.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Rule of thumb&lt;/strong&gt;: Taking the time to discover &lt;strong&gt;which tags you would use
@@ -180,7 +180,7 @@ Use &lt;code&gt;web&lt;/code&gt; + &lt;code&gt;site&lt;/code&gt; instead of &lt;
 instead of &lt;code&gt;searchengine&lt;/code&gt;or &lt;code&gt;search-engine&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Define a &lt;strong&gt;core set of tags&lt;/strong&gt; that is meaningful for you and stick to it.
-For instance &lt;code&gt;list&lt;/code&gt; when a web site or a page contains a list &lt;em&gt;things&lt;/em&gt;,
+For instance &lt;code&gt;list&lt;/code&gt; when a web site or a page contains a list of &lt;em&gt;things&lt;/em&gt;,
 &lt;code&gt;mutiple&lt;/code&gt; instead of &lt;code&gt;several&lt;/code&gt; &lt;code&gt;search&lt;/code&gt;, &lt;code&gt;find&lt;/code&gt; &lt;code&gt;speed&lt;/code&gt;, &lt;code&gt;fast&lt;/code&gt;, &lt;code&gt;slow&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Tag &lt;strong&gt;consistently&lt;/strong&gt;.&lt;/p&gt;
@@ -201,7 +201,7 @@ Ultimately, it was
 &lt;a href=&#34;https://del.icio.us/url/1bb6ae4db9f129b3670c7ba1d1e85c5f&#34;&gt;way too slow&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I can tag links with both Pocket and Pinboard, but I find it considerably easier
-with Pinboard which has been conceived with this mind from day one and offers
+with Pinboard which has been conceived with this in mind from day one and offers
 far more tagging related features as you can see in this  &lt;strong&gt;review&lt;/strong&gt; of Pinboard
 by Rhinofeed.&lt;/p&gt;
 
@@ -225,7 +225,7 @@ of Pinboard. You can &lt;a href=&#34;https://youtu.be/rQ6lW3WlA8s?t=30m30s&#34;&
 &lt;h1 id=&#34;read&#34;&gt;Read&lt;/h1&gt;
 
 &lt;p&gt;I open the links afterwards in Pinboard, when I have plenty of time to read the
-the bookmarked web pages entirely this time. This gives me the occasion to
+the bookmarked web pages entirely this time. This gives me the opportunity to
 refine existing tags or add new ones.&lt;/p&gt;
 
 &lt;h1 id=&#34;listen&#34;&gt;Listen&lt;/h1&gt;

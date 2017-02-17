@@ -31,13 +31,13 @@
   </url>
   
   <url>
-    <loc>//ericbouchut.com/categories/blog/</loc>
+    <loc>//ericbouchut.com/tags/blog/</loc>
     <lastmod>2015-08-15T00:00:02+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/tags/blog/</loc>
+    <loc>//ericbouchut.com/categories/blog/</loc>
     <lastmod>2015-08-15T00:00:02+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -94,14 +94,14 @@
   </url>
   
   <url>
-    <loc>//ericbouchut.com/categories/octopress/</loc>
-    <lastmod>2012-02-10T00:00:00+00:00</lastmod>
+    <loc>//ericbouchut.com/tags/octopress/</loc>
+    <lastmod>2015-08-15T00:00:02+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/tags/octopress/</loc>
-    <lastmod>2015-08-15T00:00:02+00:00</lastmod>
+    <loc>//ericbouchut.com/categories/octopress/</loc>
+    <lastmod>2012-02-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -135,13 +135,13 @@
   </url>
   
   <url>
-    <loc>//ericbouchut.com/categories/shell/</loc>
+    <loc>//ericbouchut.com/tags/shell/</loc>
     <lastmod>2017-02-13T13:14:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/tags/shell/</loc>
+    <loc>//ericbouchut.com/categories/shell/</loc>
     <lastmod>2017-02-13T13:14:15+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -176,13 +176,13 @@
   </url>
   
   <url>
-    <loc>//ericbouchut.com/categories/workflow/</loc>
+    <loc>//ericbouchut.com/tags/workflow/</loc>
     <lastmod>2017-02-12T16:17:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//ericbouchut.com/tags/workflow/</loc>
+    <loc>//ericbouchut.com/categories/workflow/</loc>
     <lastmod>2017-02-12T16:17:18+00:00</lastmod>
     <priority>0</priority>
   </url>
