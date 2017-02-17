@@ -6,6 +6,7 @@ languageCode: en-us
 defaultContentLanguage: "en-us"
 metaDataFormat: yaml
 canonifyurls: true
+disqusShortname: "ericbouchut"
 permalinks:
   post: "/:year/:month/:day/:title/"
 taxonomies:
@@ -20,7 +21,6 @@ author:
   gravatarEmail: ericbouchut@gmail.com
   #  picture: https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png
   twitter: ebouchut
-disqusShortname: ebouchut
 
 #~~~~~~~~~~~~~~~~
 # Markdown Engine
