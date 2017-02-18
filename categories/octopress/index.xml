@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Octopress on Eric Bouchut</title>
-    <link>//ericbouchut.com/categories/octopress/index.xml</link>
+    <link>http://ericbouchut.com/categories/octopress/index.xml</link>
     <description>Recent content in Octopress on Eric Bouchut</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="//ericbouchut.com/categories/octopress/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ericbouchut.com/categories/octopress/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Baked With Octopress</title>
-      <link>//ericbouchut.com/2012/02/10/Baked-With-Octopress/</link>
+      <link>http://ericbouchut.com/2012/02/10/Baked-With-Octopress/</link>
       <pubDate>Fri, 10 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>//ericbouchut.com/2012/02/10/Baked-With-Octopress/</guid>
+      <guid>http://ericbouchut.com/2012/02/10/Baked-With-Octopress/</guid>
       <description>&lt;p&gt;I finally decided to make the move to &lt;a href=&#34;http://octopress.org&#34; title=&#34;Octopress&#34;&gt;Octopress&lt;/a&gt;.
 &lt;/p&gt;
 
