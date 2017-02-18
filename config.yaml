@@ -1,4 +1,4 @@
-baseurl: //EricBouchut.com
+baseurl: http://ericbouchut.com
 title: Eric Bouchut
 theme: hugo-tranquilpeak-theme
 disablePathToLower: true
