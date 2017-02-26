@@ -1,5 +1,6 @@
 ---
 title: "About me"
+type: page
 comments: false
 showDate: false
 showPagination: false

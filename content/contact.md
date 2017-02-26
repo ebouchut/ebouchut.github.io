@@ -1,4 +1,5 @@
 ---
+type: page
 comments: false
 showDate: false
 showPagination: false

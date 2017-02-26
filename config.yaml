@@ -61,12 +61,12 @@ menu:
       weight: 20
       identifier: about
       pre: <i class="sidebar-button-icon fa fa-lg fa-user"></i>
-      url: "/page/about"
+      url: "/about"
     - name: Contact
       weight: 30
       identifier: contact
       pre: <i class="sidebar-button-icon fa fa-lg fa-envelope"></i>
-      url: "/page/contact"
+      url: "/contact"
   links:
     - name: LinkedIn
       weight: 10
