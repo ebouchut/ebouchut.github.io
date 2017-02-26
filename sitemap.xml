@@ -27,7 +27,7 @@
   </url>
   
   <url>
-    <loc>http://ericbouchut.com/page/about/</loc>
+    <loc>http://ericbouchut.com/about/</loc>
   </url>
   
   <url>
@@ -60,7 +60,7 @@
   </url>
   
   <url>
-    <loc>http://ericbouchut.com/page/contact/</loc>
+    <loc>http://ericbouchut.com/contact/</loc>
   </url>
   
   <url>
@@ -96,17 +96,6 @@
   <url>
     <loc>http://ericbouchut.com/tags/octopress/</loc>
     <lastmod>2015-08-15T00:00:02+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://ericbouchut.com/categories/octopress/</loc>
-    <lastmod>2012-02-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://ericbouchut.com/page/</loc>
     <priority>0</priority>
   </url>
   

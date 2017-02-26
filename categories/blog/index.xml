@@ -19,5 +19,25 @@ Eagerly waiting for the official release!&lt;/p&gt;
 </description>
     </item>
     
+    <item>
+      <title>Baked With Octopress</title>
+      <link>http://ericbouchut.com/2012/02/10/Baked-With-Octopress/</link>
+      <pubDate>Fri, 10 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://ericbouchut.com/2012/02/10/Baked-With-Octopress/</guid>
+      <description>&lt;p&gt;I finally decided to make the move to &lt;a href=&#34;http://octopress.org&#34; title=&#34;Octopress&#34;&gt;Octopress&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;A lot has been said about this new blogging framework,
+since last year when I first read about it on &lt;a href=&#34;http://news.ycombinator.com/item?id=2799081&#34; title=&#34;Hacker News&#34;&gt;Hacker News&lt;/a&gt;.
+To know more about the reasons why I decided to switch
+my blog from Wordpress to  Octopress, you can read the posts
+by &lt;a href=&#34;http://aijazansari.com/2011/12/12/switching-to-octopress/&#34; title=&#34;Aijaz Ansari&#34;&gt;Aijaz Ansari&lt;/a&gt;, &lt;a href=&#34;http://mattgemmell.com/2011/09/12/blogging-with-octopress/&#34; title=&#34;Matt Gemmell&#34;&gt;Matt Gemmell&lt;/a&gt; and &lt;a href=&#34;http://zanshin.net/2011/08/11/switching-to-octopress/&#34; title=&#34;Mark Nichols&#34;&gt;Mark Nichols&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I intend to use my blog to share my thoughts on all things related to programming.
+I will also keep you apprised of what I have learned so far about tech
+and share with you blog posts and podcasts I find interesting.&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>
