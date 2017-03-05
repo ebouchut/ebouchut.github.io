@@ -1,8 +1,11 @@
 ---
 date: 2012-02-10T00:00:00Z
 title: Baked With Octopress
-tags: [octopress, blog]
-categories: [octopress]
+tags:
+- octopress
+- blog
+categories:
+- blog
 ---
 
 I finally decided to make the move to [Octopress][].

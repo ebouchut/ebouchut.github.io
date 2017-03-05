@@ -1,5 +1,6 @@
 ---
 date: 2017-02-13T13:14:15Z
+title: Change the case of filenames with Zsh
 categories:
   - shell
 keywords:
@@ -19,7 +20,6 @@ tags:
   - convert
   - lowercase
   - uppercase
-title: Change the case of filenames with Zsh
 ---
 
 Today, after importing photos from my iPhone to my Mac, I noticed 
