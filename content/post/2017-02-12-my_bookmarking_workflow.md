@@ -1,5 +1,6 @@
 ---
 date: 2017-02-12T16:17:18
+title: My Bookmarking Workflow
 categories:
   - workflow
 keywords:
@@ -18,7 +19,6 @@ tags:
   - pinboard
   - pocket
 comments: true
-title: My Bookmarking Workflow
 ---
 
 Here is how I set aside links to read them when I have time
@@ -86,7 +86,7 @@ a cool iOS app I use to read my RSS feeds, when I want to clip an interesting
 blog post I can do that from within Inoreader itself without even using the *Pocket
 Share extension*.
 
-For those of you more visually inclined here a review of Pocket by Steve Dotto.
+For those of you more visually inclined here is a review of Pocket by Steve Dotto.
 
 {{< youtube zGeF5XaQ2tU >}}
 
