@@ -112,7 +112,7 @@ Here are my guiding principles for **choosing tags**:
 * Use the tags you would use the most **intuitively** to **search** for the link
     you are tagging. Indeed those are the ones you will use in the end when you
     do not rembember all the super extra consise and to the point tags you took 
-    so long to find. I'm not saying that it is worthless to search for an
+    so long to find. I'm not saying that it is worthless to search for a
     tag, you will need to do that at first, but keep in mind the goal 
     of a tag is to be used to search for and find a link quickly. 
 
