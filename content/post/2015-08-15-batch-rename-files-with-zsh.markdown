@@ -49,7 +49,7 @@ ls **/*.md
     ./contact/index.md
 {{< / highlight >}}
 
-You can also use the `-n` option to ask `zmv` to print what it would do without actually doing it. This gives you an opportunity to check that everything is ok before running the command to prevent you from doing a lot of back and forth only because of typo in the command ;-).
+You can also use the `-n` option to ask `zmv` to print what it would do without actually doing it. This gives you an opportunity to check that everything is ok before running the command to prevent you from doing a lot of back and forth only because of a typo in the command ;-).
 
 {{< highlight shell >}}
 zmv  -n '(**/)(*).markdown' '$1$2.md'
