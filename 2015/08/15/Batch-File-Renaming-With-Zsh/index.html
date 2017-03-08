@@ -16,7 +16,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Hugo 0.18.1">
+    <meta name="generator" content="Hugo 0.19">
     <title>Batch File Renaming With Zsh</title>
     <meta name="author" content="Eric Bouchut">
     <meta name="keywords" content="">
@@ -73,7 +73,7 @@
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-610695-2', 'auto');
 ga('send', 'pageview');
@@ -288,7 +288,7 @@ Note I used the double star zsh notation to <strong>recursively</strong> list th
 </pre></div>
 </p>
 
-<p>You can also use the <code>-n</code> option to ask <code>zmv</code> to print what it would do without actually doing it. This gives you an opportunity to check that everything is ok before running the command to prevent you from doing a lot of back and forth only because of typo in the command ;-).</p>
+<p>You can also use the <code>-n</code> option to ask <code>zmv</code> to print what it would do without actually doing it. This gives you an opportunity to check that everything is ok before running the command to prevent you from doing a lot of back and forth only because of a typo in the command ;-).</p>
 
 <div class="highlight" style="background: #272822"><pre style="line-height: 125%">zmv  -n <span style="color: #e6db74">&#39;(**/)(*).markdown&#39;</span> <span style="color: #e6db74">&#39;$1$2.md&#39;</span>
     mv -- _drafts/2012-05-06-learning-ruby-and-ruby-on-rails.markdown _drafts/2012-05-06-learning-ruby-and-ruby-on-rails.md
@@ -633,6 +633,23 @@ and classify them with tags to find them easily later on.
             <hr>
           </div>
         
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://ericbouchut.com/post/">
+                <h3 class="media-heading">Posts</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Feb 2, 2017
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
       </div>
     </div>
     <div class="modal-footer">
@@ -640,7 +657,7 @@ and classify them with tags to find them easily later on.
          data-message-zero="no post found"
          data-message-one="1 post found"
          data-message-other="{n} posts found">
-         5 posts found
+         6 posts found
       </p>
     </div>
   </div>

@@ -124,7 +124,7 @@ blog post I can do that from within Inoreader itself without even using the &lt;
 Share extension&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;For those of you more visually inclined here a review of Pocket by Steve Dotto.&lt;/p&gt;
+&lt;p&gt;For those of you more visually inclined here is a review of Pocket by Steve Dotto.&lt;/p&gt;
 
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
@@ -151,7 +151,7 @@ I may also remove links that I have already read in Pocket or do not want to arc
 &lt;li&gt;&lt;p&gt;Use the tags you would use the most &lt;strong&gt;intuitively&lt;/strong&gt; to &lt;strong&gt;search&lt;/strong&gt; for the link
 you are tagging. Indeed those are the ones you will use in the end when you
 do not rembember all the super extra consise and to the point tags you took
-so long to find. I&#39;m not saying that it is worthless to search for an
+so long to find. I&#39;m not saying that it is worthless to search for a
 tag, you will need to do that at first, but keep in mind the goal
 of a tag is to be used to search for and find a link quickly.&lt;/p&gt;
 
@@ -311,7 +311,7 @@ Note I used the double star zsh notation to &lt;strong&gt;recursively&lt;/strong
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/p&gt;
 
-&lt;p&gt;You can also use the &lt;code&gt;-n&lt;/code&gt; option to ask &lt;code&gt;zmv&lt;/code&gt; to print what it would do without actually doing it. This gives you an opportunity to check that everything is ok before running the command to prevent you from doing a lot of back and forth only because of typo in the command ;-).&lt;/p&gt;
+&lt;p&gt;You can also use the &lt;code&gt;-n&lt;/code&gt; option to ask &lt;code&gt;zmv&lt;/code&gt; to print what it would do without actually doing it. This gives you an opportunity to check that everything is ok before running the command to prevent you from doing a lot of back and forth only because of a typo in the command ;-).&lt;/p&gt;
 
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;zmv  -n &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;(**/)(*).markdown&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;$1$2.md&amp;#39;&lt;/span&gt;
     mv -- _drafts/2012-05-06-learning-ruby-and-ruby-on-rails.markdown _drafts/2012-05-06-learning-ruby-and-ruby-on-rails.md

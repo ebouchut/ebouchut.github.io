@@ -124,7 +124,7 @@ blog post I can do that from within Inoreader itself without even using the &lt;
 Share extension&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;For those of you more visually inclined here a review of Pocket by Steve Dotto.&lt;/p&gt;
+&lt;p&gt;For those of you more visually inclined here is a review of Pocket by Steve Dotto.&lt;/p&gt;
 
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
@@ -151,7 +151,7 @@ I may also remove links that I have already read in Pocket or do not want to arc
 &lt;li&gt;&lt;p&gt;Use the tags you would use the most &lt;strong&gt;intuitively&lt;/strong&gt; to &lt;strong&gt;search&lt;/strong&gt; for the link
 you are tagging. Indeed those are the ones you will use in the end when you
 do not rembember all the super extra consise and to the point tags you took
-so long to find. I&#39;m not saying that it is worthless to search for an
+so long to find. I&#39;m not saying that it is worthless to search for a
 tag, you will need to do that at first, but keep in mind the goal
 of a tag is to be used to search for and find a link quickly.&lt;/p&gt;
 
@@ -311,7 +311,7 @@ Note I used the double star zsh notation to &lt;strong&gt;recursively&lt;/strong
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/p&gt;
 
-&lt;p&gt;You can also use the &lt;code&gt;-n&lt;/code&gt; option to ask &lt;code&gt;zmv&lt;/code&gt; to print what it would do without actually doing it. This gives you an opportunity to check that everything is ok before running the command to prevent you from doing a lot of back and forth only because of typo in the command ;-).&lt;/p&gt;
+&lt;p&gt;You can also use the &lt;code&gt;-n&lt;/code&gt; option to ask &lt;code&gt;zmv&lt;/code&gt; to print what it would do without actually doing it. This gives you an opportunity to check that everything is ok before running the command to prevent you from doing a lot of back and forth only because of a typo in the command ;-).&lt;/p&gt;
 
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;zmv  -n &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;(**/)(*).markdown&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;$1$2.md&amp;#39;&lt;/span&gt;
     mv -- _drafts/2012-05-06-learning-ruby-and-ruby-on-rails.markdown _drafts/2012-05-06-learning-ruby-and-ruby-on-rails.md
@@ -379,16 +379,22 @@ I also have a solid hands-on experience in Java and a real knack for the art of 
   I’m a software developer with over 15 years of experience:&lt;/p&gt;
   &lt;ul&gt;
     &lt;li itemprop=&#34;affiliation&#34; itemscope=&#34;&#34; itemtype=&#34;http://schema.org/Organization&#34;&gt;
-      6 years as a Web developer (Ruby on Rails, Java, GWT) for 
-      &lt;span itemprop=&#34;name&#34;&gt;&lt;a href=&#34;http://www.antidot.net&#34; itemprop=&#34;url&#34;&gt;Antidot&lt;/a&gt;&lt;/span&gt;, a search engine company and &lt;span itemprop=&#34;name&#34;&gt;LD Mobile&lt;/span&gt; editor of &lt;span itemprop=&#34;name&#34;&gt;&lt;a href=&#34;http://www.netadge.com/&#34; itemprop=&#34;url&#34;&gt;netADge&lt;/a&gt;&lt;/span&gt; a mobile DSP in the Real Time Bid arena (programmatic advertising).
+      3+ years as a Ruby on Rails and Java developer for 
+      &lt;span itemprop=&#34;name&#34;&gt;LD Mobile&lt;/span&gt; editor of &lt;span itemprop=&#34;name&#34;&gt;&lt;a href=&#34;http://www.netadge.com/&#34; itemprop=&#34;url&#34;&gt;netADge&lt;/a&gt;&lt;/span&gt;,
+      a mobile DSP in the Real Time Bid arena (programmatic advertising).
+    &lt;/li&gt;
+    &lt;li itemprop=&#34;affiliation&#34; itemscope=&#34;&#34; itemtype=&#34;http://schema.org/Organization&#34;&gt;
+      3 years as a Web developer Java, GWT for 
+      &lt;span itemprop=&#34;name&#34;&gt;&lt;a href=&#34;http://www.antidot.net&#34; itemprop=&#34;url&#34;&gt;Antidot&lt;/a&gt;&lt;/span&gt;, a search engine company.
     &lt;/li&gt;
     &lt;li itemprop=&#34;affiliation&#34; itemscope=&#34;&#34; itemtype=&#34;http://schema.org/Organization&#34;&gt;
       5 years of Java and Web development for 2 startups: Perform (acquired by BMC) and 
       &lt;span itemprop=&#34;name&#34;&gt;&lt;a href=&#34;http://www.miyowa.com&#34; itemprop=&#34;url&#34;&gt;Miyowa&lt;/a&gt;&lt;/span&gt;
     &lt;/li&gt;
     &lt;li itemprop=&#34;affiliation&#34; itemscope=&#34;&#34; itemtype=&#34;http://schema.org/Organization&#34;&gt;
-      extensive work with Java including 7 years for the fortune 500 company 
-      &lt;span itemprop=&#34;name&#34;&gt;&lt;a href=&#34;http://www.bmc.com&#34; itemprop=&#34;url&#34;&gt;BMC Software&lt;/a&gt;&lt;/span&gt;
+      extensive work with Java including 7 years for 
+      &lt;span itemprop=&#34;name&#34;&gt;&lt;a href=&#34;http://www.bmc.com&#34; itemprop=&#34;url&#34;&gt;BMC Software&lt;/a&gt;&lt;/span&gt;,
+      a fortune 500 company 
     &lt;/li&gt;
     &lt;li&gt;3 years of Unix/C/C++ development  for an IT consulting firm&lt;/li&gt;
     &lt;li itemprop=&#34;affiliation&#34; itemscope=&#34;&#34; itemtype=&#34;http://schema.org/Organization&#34;&gt;
@@ -404,7 +410,7 @@ I also have a solid hands-on experience in Java and a real knack for the art of 
 
 &lt;p&gt;
   More recently I have joined the team at 
-   &lt;span itemprop=&#34;worksFor&#34; itemscope=&#34;&#34; itemtype=&#34;http://schema.org/Organization&#34;&gt;&lt;span itemprop=&#34;name&#34;&gt;&lt;a href=&#34;http://www.netadge.com/&#34; itemprop=&#34;url&#34;&gt;netADge&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;
+   &lt;span itemprop=&#34;worksFor&#34; itemscope=&#34;&#34; itemtype=&#34;http://schema.org/Organization&#34;&gt;&lt;span itemprop=&#34;name&#34;&gt;&lt;a href=&#34;http://s4m.io/&#34; itemprop=&#34;url&#34;&gt;S4M&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;
   as a &lt;span itemprop=&#34;jobTitle&#34;&gt;Ruby on Rails and Java Developer&lt;/span&gt;.  
 &lt;/p&gt;
 
