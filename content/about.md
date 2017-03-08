@@ -36,16 +36,22 @@ I also have a solid hands-on experience in Java and a real knack for the art of 
   I’m a software developer with over 15 years of experience:</p>
   <ul>
     <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
-      6 years as a Web developer (Ruby on Rails, Java, GWT) for 
-      <span itemprop="name"><a href="http://www.antidot.net" itemprop="url">Antidot</a></span>, a search engine company and <span itemprop="name">LD Mobile</span> editor of <span itemprop="name"><a href="http://www.netadge.com/" itemprop="url">netADge</a></span> a mobile DSP in the Real Time Bid arena (programmatic advertising).
+      3+ years as a Ruby on Rails and Java developer for 
+      <span itemprop="name">LD Mobile</span> editor of <span itemprop="name"><a href="http://www.netadge.com/" itemprop="url">netADge</a></span>,
+      a mobile DSP in the Real Time Bid arena (programmatic advertising).
+    </li>
+    <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
+      3 years as a Web developer Java, GWT for 
+      <span itemprop="name"><a href="http://www.antidot.net" itemprop="url">Antidot</a></span>, a search engine company.
     </li>
     <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
       5 years of Java and Web development for 2 startups: Perform (acquired by BMC) and 
       <span itemprop="name"><a href="http://www.miyowa.com" itemprop="url">Miyowa</a></span>
     </li>
     <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
-      extensive work with Java including 7 years for the fortune 500 company 
-      <span itemprop="name"><a href="http://www.bmc.com" itemprop="url">BMC Software</a></span>
+      extensive work with Java including 7 years for 
+      <span itemprop="name"><a href="http://www.bmc.com" itemprop="url">BMC Software</a></span>,
+      a fortune 500 company 
     </li>
     <li>3 years of Unix/C/C++ development  for an IT consulting firm</li>
     <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
@@ -61,7 +67,7 @@ I also have a solid hands-on experience in Java and a real knack for the art of 
 
 <p>
   More recently I have joined the team at 
-   <span itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization"><span itemprop="name"><a href="http://www.netadge.com/" itemprop="url">netADge</a></span></span>
+   <span itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization"><span itemprop="name"><a href="http://s4m.io/" itemprop="url">S4M</a></span></span>
   as a <span itemprop="jobTitle">Ruby on Rails and Java Developer</span>.  
 </p>
 
