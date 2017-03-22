@@ -1,7 +1,6 @@
 baseurl: http://ericbouchut.com
 title: Eric Bouchut
 theme: hugo-tranquilpeak-theme
-disablePathToLower: true
 languageCode: en-us
 defaultContentLanguage: "en-us"
 metaDataFormat: yaml
