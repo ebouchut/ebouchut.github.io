@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Uppercase on Eric Bouchut</title>
-    <link>http://ericbouchut.com/tags/uppercase/index.xml</link>
+    <link>http://localhost:1313/tags/uppercase/index.xml</link>
     <description>Recent content in Uppercase on Eric Bouchut</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://ericbouchut.com/tags/uppercase/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/uppercase/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Change the case of filenames with Zsh</title>
-      <link>http://ericbouchut.com/2017/02/13/Change-the-case-of-filenames-with-Zsh/</link>
+      <link>http://localhost:1313/2017/02/13/change-the-case-of-filenames-with-zsh/</link>
       <pubDate>Mon, 13 Feb 2017 13:14:15 +0000</pubDate>
       
-      <guid>http://ericbouchut.com/2017/02/13/Change-the-case-of-filenames-with-Zsh/</guid>
+      <guid>http://localhost:1313/2017/02/13/change-the-case-of-filenames-with-zsh/</guid>
       <description>&lt;p&gt;Today, after importing photos from my iPhone to my Mac, I noticed
 their filenames were all uppercase whereas I want them to be all lowercase.
 This is a task &lt;code&gt;zsh&lt;/code&gt; can perform easily with a oneliner.

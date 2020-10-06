@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bookmark on Eric Bouchut</title>
-    <link>http://ericbouchut.com/tags/bookmark/index.xml</link>
+    <link>http://localhost:1313/tags/bookmark/index.xml</link>
     <description>Recent content in Bookmark on Eric Bouchut</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://ericbouchut.com/tags/bookmark/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/bookmark/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>My Bookmarking Workflow</title>
-      <link>http://ericbouchut.com/2017/02/12/My-Bookmarking-Workflow/</link>
+      <link>http://localhost:1313/2017/02/12/my-bookmarking-workflow/</link>
       <pubDate>Sun, 12 Feb 2017 16:17:18 +0000</pubDate>
       
-      <guid>http://ericbouchut.com/2017/02/12/My-Bookmarking-Workflow/</guid>
+      <guid>http://localhost:1313/2017/02/12/my-bookmarking-workflow/</guid>
       <description>&lt;p&gt;Here is how I set aside links to read them when I have time
 and classify them with tags to find them easily later on.
 &lt;/p&gt;
@@ -22,7 +22,7 @@ and classify them with tags to find them easily later on.
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ericbouchut.com/images/my_bookmarking_workflow/overview.png&#34; alt=&#34;bookmarking workflow overview&#34; title=&#34;Bookmarking Workflow Overview&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/my_bookmarking_workflow/overview.png&#34; alt=&#34;bookmarking workflow overview&#34; title=&#34;Bookmarking Workflow Overview&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;My bookmarking workflow is the following:&lt;/p&gt;
 

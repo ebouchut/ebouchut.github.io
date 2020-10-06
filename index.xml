@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eric Bouchut</title>
-    <link>http://ericbouchut.com/index.xml</link>
+    <link>http://localhost:1313/index.xml</link>
     <description>Recent content on Eric Bouchut</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 Feb 2017 13:14:15 +0000</lastBuildDate>
-    <atom:link href="http://ericbouchut.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Change the case of filenames with Zsh</title>
-      <link>http://ericbouchut.com/2017/02/13/Change-the-case-of-filenames-with-Zsh/</link>
+      <link>http://localhost:1313/2017/02/13/change-the-case-of-filenames-with-zsh/</link>
       <pubDate>Mon, 13 Feb 2017 13:14:15 +0000</pubDate>
       
-      <guid>http://ericbouchut.com/2017/02/13/Change-the-case-of-filenames-with-Zsh/</guid>
+      <guid>http://localhost:1313/2017/02/13/change-the-case-of-filenames-with-zsh/</guid>
       <description>&lt;p&gt;Today, after importing photos from my iPhone to my Mac, I noticed
 their filenames were all uppercase whereas I want them to be all lowercase.
 This is a task &lt;code&gt;zsh&lt;/code&gt; can perform easily with a oneliner.
@@ -52,10 +52,10 @@ to &lt;strong&gt;uppercase&lt;/strong&gt;, use &lt;code&gt;${file:u}&lt;/code&gt
     
     <item>
       <title>My Bookmarking Workflow</title>
-      <link>http://ericbouchut.com/2017/02/12/My-Bookmarking-Workflow/</link>
+      <link>http://localhost:1313/2017/02/12/my-bookmarking-workflow/</link>
       <pubDate>Sun, 12 Feb 2017 16:17:18 +0000</pubDate>
       
-      <guid>http://ericbouchut.com/2017/02/12/My-Bookmarking-Workflow/</guid>
+      <guid>http://localhost:1313/2017/02/12/my-bookmarking-workflow/</guid>
       <description>&lt;p&gt;Here is how I set aside links to read them when I have time
 and classify them with tags to find them easily later on.
 &lt;/p&gt;
@@ -64,7 +64,7 @@ and classify them with tags to find them easily later on.
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ericbouchut.com/images/my_bookmarking_workflow/overview.png&#34; alt=&#34;bookmarking workflow overview&#34; title=&#34;Bookmarking Workflow Overview&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/my_bookmarking_workflow/overview.png&#34; alt=&#34;bookmarking workflow overview&#34; title=&#34;Bookmarking Workflow Overview&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;My bookmarking workflow is the following:&lt;/p&gt;
 
@@ -268,10 +268,10 @@ or a way to collect and process your bookmarks that may improve your workflow.&l
     
     <item>
       <title>Batch File Renaming With Zsh</title>
-      <link>http://ericbouchut.com/2015/08/15/Batch-File-Renaming-With-Zsh/</link>
+      <link>http://localhost:1313/2015/08/15/batch-file-renaming-with-zsh/</link>
       <pubDate>Sat, 15 Aug 2015 20:44:39 +0000</pubDate>
       
-      <guid>http://ericbouchut.com/2015/08/15/Batch-File-Renaming-With-Zsh/</guid>
+      <guid>http://localhost:1313/2015/08/15/batch-file-renaming-with-zsh/</guid>
       <description>&lt;p&gt;I recently discovered &lt;code&gt;zmv&lt;/code&gt;, a builtin feature of zsh that makes batch file renaming, a breeze.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -330,10 +330,10 @@ If you want to read more I recommend you &lt;a href=&#34;http://www.drbunsen.org
     
     <item>
       <title>Octopress 3.0</title>
-      <link>http://ericbouchut.com/2015/08/15/Octopress-3.0/</link>
+      <link>http://localhost:1313/2015/08/15/octopress-3.0/</link>
       <pubDate>Sat, 15 Aug 2015 00:00:02 +0000</pubDate>
       
-      <guid>http://ericbouchut.com/2015/08/15/Octopress-3.0/</guid>
+      <guid>http://localhost:1313/2015/08/15/octopress-3.0/</guid>
       <description>&lt;p&gt;I recently upgraded Octopress, the engine running my blog, to version &lt;a href=&#34;http://octopress.org/2015/01/15/octopress-3.0-is-coming/&#34;&gt;3.0&lt;/a&gt; with the &lt;a href=&#34;https://github.com/octopress/genesis-theme&#34;&gt;octopress-genesis-theme&lt;/a&gt;.
 Eagerly waiting for the official release!&lt;/p&gt;
 </description>
@@ -341,10 +341,10 @@ Eagerly waiting for the official release!&lt;/p&gt;
     
     <item>
       <title>Baked With Octopress</title>
-      <link>http://ericbouchut.com/2012/02/10/Baked-With-Octopress/</link>
+      <link>http://localhost:1313/2012/02/10/baked-with-octopress/</link>
       <pubDate>Fri, 10 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://ericbouchut.com/2012/02/10/Baked-With-Octopress/</guid>
+      <guid>http://localhost:1313/2012/02/10/baked-with-octopress/</guid>
       <description>&lt;p&gt;I finally decided to make the move to &lt;a href=&#34;http://octopress.org&#34; title=&#34;Octopress&#34;&gt;Octopress&lt;/a&gt;.
 &lt;/p&gt;
 
@@ -361,13 +361,13 @@ and share with you blog posts and podcasts I find interesting.&lt;/p&gt;</descri
     
     <item>
       <title>About me</title>
-      <link>http://ericbouchut.com/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ericbouchut.com/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;p&gt;&lt;div itemscope=&#34;&#34; itemtype=&#34;http://schema.org/Person&#34;&gt;
 I&#39;m &lt;span itemprop=&#34;name&#34;&gt;&lt;span itemprop=&#34;givenName&#34;&gt;Eric&lt;/span&gt; &lt;span itemprop=&#34;familyName&#34;&gt;Bouchut&lt;/span&gt;&lt;/span&gt;.
-&lt;img src=&#34;http://ericbouchut.com/images/eric_bouchut.jpg&#34; align=&#34;right&#34;  width=&#34;96&#34; height=&#34;96&#34; /&gt;
+&lt;img src=&#34;http://localhost:1313/images/eric_bouchut.jpg&#34; align=&#34;right&#34;  width=&#34;96&#34; height=&#34;96&#34; /&gt;
 &lt;br /&gt;
 I write software and I&#39;m really fond of dance and Ruby on Rails.
 &lt;br /&gt;
@@ -415,16 +415,16 @@ I also have a solid hands-on experience in Java and a real knack for the art of 
 &lt;/p&gt;
 
 &lt;p&gt;&lt;/div&gt;
- &lt;a href=&#34;http://ericbouchut.com/page/contact&#34;&gt;Contact me&lt;/a&gt;.&lt;/p&gt;
+ &lt;a href=&#34;http://localhost:1313/page/contact&#34;&gt;Contact me&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Contact Eric Bouchut</title>
-      <link>http://ericbouchut.com/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://ericbouchut.com/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description>&lt;p&gt;You can get in touch with me via &lt;a href=&#34;mailto:EricBouchut@gmail.com&#34;&gt;email&lt;/a&gt;,
 &lt;br /&gt;consult my professional profile on &lt;a href=&#34;https://www.linkedin.com/in/ebouchut&#34;&gt;LinkedIn&lt;/a&gt; or &lt;a href=&#34;https://viadeo.com/fr/profile/eric.bouchut&#34;&gt;Viadeo&lt;/a&gt;
 &lt;br /&gt;and keep up with my news on  &lt;a href=&#34;https://twitter.com/ebouchut&#34;&gt;Twitter&lt;/a&gt;, &lt;a href=&#34;https://github.com/ebouchut&#34;&gt;Github&lt;/a&gt; and &lt;a href=&#34;https://plus.google.com/u/0/111804446383442393632?rel=author&#34;&gt;Google+&lt;/a&gt;.&lt;/p&gt;
