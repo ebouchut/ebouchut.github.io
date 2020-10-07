@@ -5,71 +5,52 @@ comments: false
 showDate: false
 showPagination: false
 showSocial: false
+showTags: false
 keywords:
 - Eric Bouchut
 - ruby developer
 - rails developer
 - ruby on rails developer
+- blockchain developer
+- smart contracts developer
+- developpeur blockchain
+- developpeur smart contract
 - java developer
-- programmer
 - developpeur ruby
 - developpeur ruby on rails
 - developpeur java
+- programmer
 - Netadge
 - LD Mobile
 - Miyowa
 - BMC Software
-showTags: false
+- S4M
 ---
 
-<div itemscope="" itemtype="http://schema.org/Person">
-I'm <span itemprop="name"><span itemprop="givenName">Eric</span> <span itemprop="familyName">Bouchut</span></span>.
-<img src="/images/eric_bouchut.jpg" align="right"  width="96" height="96" />
-<br />
-I write software and I'm really fond of dance and Ruby on Rails.
-<br />
-My focus is on Web Development.  
-<br />
-I also have a solid hands-on experience in Java and a real knack for the art of teaching.
+I'm Eric Bouchut.
+I write software and I'm really fond of dance, Blockchain and Ruby on Rails.
+I also have a solid hands-on experience in Java and a real knack for the art 
+of teaching and sharing what I learned.
 
-<p>
-  I’m a software developer with over 15 years of experience:</p>
-  <ul>
-    <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
-      3+ years as a Ruby on Rails and Java developer for 
-      <span itemprop="name">LD Mobile</span> editor of <span itemprop="name"><a href="http://www.netadge.com/" itemprop="url">netADge</a></span>,
-      a mobile DSP in the Real Time Bid arena (programmatic advertising).
-    </li>
-    <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
-      3 years as a Web developer Java, GWT for 
-      <span itemprop="name"><a href="http://www.antidot.net" itemprop="url">Antidot</a></span>, a search engine company.
-    </li>
-    <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
-      5 years of Java and Web development for 2 startups: Perform (acquired by BMC) and 
-      <span itemprop="name"><a href="http://www.miyowa.com" itemprop="url">Miyowa</a></span>
-    </li>
-    <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
-      extensive work with Java including 7 years for 
-      <span itemprop="name"><a href="http://www.bmc.com" itemprop="url">BMC Software</a></span>,
-      a fortune 500 company 
-    </li>
-    <li>3 years of Unix/C/C++ development  for an IT consulting firm</li>
-    <li itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization">
-      Computer science teacher 
-      for <span itemprop="name"><a href="http://www.axis.fr" itemprop="url">Axis Digital</a></span>.
-      <ul>
-        <li>Taught 4 different training classes to groups of 15 people for 3 years.</li>
-        <li>Developped and gave the computer science class “Utilisation Unix avancée”</li>
-      </ul>
-    </li>
-  </ul>
-</p>
+I’m a software developer with over 15 years of experience:</p>
 
-<p>
-  More recently I have joined the team at 
-   <span itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization"><span itemprop="name"><a href="http://s4m.io/" itemprop="url">S4M</a></span></span>
-  as a <span itemprop="jobTitle">Ruby on Rails and Java Developer</span>.  
-</p>
+* 3+ years as a Ruby on Rails and Java developer for LD Mobile  editor 
+of [netADge](http://www.netadge.com/"), a mobile DSP in the Real Time Bid arena 
+(programmatic advertising).
+* 3 years as a Web developer Java, GWT for [Antidot](https://www.antidot.net), 
+a search engine company.
+* 5 years of Java and Web development for 2 startups: *Perform* (acquired by BMC) 
+and *Miyowa*
+* extensive work with Java including 7 years for 
+[BMC Software](https://www.bmc.com), a fortune 500 company 
+* 3 years of Unix/C/C++ development  for an IT consulting firm
+* Computer science teacher for *Axis Digital*:
+    * Taught 4 different training classes to groups of 15 people for 3 years.
+    * Developped and gave the computer science class "Utilisation Unix avancée"
 
-</div>
- [Contact me](/page/contact).
+  I'm currently working for [S4M](https://www.s4m.io/)
+  as a Ruby on Rails and Java Developer.  
+  I'm also undergoing a **"Blockchain and Smart Contracts Developer"** training 
+  at [Alyra](https://alyra.fr).
+
+ [Contact me](/contact).
