@@ -41,7 +41,7 @@ blackfriday:
 params:
   sidebarBehavior: 2
   clearReading: true
-  coverImage: cover.jpg
+  coverImage: images/cover-v1.2.0.jpg
   imageGallery: true
   thumbnailImage: true
   thumbnailImagePosition: bottom
