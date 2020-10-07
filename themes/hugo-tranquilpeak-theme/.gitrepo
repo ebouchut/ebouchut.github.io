@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:kakawait/hugo-tranquilpeak-theme
+	branch = master
+	commit = e1d2c5d5cb1efb687ed698782f99df576e7db084
+	parent = 55e5043b90e04c79feabf9761837046a94207121
+	method = merge
+	cmdver = 0.4.1
