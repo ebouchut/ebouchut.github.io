@@ -14,7 +14,7 @@ taxonomies:
 editor: vim
 author:
   name: Eric Bouchut
-  bio: Ruby on Rails aficionado
+  bio: Ruby on Rails aficionado, en route to becoming a Blockchain and Smart Contracts developer
   job: Ruby on Rails developer at S4M
   location: Aix-en-Provence, France
   gravatarEmail: ericbouchut@gmail.com
@@ -82,6 +82,11 @@ menu:
       identifier: twitter
       pre: <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
       url: https://twitter.com/ebouchut
+    - name: Blockchain
+      weight: 40
+      identifier: blockchain
+      pre: <i class="sidebar-button-icon fa fa-lg fa-bitcoin"></i>
+      url: https://github.com/ebouchut/dev-blockchain
 
   misc:
     - name: "Categories"
