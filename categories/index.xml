@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Eric Bouchut</title>
+    <link>http://ericbouchut.com/categories/</link>
+    <description>Recent content in Categories on Eric Bouchut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Feb 2017 13:14:15 +0000</lastBuildDate><atom:link href="http://ericbouchut.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>shell</title>
+      <link>http://ericbouchut.com/categories/shell/</link>
+      <pubDate>Mon, 13 Feb 2017 13:14:15 +0000</pubDate>
+      
+      <guid>http://ericbouchut.com/categories/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workflow</title>
+      <link>http://ericbouchut.com/categories/workflow/</link>
+      <pubDate>Sun, 12 Feb 2017 16:17:18 +0000</pubDate>
+      
+      <guid>http://ericbouchut.com/categories/workflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>http://ericbouchut.com/categories/blog/</link>
+      <pubDate>Sat, 15 Aug 2015 00:00:02 +0000</pubDate>
+      
+      <guid>http://ericbouchut.com/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,114 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zsh on Eric Bouchut</title>
-    <link>http://localhost:1313/tags/zsh/index.xml</link>
-    <description>Recent content in Zsh on Eric Bouchut</description>
+    <title>zsh on Eric Bouchut</title>
+    <link>http://ericbouchut.com/tags/zsh/</link>
+    <description>Recent content in zsh on Eric Bouchut</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Mon, 13 Feb 2017 13:14:15 +0000</lastBuildDate><atom:link href="http://ericbouchut.com/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Change the case of filenames with Zsh</title>
-      <link>http://localhost:1313/2017/02/13/change-the-case-of-filenames-with-zsh/</link>
+      <link>http://ericbouchut.com/2017/02/13/change-the-case-of-filenames-with-zsh/</link>
       <pubDate>Mon, 13 Feb 2017 13:14:15 +0000</pubDate>
       
-      <guid>http://localhost:1313/2017/02/13/change-the-case-of-filenames-with-zsh/</guid>
+      <guid>http://ericbouchut.com/2017/02/13/change-the-case-of-filenames-with-zsh/</guid>
       <description>&lt;p&gt;Today, after importing photos from my iPhone to my Mac, I noticed
 their filenames were all uppercase whereas I want them to be all lowercase.
-This is a task &lt;code&gt;zsh&lt;/code&gt; can perform easily with a oneliner.
-&lt;/p&gt;
-
-&lt;p&gt;The files before the renaming.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;IMG_4575.PNG
-IMG_4576.PNG
-IMG_4577.PNG
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This oneliner iterates over the files whose name starts with &lt;code&gt;IMG&lt;/code&gt; and ends with
-&lt;code&gt;.PNG&lt;/code&gt; and rename each one to lowercase.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;for file in IMG*.PNG ; do  mv $file ${file:l}  ; done
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The key trick here is &lt;code&gt;${file:l}&lt;/code&gt; (with an &#39;l&#39; as in lowercase) that outputs
-the content of the variable &lt;code&gt;file&lt;/code&gt; all lowercase.&lt;/p&gt;
-
-&lt;p&gt;The files have been successfully renamed all lowercase.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;img_4575.png
-img_4576.png
-img_4577.png
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Should you need to perform the opposite ie. convert the file names
-to &lt;strong&gt;uppercase&lt;/strong&gt;, use &lt;code&gt;${file:u}&lt;/code&gt; instead, like so:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;for file in img*.png ; do  mv $file ${file:u}  ; done
-&lt;/code&gt;&lt;/pre&gt;</description>
+This is a task &lt;code&gt;zsh&lt;/code&gt; can perform easily with a oneliner.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Batch File Renaming With Zsh</title>
-      <link>http://localhost:1313/2015/08/15/batch-file-renaming-with-zsh/</link>
+      <link>http://ericbouchut.com/2015/08/15/batch-file-renaming-with-zsh/</link>
       <pubDate>Sat, 15 Aug 2015 20:44:39 +0000</pubDate>
       
-      <guid>http://localhost:1313/2015/08/15/batch-file-renaming-with-zsh/</guid>
-      <description>&lt;p&gt;I recently discovered &lt;code&gt;zmv&lt;/code&gt;, a builtin feature of zsh that makes batch file renaming, a breeze.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;To use it you need to add this to your zsh configuration file (&lt;code&gt;.zshrc&lt;/code&gt;).
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;autoload zmv
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
-
-&lt;p&gt;My blog contains several Markdown files with a &lt;code&gt;.markdown&lt;/code&gt; extension and I want to use &lt;code&gt;.md&lt;/code&gt; instead. Here is what the markdown files looks like.
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;ls **/*.markdown  
-    ./_drafts/2012-05-06-learning-ruby-and-ruby-on-rails.markdown
-    ./_drafts/2015-07-19-welcome-to-jekyll.markdown
-    ./_posts/2012-02-10-baked-with-octopress.markdown
-    ./_posts/2015-08-15-batch-rename-files-with-zsh.markdown
-    ./_posts/2015-08-15-octopress-3-0.markdown
-    ./about/index.markdown
-    ./contact/index.markdown
-&lt;/pre&gt;&lt;/div&gt;
-
-Note I used the double star zsh notation to &lt;strong&gt;recursively&lt;/strong&gt; list the files which is shorter than  &lt;code&gt;find . -name &#39;*.markdown&#39;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;This is where &lt;code&gt;zmv&lt;/code&gt; comes in handy to &lt;strong&gt;recursively&lt;/strong&gt; change the extension from &lt;code&gt;.markdown&lt;/code&gt; to &lt;code&gt;.md&lt;/code&gt;. Once more the double stars &lt;code&gt;**&lt;/code&gt; match the current directory or whatever directory beneath it.
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;zmv &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;(**/)(*).markdown&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;$1$2.md&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Voilà, the files are renamed!
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;ls **/*.md
-    ./_drafts/2012-05-06-learning-ruby-and-ruby-on-rails.md
-    ./_drafts/2015-07-19-welcome-to-jekyll.md
-    ./_posts/2012-02-10-baked-with-octopress.md
-    ./_posts/2015-08-15-batch-rename-files-with-zsh.md
-    ./_posts/2015-08-15-octopress-3-0.md
-    ./about/index.md
-    ./contact/index.md
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
-
-&lt;p&gt;You can also use the &lt;code&gt;-n&lt;/code&gt; option to ask &lt;code&gt;zmv&lt;/code&gt; to print what it would do without actually doing it. This gives you an opportunity to check that everything is ok before running the command to prevent you from doing a lot of back and forth only because of a typo in the command ;-).&lt;/p&gt;
-
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;zmv  -n &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;(**/)(*).markdown&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;$1$2.md&amp;#39;&lt;/span&gt;
-    mv -- _drafts/2012-05-06-learning-ruby-and-ruby-on-rails.markdown _drafts/2012-05-06-learning-ruby-and-ruby-on-rails.md
-    mv -- _drafts/2015-07-19-welcome-to-jekyll.markdown _drafts/2015-07-19-welcome-to-jekyll.md
-    mv -- _posts/2012-02-10-baked-with-octopress.markdown _posts/2012-02-10-baked-with-octopress.md
-    mv -- _posts/2015-08-15-batch-rename-files-with-zsh.markdown _posts/2015-08-15-batch-rename-files-with-zsh.md
-    mv -- _posts/2015-08-15-octopress-3-0.markdown _posts/2015-08-15-octopress-3-0.md
-    mv -- about/index.markdown about/index.md
-    mv -- contact/index.markdown contact/index.md
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;I only scratched the surface of this feature.
-If you want to read more I recommend you &lt;a href=&#34;http://www.drbunsen.org/batch-file-renaming/&#34;&gt;Seth Brown&#39;s post&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>http://ericbouchut.com/2015/08/15/batch-file-renaming-with-zsh/</guid>
+      <description>&lt;p&gt;I recently discovered &lt;code&gt;zmv&lt;/code&gt;, a builtin feature of zsh that makes batch file renaming, a breeze.&lt;/p&gt;</description>
     </item>
     
   </channel>

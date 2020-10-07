@@ -1,86 +1,93 @@
-
-
-  
-    
-  
-
-
-  
-
-
-  
-
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
     
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Hugo 0.19">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.76.0 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="Eric Bouchut">
+<meta name="keywords" content="">
+<meta name="description" content="I recently discovered zmv, a builtin feature of zsh that makes batch file renaming, a breeze.">
+
+
+<meta property="og:description" content="I recently discovered zmv, a builtin feature of zsh that makes batch file renaming, a breeze.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Batch File Renaming With Zsh">
+<meta name="twitter:title" content="Batch File Renaming With Zsh">
+<meta property="og:url" content="http://ericbouchut.com/2015/08/15/batch-file-renaming-with-zsh/">
+<meta property="twitter:url" content="http://ericbouchut.com/2015/08/15/batch-file-renaming-with-zsh/">
+<meta property="og:site_name" content="Eric Bouchut">
+<meta property="og:description" content="I recently discovered zmv, a builtin feature of zsh that makes batch file renaming, a breeze.">
+<meta name="twitter:description" content="I recently discovered zmv, a builtin feature of zsh that makes batch file renaming, a breeze.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2015-08-15T20:44:39">
+  
+  
+    <meta property="article:modified_time" content="2015-08-15T20:44:39">
+  
+  
+  
+    
+      <meta property="article:section" content="shell">
+    
+  
+  
+    
+      <meta property="article:tag" content="zsh">
+    
+      <meta property="article:tag" content="rename">
+    
+      <meta property="article:tag" content="file">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+  <meta name="twitter:site" content="@ebouchut">
+
+
+  <meta name="twitter:creator" content="@ebouchut">
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/c10172d9ef35d12d188582d01a09eb8d?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/c10172d9ef35d12d188582d01a09eb8d?s=640">
+
+
     <title>Batch File Renaming With Zsh</title>
-    <meta name="author" content="Eric Bouchut">
-    <meta name="keywords" content="">
 
-    <link rel="icon" href="http://localhost:1313/favicon.png">
-    
-
-    
-    <meta name="description" content="I recently discovered zmv, a builtin feature of zsh that makes batch file renaming, a breeze.
-
-">
-    <meta property="og:description" content="I recently discovered zmv, a builtin feature of zsh that makes batch file renaming, a breeze.
-
-">
-    <meta property="og:type" content="blog">
-    <meta property="og:title" content="Batch File Renaming With Zsh">
-    <meta property="og:url" content="/2015/08/15/batch-file-renaming-with-zsh/">
-    <meta property="og:site_name" content="Eric Bouchut">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Eric Bouchut">
-    <meta name="twitter:description" content="I recently discovered zmv, a builtin feature of zsh that makes batch file renaming, a breeze.
-
-">
-    
-      <meta name="twitter:creator" content="@ebouchut">
-    
-    
-
-    
-    
-
-    
-      <meta property="og:image" content="//www.gravatar.com/avatar/c10172d9ef35d12d188582d01a09eb8d?s=640">
-    
-
-    
-    
+    <link rel="icon" href="http://ericbouchut.com/favicon.png">
     
 
     
 
+    <link rel="canonical" href="http://ericbouchut.com/2015/08/15/batch-file-renaming-with-zsh/">
+
     
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
     
     
-    <link rel="stylesheet" href="http://localhost:1313/css/style-gwlo24d2hxipxk8bi1sxik0zhlpn9t7ebcmgp9kubmmcjfzlavuyhvbqumhn.min.css" />
+    <link rel="stylesheet" href="http://ericbouchut.com/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
     
     
+
     
       
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-610695-2', 'auto');
-ga('send', 'pageview');
-</script>
-
     
-    <link rel="stylesheet" href="http://localhost:1313/css/highlight/default.css"
+    <link rel="stylesheet" href="http://ericbouchut.com/css/highlight/default.css"
                        type="text/css" media="screen" charset="utf-8">
 
   </head>
@@ -90,7 +97,7 @@ ga('send', 'pageview');
       <header id="header" data-behavior="5">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
-    <a class="header-title-link" href="http://localhost:1313/">Eric Bouchut</a>
+    <a class="header-title-link" href="http://ericbouchut.com/">Eric Bouchut</a>
   </div>
   
 </header>
@@ -99,8 +106,8 @@ ga('send', 'pageview');
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
-        <a href="http://localhost:1313/#about">
-          <img class="sidebar-profile-picture" src="//www.gravatar.com/avatar/c10172d9ef35d12d188582d01a09eb8d?s=110" alt="Author&#39;s picture" />
+        <a href="http://ericbouchut.com/#about">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/c10172d9ef35d12d188582d01a09eb8d?s=110" alt="" />
         </a>
         <h4 class="sidebar-profile-name">Eric Bouchut</h4>
         
@@ -112,7 +119,7 @@ ga('send', 'pageview');
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="http://localhost:1313/">
+      <a class="sidebar-button-link " href="http://ericbouchut.com/">
     
       <i class="sidebar-button-icon fa fa-lg fa-home"></i>
       
@@ -122,7 +129,7 @@ ga('send', 'pageview');
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="http://localhost:1313/about">
+      <a class="sidebar-button-link " href="http://ericbouchut.com/about">
     
       <i class="sidebar-button-icon fa fa-lg fa-user"></i>
       
@@ -132,7 +139,7 @@ ga('send', 'pageview');
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="http://localhost:1313/contact">
+      <a class="sidebar-button-link " href="http://ericbouchut.com/contact">
     
       <i class="sidebar-button-icon fa fa-lg fa-envelope"></i>
       
@@ -140,12 +147,13 @@ ga('send', 'pageview');
     </a>
   </li>
 
+
     </ul>
     <ul class="sidebar-buttons">
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://linkedin.com/in/ebouchut" target="_blank">
+      <a class="sidebar-button-link " href="https://linkedin.com/in/ebouchut" target="_blank" rel="noopener">
     
       <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
       
@@ -155,17 +163,17 @@ ga('send', 'pageview');
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://github.com/ebouchut" target="_blank">
+      <a class="sidebar-button-link " href="https://github.com/ebouchut" target="_blank" rel="noopener">
     
       <i class="sidebar-button-icon fa fa-lg fa-github"></i>
       
-      <span class="sidebar-button-desc">GitHub</span>
+      <span class="sidebar-button-desc">Github</span>
     </a>
   </li>
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://twitter.com/ebouchut" target="_blank">
+      <a class="sidebar-button-link " href="https://twitter.com/ebouchut" target="_blank" rel="noopener">
     
       <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
       
@@ -173,12 +181,13 @@ ga('send', 'pageview');
     </a>
   </li>
 
+
     </ul>
     <ul class="sidebar-buttons">
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="http://localhost:1313/categories">
+      <a class="sidebar-button-link " href="http://ericbouchut.com/categories">
     
       <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
       
@@ -188,7 +197,7 @@ ga('send', 'pageview');
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="http://localhost:1313/tags">
+      <a class="sidebar-button-link " href="http://ericbouchut.com/tags">
     
       <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
       
@@ -198,13 +207,14 @@ ga('send', 'pageview');
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="http://localhost:1313/index.xml">
+      <a class="sidebar-button-link " href="http://ericbouchut.com/index.xml">
     
       <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
       
       <span class="sidebar-button-desc">RSS</span>
     </a>
   </li>
+
 
     </ul>
   </div>
@@ -229,19 +239,18 @@ ga('send', 'pageview');
   
     <time itemprop="datePublished" datetime="2015-08-15T20:44:39Z">
       
-  August 15, 2015
+   15, 2015
 
     </time>
   
   
   
   
-    <span>in</span>
+    <span></span>
     
-      <a class="category-link" href="http://localhost:1313/categories/shell">shell</a>
+      <a class="category-link" href="http://ericbouchut.com/categories/shell">shell</a>
     
   
-
 
 </div>
 
@@ -250,59 +259,40 @@ ga('send', 'pageview');
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
               <p>I recently discovered <code>zmv</code>, a builtin feature of zsh that makes batch file renaming, a breeze.</p>
-
-<p></p>
-
 <p>To use it you need to add this to your zsh configuration file (<code>.zshrc</code>).
-<div class="highlight" style="background: #272822"><pre style="line-height: 125%">autoload zmv
-</pre></div>
-</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">autoload zmv</code></pre></div></p>
 <p>My blog contains several Markdown files with a <code>.markdown</code> extension and I want to use <code>.md</code> instead. Here is what the markdown files looks like.
-<div class="highlight" style="background: #272822"><pre style="line-height: 125%">ls **/*.markdown  
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ls **/*.markdown  
     ./_drafts/2012-05-06-learning-ruby-and-ruby-on-rails.markdown
     ./_drafts/2015-07-19-welcome-to-jekyll.markdown
     ./_posts/2012-02-10-baked-with-octopress.markdown
     ./_posts/2015-08-15-batch-rename-files-with-zsh.markdown
     ./_posts/2015-08-15-octopress-3-0.markdown
     ./about/index.markdown
-    ./contact/index.markdown
-</pre></div>
-
+    ./contact/index.markdown</code></pre></div>
 Note I used the double star zsh notation to <strong>recursively</strong> list the files which is shorter than  <code>find . -name '*.markdown'</code>.</p>
-
 <p>This is where <code>zmv</code> comes in handy to <strong>recursively</strong> change the extension from <code>.markdown</code> to <code>.md</code>. Once more the double stars <code>**</code> match the current directory or whatever directory beneath it.
-<div class="highlight" style="background: #272822"><pre style="line-height: 125%">zmv <span style="color: #e6db74">&#39;(**/)(*).markdown&#39;</span> <span style="color: #e6db74">&#39;$1$2.md&#39;</span>
-</pre></div>
-</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">zmv <span style="color:#e6db74">&#39;(**/)(*).markdown&#39;</span> <span style="color:#e6db74">&#39;$1$2.md&#39;</span></code></pre></div></p>
 <p>Voilà, the files are renamed!
-<div class="highlight" style="background: #272822"><pre style="line-height: 125%">ls **/*.md
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ls **/*.md
     ./_drafts/2012-05-06-learning-ruby-and-ruby-on-rails.md
     ./_drafts/2015-07-19-welcome-to-jekyll.md
     ./_posts/2012-02-10-baked-with-octopress.md
     ./_posts/2015-08-15-batch-rename-files-with-zsh.md
     ./_posts/2015-08-15-octopress-3-0.md
     ./about/index.md
-    ./contact/index.md
-</pre></div>
-</p>
-
+    ./contact/index.md</code></pre></div></p>
 <p>You can also use the <code>-n</code> option to ask <code>zmv</code> to print what it would do without actually doing it. This gives you an opportunity to check that everything is ok before running the command to prevent you from doing a lot of back and forth only because of a typo in the command ;-).</p>
-
-<div class="highlight" style="background: #272822"><pre style="line-height: 125%">zmv  -n <span style="color: #e6db74">&#39;(**/)(*).markdown&#39;</span> <span style="color: #e6db74">&#39;$1$2.md&#39;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">zmv  -n <span style="color:#e6db74">&#39;(**/)(*).markdown&#39;</span> <span style="color:#e6db74">&#39;$1$2.md&#39;</span>
     mv -- _drafts/2012-05-06-learning-ruby-and-ruby-on-rails.markdown _drafts/2012-05-06-learning-ruby-and-ruby-on-rails.md
     mv -- _drafts/2015-07-19-welcome-to-jekyll.markdown _drafts/2015-07-19-welcome-to-jekyll.md
     mv -- _posts/2012-02-10-baked-with-octopress.markdown _posts/2012-02-10-baked-with-octopress.md
     mv -- _posts/2015-08-15-batch-rename-files-with-zsh.markdown _posts/2015-08-15-batch-rename-files-with-zsh.md
     mv -- _posts/2015-08-15-octopress-3-0.markdown _posts/2015-08-15-octopress-3-0.md
     mv -- about/index.markdown about/index.md
-    mv -- contact/index.markdown contact/index.md
-</pre></div>
-
-
+    mv -- contact/index.markdown contact/index.md</code></pre></div>
 <p>I only scratched the surface of this feature.
-If you want to read more I recommend you <a href="http://www.drbunsen.org/batch-file-renaming/">Seth Brown's post</a>.</p>
+If you want to read more I recommend you <a href="http://www.drbunsen.org/batch-file-renaming/">Seth Brown&rsquo;s post</a>.</p>
               
             </div>
           </div>
@@ -312,81 +302,68 @@ If you want to read more I recommend you <a href="http://www.drbunsen.org/batch-
                 
                 
                   <div class="post-footer-tags">
-                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    <span class="text-color-light text-small"></span><br/>
                     
-  <a class="tag tag--primary tag--small" href="http://localhost:1313//tags/zsh/">zsh</a>
+  <a class="tag tag--primary tag--small" href="http://ericbouchut.com/tags/zsh/">zsh</a>
 
-  <a class="tag tag--primary tag--small" href="http://localhost:1313//tags/rename/">rename</a>
+  <a class="tag tag--primary tag--small" href="http://ericbouchut.com/tags/rename/">rename</a>
 
-  <a class="tag tag--primary tag--small" href="http://localhost:1313//tags/file/">file</a>
+  <a class="tag tag--primary tag--small" href="http://ericbouchut.com/tags/file/">file</a>
 
                   </div>
                 
               
             
             <div class="post-actions-wrap">
-  <nav>
-    <ul class="post-actions post-action-nav">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="http://ericbouchut.com/2017/02/12/my-bookmarking-workflow/" data-tooltip="My Bookmarking Workflow">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml"></span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="http://ericbouchut.com/2015/08/15/octopress-3.0/" data-tooltip="Octopress 3.0">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr"></span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
       
-        <li class="post-action">
-          
-            <a class="post-action-btn btn btn--default tooltip--top" href="http://localhost:1313/2017/02/12/my-bookmarking-workflow/" data-tooltip="My Bookmarking Workflow">
-          
-            <i class="fa fa-angle-left"></i>
-            <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
           </a>
         </li>
+        
+      
+      
         <li class="post-action">
-          
-            <a class="post-action-btn btn btn--default tooltip--top" href="http://localhost:1313/2015/08/15/octopress-3.0/" data-tooltip="Octopress 3.0">
-          
-            <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
-            <i class="fa fa-angle-right"></i>
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
           </a>
         </li>
       
-    </ul>
-  </nav>
-  <ul class="post-actions post-action-share">
-    
-      <li class="post-action hide-lg hide-md hide-sm">
-        <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
-          <i class="fa fa-share-alt"></i>
-        </a>
-      </li>
-      <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f08%2f15%2fbatch-file-renaming-with-zsh%2f">
-          <i class="fa fa-google-plus"></i>
-        </a>
-      </li>
-      <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2f2015%2f08%2f15%2fbatch-file-renaming-with-zsh%2f">
-          <i class="fa fa-facebook-official"></i>
-        </a>
-      </li>
-      <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2flocalhost%3a1313%2f2015%2f08%2f15%2fbatch-file-renaming-with-zsh%2f">
-          <i class="fa fa-twitter"></i>
-        </a>
-      </li>
-    
-    
       <li class="post-action">
-        <a class="post-action-btn btn btn--default" href="#disqus_thread">
-          <i class="fa fa-comment-o"></i>
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
         </a>
       </li>
-    
-    <li class="post-action">
-      
-        <a class="post-action-btn btn btn--default" href="#">
-      
-        <i class="fa fa-list"></i>
-      </a>
-    </li>
-  </ul>
+    </ul>
+  
 </div>
-
 
             
               
@@ -399,94 +376,68 @@ If you want to read more I recommend you <a href="http://www.drbunsen.org/batch-
         </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2017 Eric Bouchut. All Rights Reserved
+    &copy; 2020 Eric Bouchut. 
   </span>
 </footer>
 
       </div>
       <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
         <div class="post-actions-wrap">
-  <nav>
-    <ul class="post-actions post-action-nav">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="http://ericbouchut.com/2017/02/12/my-bookmarking-workflow/" data-tooltip="My Bookmarking Workflow">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml"></span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="http://ericbouchut.com/2015/08/15/octopress-3.0/" data-tooltip="Octopress 3.0">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr"></span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
       
-        <li class="post-action">
-          
-            <a class="post-action-btn btn btn--default tooltip--top" href="http://localhost:1313/2017/02/12/my-bookmarking-workflow/" data-tooltip="My Bookmarking Workflow">
-          
-            <i class="fa fa-angle-left"></i>
-            <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
           </a>
         </li>
+        
+      
+      
         <li class="post-action">
-          
-            <a class="post-action-btn btn btn--default tooltip--top" href="http://localhost:1313/2015/08/15/octopress-3.0/" data-tooltip="Octopress 3.0">
-          
-            <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
-            <i class="fa fa-angle-right"></i>
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
           </a>
         </li>
       
-    </ul>
-  </nav>
-  <ul class="post-actions post-action-share">
-    
-      <li class="post-action hide-lg hide-md hide-sm">
-        <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
-          <i class="fa fa-share-alt"></i>
-        </a>
-      </li>
-      <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f08%2f15%2fbatch-file-renaming-with-zsh%2f">
-          <i class="fa fa-google-plus"></i>
-        </a>
-      </li>
-      <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2f2015%2f08%2f15%2fbatch-file-renaming-with-zsh%2f">
-          <i class="fa fa-facebook-official"></i>
-        </a>
-      </li>
-      <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2flocalhost%3a1313%2f2015%2f08%2f15%2fbatch-file-renaming-with-zsh%2f">
-          <i class="fa fa-twitter"></i>
-        </a>
-      </li>
-    
-    
       <li class="post-action">
-        <a class="post-action-btn btn btn--default" href="#disqus_thread">
-          <i class="fa fa-comment-o"></i>
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
         </a>
       </li>
-    
-    <li class="post-action">
-      
-        <a class="post-action-btn btn btn--default" href="#">
-      
-        <i class="fa fa-list"></i>
-      </a>
-    </li>
-  </ul>
+    </ul>
+  
 </div>
-
 
       </div>
       <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
   <ul class="share-options">
-    <li class="share-option">
-      <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2f2015%2f08%2f15%2fbatch-file-renaming-with-zsh%2f">
-        <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
-      </a>
-    </li>
-    <li class="share-option">
-      <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2f2015%2f08%2f15%2fbatch-file-renaming-with-zsh%2f">
-        <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
-      </a>
-    </li>
-    <li class="share-option">
-      <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2flocalhost%3a1313%2f2015%2f08%2f15%2fbatch-file-renaming-with-zsh%2f">
-        <i class="fa fa-twitter"></i><span>Share on Twitter</span>
-      </a>
-    </li>
+    
   </ul>
 </div>
 <div id="share-options-mask" class="share-options-mask"></div>
@@ -498,7 +449,7 @@ If you want to read more I recommend you <a href="http://www.drbunsen.org/batch-
       <i class="fa fa-remove"></i>
     </div>
     
-      <img id="about-card-picture" src="//www.gravatar.com/avatar/c10172d9ef35d12d188582d01a09eb8d?s=110" alt="Author&#39;s picture" />
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/c10172d9ef35d12d188582d01a09eb8d?s=110" alt="" />
     
     <h4 id="about-card-name">Eric Bouchut</h4>
     
@@ -521,187 +472,46 @@ If you want to read more I recommend you <a href="http://www.drbunsen.org/batch-
   </div>
 </div>
 
-    <div id="algolia-search-modal" class="modal-container">
-  <div class="modal">
-    <div class="modal-header">
-      <span class="close-button"><i class="fa fa-close"></i></span>
-      <a href="https://algolia.com" target="_blank" class="searchby-algolia text-color-light link-unstyled">
-        <span class="searchby-algolia-text text-color-light text-small">by</span>
-        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
-      </a>
-      <i class="search-icon fa fa-search"></i>
-      <form id="algolia-search-form">
-        <input type="text" id="algolia-search-input" name="search"
-          class="form-control input--large search-input" placeholder="Search" />
-      </form>
-    </div>
-    <div class="modal-body">
-      <div class="no-result text-color-light text-center">no post found</div>
-      <div class="results">
-        
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="http://localhost:1313/2017/02/13/change-the-case-of-filenames-with-zsh/">
-                <h3 class="media-heading">Change the case of filenames with Zsh</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Feb 2, 2017
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>Today, after importing photos from my iPhone to my Mac, I noticed
-their filenames were all uppercase whereas I want them to be all lowercase.
-This is a task <code>zsh</code> can perform easily with a oneliner.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="http://localhost:1313/2017/02/12/my-bookmarking-workflow/">
-                <h3 class="media-heading">My Bookmarking Workflow</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Feb 2, 2017
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>Here is how I set aside links to read them when I have time
-and classify them with tags to find them easily later on.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="http://localhost:1313/2015/08/15/batch-file-renaming-with-zsh/">
-                <h3 class="media-heading">Batch File Renaming With Zsh</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Aug 8, 2015
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>I recently discovered <code>zmv</code>, a builtin feature of zsh that makes batch file renaming, a breeze.</p>
+    
 
-<p></p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="http://localhost:1313/2015/08/15/octopress-3.0/">
-                <h3 class="media-heading">Octopress 3.0</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Aug 8, 2015
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather">I recently upgraded Octopress, the engine running my blog, to version 3.0 with the octopress-genesis-theme. Eagerly waiting for the official release!</div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="http://localhost:1313/2012/02/10/baked-with-octopress/">
-                <h3 class="media-heading">Baked With Octopress</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Feb 2, 2012
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>I finally decided to make the move to <a href="http://octopress.org" title="Octopress">Octopress</a>.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="http://localhost:1313/post/">
-                <h3 class="media-heading">Posts</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Feb 2, 2017
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-      </div>
-    </div>
-    <div class="modal-footer">
-      <p class="results-count text-medium"
-         data-message-zero="no post found"
-         data-message-one="1 post found"
-         data-message-other="{n} posts found">
-         6 posts found
-      </p>
-    </div>
-  </div>
-</div>
     
   
     
-    <div id="cover" style="background-image:url('http://localhost:1313/images/cover.jpg');"></div>
+      <div id="cover" style="background-image:url('http://ericbouchut.com/cover.jpg');"></div>
+    
   
 
 
     
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
 
 
-<script src="http://localhost:1313/js/script-wl33z0n6ocaypepiqrazthtivfrliqijej4rq8ek8gvrv1awftmgjuv8k4zc.min.js"></script>
+<script src="http://ericbouchut.com/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
 
-<script>
-$(document).ready(function() {
-  hljs.configure({ classPrefix: '', useBR: false });
-  $('pre.code-highlight').each(function(i, block) {
-    var code = "";
-    hljs.highlightAuto(block.innerText).value.split(/\r\n|\r|\n/).forEach(function(line) {
-      code += "<span class=\"line\">" + line + "</span><br>";
-    });
-    if (code.length > 0) {
-      block.innerHTML = code;  
-    }
-  });
-  $('pre > code').each(function(i, block) {
-    $(this).addClass('codeblock');
-    hljs.highlightBlock(block);
-  });
-});
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
 </script>
+
 
   
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'http:\/\/localhost:1313\/2015\/08\/15\/batch-file-renaming-with-zsh\/';
+          this.page.url = 'http:\/\/ericbouchut.com\/2015\/08\/15\/batch-file-renaming-with-zsh\/';
           
             this.page.identifier = '\/2015\/08\/15\/batch-file-renaming-with-zsh\/'
           
@@ -724,7 +534,9 @@ $(document).ready(function() {
   
 
 
+
+
     
-  <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+  </body>
 </html>
 
