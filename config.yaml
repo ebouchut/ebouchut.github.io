@@ -4,7 +4,7 @@ theme: hugo-tranquilpeak-theme
 languageCode: en-us
 defaultContentLanguage: "en-us"
 metaDataFormat: yaml
-canonifyurls: true
+canonifyurls: false
 disqusShortname: "ericbouchut"
 permalinks:
   post: "/:year/:month/:day/:title/"
