@@ -38,6 +38,9 @@ git worktree add public gh-pages
 
 I use the `worktree` git subcommand here, to create the `public` folder.
 Git populates it with the content of the `gh-pages` as if we cloned the repository inside then checked out the `gh-pages`branches.
+The main advantage f using git worktree is to have the ability to work on multiple branches at the same time depending on the folder we are in:
+- under `public/` we work on the `gh-pages` branch, the published version of the blog.
+- everywhere else (in the working area) we work on the checked out branch (`master`in this case) the source version of the blog.
 
 The benefit here is to have the `publish` folder handy with a cloned version of the repository with the target branch `gh-pages` checked out.
 Once I generate the published version of the blog using `hugo` I then only need to cd into `publish` commit the changes and push the `gh-pages` branch to github. Github then automatically notices a push occurred and replicates the published site on its servers.
