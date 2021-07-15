@@ -86,7 +86,7 @@ menu:
       weight: 40
       identifier: blockchain
       pre: <i class="sidebar-button-icon fa fa-lg fa-bitcoin"></i>
-      url: https://github.com/ebouchut/dev-blockchain
+      url: https://github.com/bet-no-loss/bet-no-loss#readme
 
   misc:
     - name: "Categories"
