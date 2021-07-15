@@ -58,8 +58,10 @@ The table below provides the content of the jump stack for each command in the a
 
 Each time you jump on a new branch the existing branches on the stack are shifted towards the bottom and the branch you jump on is pushed onto the stack.
 
-git provides [revisions][git revisions], ie. among which we find the handy shortcut notations `@{0}`, `@{-1}`, `@{-2}` ... to reference the jump stack elements.
+git provides [revisions][git revisions],  among which we find the handy shortcut
+notations `@{0}`, `@{-1}`, `@{-2}` ... we can use to reference the jump stack elements.
 
-`git checkout -` is simply a notation equivalent to  `git checkout @{-1}` that denotes the previous branch you were on.
+`git checkout -` is simply a notation equivalent to  `git checkout @{-1}` to go
+to the previous branch you were on.
 
 [git revisions]: https://mirrors.edge.kernel.org/pub/software/scm/git/docs/gitrevisions.html#_specifying_revisions
