@@ -1,5 +1,4 @@
----
-title: "Go to the previous branch with git checkout -"
+--- title: "Go to the previous branch with git checkout"
 date: 2021-07-14T11:02:48+02:00
 categories:
 - git
@@ -20,7 +19,7 @@ keywords:
 You are used to use `cd` in the shell (*bash*, *zsh*) to change folder then 
 `cd -` to go back to the folder you were previously in.
 
-Good news, `git` offers a similar kind of shortcut when switching branches.
+Good news, `git` offers a similar shorthand when switching branches.
 
 <!--more-->
 Below, we first change directory to go from `folderA` to `folderB`, 
@@ -58,10 +57,11 @@ The table below provides the content of the jump stack for each command in the a
 
 Each time you jump on a new branch the existing branches on the stack are shifted towards the bottom and the branch you jump on is pushed onto the stack.
 
-git provides [revisions][git revisions],  among which we find the handy shortcut
-notations `@{0}`, `@{-1}`, `@{-2}` ... we can use to reference the jump stack elements.
+git provides [revisions][git revisions],  among which we find the handy 
+shorthand `@{0}`, `@{-1}`, `@{-2}` ... we can use to reference the jump stack elements.
 
-`git checkout -` is simply a notation equivalent to  `git checkout @{-1}` to go
-to the previous branch you were on.
+`git checkout -` is a shorthand for `git checkout @{-1}` available since [git
+version
+1.6.2](https://github.com/git/git/blob/master/Documentation/RelNotes/1.6.2.txt#L85).
 
 [git revisions]: https://mirrors.edge.kernel.org/pub/software/scm/git/docs/gitrevisions.html#_specifying_revisions
