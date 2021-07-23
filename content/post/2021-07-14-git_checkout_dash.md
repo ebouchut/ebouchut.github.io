@@ -1,4 +1,5 @@
---- title: "Go to the previous branch with git checkout"
+---
+title: "Go to the previous branch with git checkout"
 date: 2021-07-14T11:02:48+02:00
 categories:
 - git
