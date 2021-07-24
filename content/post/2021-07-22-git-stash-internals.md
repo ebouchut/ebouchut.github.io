@@ -205,7 +205,7 @@ Now that we know what is stashed, let's take a look at the way it is stored inte
 Let's figure out what is in our most recent stash.  
 This section assumes we ran `git stash -u` in the example's repository so we end up with this log.
 
-![git stash - log](/images/git_stash/git-stash-internals-graph-_log.png)
+![git stash - log](/images/git_stash/git-stash-internals-graph_log.png)
 
 
 Now let's take a look at the stash@{0} commit.
@@ -223,23 +223,26 @@ committer Eric Bouchut <ebouchut@gmail.com> 1627056522 +0200
 
     WIP on master: 031ca10 Add README
 ```
-This merge commit has 3 parents.
 
 ![git stash commit parents](/images/git_stash/git-stash-internals-commit_parents.png)
 
-A **stash commit** is a **merge commit** with **2 or 3 parents** (See the output of the above `git show` command above):
+The **stash commit `stash@{0}`** (`49482a`) is a **merge commit** with 3 parents 
+in this case because we stashed the untracked files, (2 parents y default).  
+It also contains the non ignored files of the working dir that were modified 
+at the time of the stash.
+
+Let's meet the parents:
 - **`stash@{0}^1`** (`031ca10`) denotes the **first** parent of the stash commit.  
  This was the current commit (`HEAD`) at the time of the stash.
 - **`stash@{0}^2`** (`b558b9e`) denotes the **second** parent of the stash commit.  
-It is a commit with the changesets present in the **Index** at the time of the stash.  
+It contains the changesets present in the **Index** at the time of the stash.  
 The _Index_ is aka. as the _staging area_. This is where the files you add with `git add` are stored before they can be committed.
 - **`stash@{0}^3`** (`dfac0d7`) denotes the **third** parent of the stash commit.  
-This commit contains the **untracked files** and **ignored files** present in the working tree at the time of the stash.
+It contains the **untracked files** (`-u`) and **ignored files** (`-a`) 
+present in the working tree at the time of the stash.  
 `git stash` creates it only when you use any of the `-u` or `-a` option.
 
-The stash commit **`stash@{0}`** (`49482a`) is a merge commit that also contains the tracked files of the working dir that were modified at the time of the stash.
-
-> Why do we need to dive deep into the inner workings of the system?
+> Why do we need to dive deep into the inner workings of `git stash`?
 
 Because up until version 2.32, git did not offer a simple way to list and show the untracked files in a stash commit.
 This is why we need to know the `git stash` internals to do this. 
@@ -287,5 +290,7 @@ Before git version 2.32, we can use instead:
 git log -p 'stash@{0}^3'
 ```
 
-[git-stash-show_untracked_files]: https://stackoverflow.com/questions/12681529/in-git-is-there-a-way-to-show-untracked-stashed-files-without-applying-the-stas/12681856#12681856
+
+[git-stash-show_untracked_files]: 
+https://stackoverflow.com/questions/12681529/in-git-is-there-a-way-to-show-untracked-stashed-files-without-applying-the-stas
 [git trees]: http://scottchacon.com/2011/07/11/reset.html
