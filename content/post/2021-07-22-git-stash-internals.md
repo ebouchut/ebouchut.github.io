@@ -14,6 +14,7 @@ keywords:
 - stash
 - internals
 - difference
+thumbnailImage: /images/git_stash/git-stash-internals-commit_parents.png
 ---
 
 How does `git stash` works under the hood?  
