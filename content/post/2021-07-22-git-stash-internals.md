@@ -236,10 +236,10 @@ at the time of the stash.
 
 Let's meet the parents:
 - **`stash@{0}^1`** (`031ca10`) denotes the **first** parent of the stash commit.  
- This was the current commit (`HEAD`) at the time of the stash.
+ This was the current commit (`HEAD`) at the time of the stash.  
 - **`stash@{0}^2`** (`b558b9e`) denotes the **second** parent of the stash commit.  
 It contains the changesets present in the **Index** at the time of the stash.  
-The _Index_ is aka. as the _staging area_. This is where the files you add with `git add` are stored before they can be committed.
+The _Index_ is aka. as the _staging area_. This is where the files you add with `git add` are stored before they can be committed.  
 - **`stash@{0}^3`** (`dfac0d7`) denotes the **third** parent of the stash commit.  
 It contains the **untracked files** (`-u`) and **ignored files** (`-a`) 
 present in the working tree at the time of the stash.  
@@ -251,14 +251,56 @@ Because up until version 2.32, git did not offer a simple way to list and show t
 This is why we need to know the `git stash` internals to do this. 
 You are now ready to understand what is next.
 
-# List untracked files in a stash
+# List Modified Files in the Working Dir of a Stash Commit
+
+Here is how to **list modified files in the Working Dir** of the most recent 
+stash commit:
+
+```shell
+ git log -m --first-parent -1  --format='' --name-only 'stash@{0}'
+```
+Here we drill down on the merge commit (`-m`) and focus only on the first commit
+(`-1`) of the first parent (`--first-parent`), that is the stash commit itself.  
+
+ℹ️  By default, git log does not display details about any parent of a merge
+commit, unless we use `-m` and when we do use this option, it displays what is
+requested for each and every parent. As this is not what we want here, we
+restrict only to the first parent..
+
+
+For whatever reason, even with `--name-only`, `git log` 
+displays non requested information (commit SHA1, date, and author) in addition
+to the file names. I noticed this issue in git version 2.32.0.
+This is why I use `--format=''` as a workaround to remove them.
+
+Now here is how to view **what changed in the modified files of the Working
+Dir**  of the mostrecent commit:
+```shell
+git log -m --first-parent -1   -p 'stash@{0}'
+```
+
+# Stashed Files of a Stash Commit
+
+The command below **lists** the **staged files** of the most recent stash commit.
+```shell
+git log  --name-only -1 --format='' 'stash@{0}^2'
+```
+
+In order to get the **content of the** (changesets in the) **Index** 
+in this stash commit:
+```shell
+git log  -1  -p 'stash@{0}^2'
+```
+
+
+# List Untracked Files of a Stash Commit
 
 Here is how to list the name of untracked files in the most recent stash commit.
 
 From [git version 2.32](https://github.com/git/git/blob/v2.32.0/Documentation/RelNotes/2.32.0.txt#L30) onwards `git show` now has the `--only-untracked` option to list the untracked files of a stash. 
 
 ℹ️
-This also lists the ignored files should you have used `git stash -a` to also stash the ignored files.
+This also lists the ignored files if you used `git stash -a` to also stash the ignored files.
 
 
 ```Shell
@@ -277,7 +319,7 @@ git ls-tree -r 'stash@{0}^3' --name-only
 ```
 
 
-# Content of untracked files in a stash
+# Content of Untracked Files of a Stash Commit
 
 Here is how to view the content of the untracked files (and ignored file(s) if any) in the most recent stash commit.
 
@@ -287,7 +329,7 @@ From [git version 2.32](https://github.com/git/git/blob/v2.32.0/Documentation/Re
 git stash show --only-untracked -p 'stash@{0}'
 ```
 
-Before git version 2.32, we use instead:
+Before git version 2.32, use instead:
 
 ```Shell
 git log -p 'stash@{0}^3'
