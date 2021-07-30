@@ -60,10 +60,15 @@ The changes are updated live.
 ### Write a new Blog Post
 
 ```
+# git checkout master # If not on the master branch
+
 # Generate a new blog post named xxx.md under content/
 hugo new post/2021-07-17-xxx.md
 
 # Edit content/post/2021-07-17-xxx.md
+
+git add content/post/2021-07-17-xxx.md
+git push  # origin master
 ```
 
 ### Publish the Blog
