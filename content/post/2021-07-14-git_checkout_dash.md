@@ -15,6 +15,7 @@ keywords:
 - branch
 - history
 - navigate
+thumbnailImage: /images/git_checkout_dash-thumbnail.png
 ---
 
 You are used to use `cd` in the shell (*bash*, *zsh*) to change folder then 
