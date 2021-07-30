@@ -251,7 +251,7 @@ Because up until version 2.32, git did not offer a simple way to list and show t
 This is why we need to know the `git stash` internals to do this. 
 You are now ready to understand what is next.
 
-# List Modified Files in the Working Dir of a Stash Commit
+# Modified Files in the Working Dir of a Stash Commit
 
 Here is how to **list modified files in the Working Dir** of the most recent 
 stash commit:
@@ -273,8 +273,8 @@ displays non requested information (commit SHA1, date, and author) in addition
 to the file names. I noticed this issue in git version 2.32.0.
 This is why I use `--format=''` as a workaround to remove them.
 
-Now here is how to view **what changed in the modified files of the Working
-Dir**  of the mostrecent commit:
+Now, here is how to view **what changed in the modified files of the Working
+Dir**  of the most recent stash commit:
 ```shell
 git log -m --first-parent -1   -p 'stash@{0}'
 ```
@@ -293,11 +293,13 @@ git log  -1  -p 'stash@{0}^2'
 ```
 
 
-# List Untracked Files of a Stash Commit
+# Untracked Files of a Stash Commit
 
-Here is how to list the name of untracked files in the most recent stash commit.
+Here is how to **list** the **untracked files** in the most recent stash commit.
 
-From [git version 2.32](https://github.com/git/git/blob/v2.32.0/Documentation/RelNotes/2.32.0.txt#L30) onwards `git show` now has the `--only-untracked` option to list the untracked files of a stash. 
+From [git version 2.32](https://github.com/git/git/blob/v2.32.0/Documentation/RelNotes/2.32.0.txt#L30) 
+onwards `git show` now has the `--only-untracked` option to list the untracked 
+files of a stash. 
 
 ℹ️
 This also lists the ignored files if you used `git stash -a` to also stash the ignored files.
@@ -319,9 +321,8 @@ git ls-tree -r 'stash@{0}^3' --name-only
 ```
 
 
-# Content of Untracked Files of a Stash Commit
-
-Here is how to view the content of the untracked files (and ignored file(s) if any) in the most recent stash commit.
+Here is how to view the **content of the untracked files** (and ignored file(s) 
+if any) in the most recent stash commit.
 
 From [git version 2.32](https://github.com/git/git/blob/v2.32.0/Documentation/RelNotes/2.32.0.txt#L30) onwards you can use the  `--only-untracked` option of `git show`.
 
