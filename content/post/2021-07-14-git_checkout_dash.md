@@ -15,7 +15,7 @@ keywords:
 - branch
 - history
 - navigate
-thumbnailImage: /images/git_checkout_dash-thumbnail.png
+thumbnailImage: /images/git_checkout_dash.png
 ---
 
 You are used to use `cd` in the shell (*bash*, *zsh*) to change folder then 
@@ -44,6 +44,8 @@ git checkout branch-b
 git checkout -
 ```
 We first jump on the `master` branch, then on `branch-a` and finally on `branch-b`  
+
+![git checkout dash](/images/git_checkout_dash.png)
 
 Then **`git checkout -` jumps back on the branch we were previously on**, that is `branch-a`.  
 Note that in this case `git checkout` is followed by a dash sign (`-`) instead of a branch name.
