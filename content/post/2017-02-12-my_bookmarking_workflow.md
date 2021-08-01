@@ -19,6 +19,7 @@ tags:
   - pinboard
   - pocket
 comments: true
+thumbnailImage: /images/my_bookmarking_workflow/overview.png
 ---
 
 Here is how I set aside links to read them when I have time
@@ -197,7 +198,7 @@ and tech articles.
 I pick an article from Pocket *read later list*,click a button and boom!
 I'm both  learning something that I'm passionate about but I also improve my
 understanding of the English language while listening to a realistic English 
-voice [**Alex**][pocket_voice_alex].
+voice **Alex**.
 I guess it is based on the built-in TTS functionality of iOS, but adds more on
 top of that, it **scrolls** the page to hightlight the current word and make 
 sure it is always visible.
@@ -234,6 +235,5 @@ or a way to collect and process your bookmarks that may improve your workflow.
 [pocket_saving_on_iphone]: https://help.getpocket.com/article/891-saving-to-pocket-on-iphone
                            "Saving to Pocket on iPhone"
 [pocket_tts]: https://help.getpocket.com/article/1081-listening-to-articles-in-pocket-with-text-to-speech
-[pocket_voice_alex]: https://help.getpocket.com/article/982-using-the-high-quality-alex-voice-on-ios 
 [pocket_web]: https://help.getpocket.com/category/847-category
 
