@@ -20,6 +20,7 @@ tags:
   - convert
   - lowercase
   - uppercase
+thumbnailImage: /images/change_case_filenames_ with_zsh.png
 ---
 
 Today, after importing photos from my iPhone to my Mac, I noticed 
