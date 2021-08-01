@@ -44,7 +44,7 @@ params:
   coverImage: images/cover-v1.2.0.jpg
   imageGallery: true
   thumbnailImage: true
-  thumbnailImagePosition: bottom
+  thumbnailImagePosition: left
   googleAnalytics: UA-610695-2
   comments: false
   hierarchicalCategories: true
