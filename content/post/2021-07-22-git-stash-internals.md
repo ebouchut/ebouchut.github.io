@@ -212,7 +212,7 @@ nothing to commit, working directory clean
 To also stash the ignored files use the `-a`option instead of `-u`.
 
 `git stash -a` sets aside **all** the files, that is:
-- **Modified files** that git is tracking: `README.md`, `LICENSE`
+- **Modified files** that git is tracking: `README.md`
 - **Index**: `CONTRIBUTING.md`
 - **Untracked files**:  `LICENSE`
 - **Ignored files**: `temp/stash.out`
