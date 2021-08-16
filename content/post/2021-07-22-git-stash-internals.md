@@ -230,7 +230,7 @@ committer Eric Bouchut <ebouchut@gmail.com> 1627056522 +0200
 ![git stash commit parents](/images/git_stash/git-stash-internals-commit_parents.png)
 
 The **stash commit `stash@{0}`** (`49482a`) is a **merge commit** with 3 parents 
-in this case because we stashed the untracked files, (2 parents y default).  
+in this case because we stashed the untracked files, (2 parents by default).  
 It also contains the non ignored files of the working dir that were modified 
 at the time of the stash.
 
@@ -247,7 +247,7 @@ present in the working tree at the time of the stash.
 
 > Why do we need to dive deep into the inner workings of `git stash`?
 
-Because up until version 2.32, git did not offer a simple way to list and show the untracked files in a stash commit.
+Up until version 2.32, git did not offer a simple way to list and show the untracked files in a stash commit.
 This is why we need to know the `git stash` internals to do this. 
 You are now ready to understand what is next.
 
