@@ -85,7 +85,7 @@ menu:
     - name: Blockchain
       weight: 40
       identifier: blockchain
-      pre: <i class="sidebar-button-icon fab fa-bitcoin"></i>
+      pre: <i class="sidebar-button-icon fab fa-ethereum"></i>
       url: https://github.com/bet-no-loss/bet-no-loss#readme
 
   misc:
