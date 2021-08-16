@@ -6,7 +6,7 @@
 [subrepo]
 	remote = git@github.com:kakawait/hugo-tranquilpeak-theme
 	branch = master
-	commit = 1ab69671a6d6416ca45ed8cedadec58af0fef172
-	parent = 2ea302524b054b5071ea41bf82f904c22ad8eb1a
+	commit = 37550aa165eec033e34f2e0f89cb0720d72a4c34
+	parent = da26843cfb654111f20e55d37f2c49e654994827
 	method = merge
 	cmdver = 0.4.3
