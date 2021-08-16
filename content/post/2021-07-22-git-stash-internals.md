@@ -21,6 +21,7 @@ How does `git stash` work under the hood?
 How to view the untracked files in a stash?
 <!--more-->
 
+{{< toc >}}
 
 ## Definition
 
