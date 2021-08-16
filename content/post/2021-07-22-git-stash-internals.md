@@ -22,7 +22,7 @@ How to view the untracked files in a stash?
 <!--more-->
 
 
-# Definition
+## Definition
 
 Say you want to **set aside your current uncommitted work** 
 in order to fix an urgent bug, or jump on another branch temporarily 
@@ -37,7 +37,7 @@ these changed files into this other branch.
 To prevent that I will use `git stash` before switching branches, to start off a blank
 slate.
 
-# Terminology
+## Terminology
 
 We may need a bit of **terminology** refresher in this post.
 Feel free to skip ahead and come back later if needed.
@@ -59,7 +59,7 @@ shipment when it is ready using `git add`.
 Once all the parcels required for this shipment are available in the warehouse 
 we send the shipment for delivery using `git commit`.
 
-# Example
+## Example
 
 Here is the shell script I used to create the repository for this example.
 You may find it helpful to practice the `git stash` command line options 
@@ -191,7 +191,7 @@ nothing to commit, working directory clean
 
 To also stash the ignored files, you can use `git stash -a` instead.
 
-# Stash Stack
+## Stash Stack
 
 When adding a stash, git creates a *stash commit*, pushes it on top of the stash stack.
 This shifts existing stash entries downwards (if any).
@@ -203,7 +203,7 @@ Each time you stash something else it is pushed downwards, hence:
 
 Now that we know what is stashed, let's take a look at the way it is stored internally.
 
-# What is in a stash?
+## What is in a stash?
 
 Let's figure out what is in our most recent stash.  
 This section assumes we ran `git stash -u` in the example's repository so we end up with this log.
@@ -251,7 +251,7 @@ Up until version 2.32, git did not offer a simple way to list and show the untra
 This is why we need to know the `git stash` internals to do this. 
 You are now ready to understand what is next.
 
-# Modified Files in the Working Dir of a Stash Commit
+## Modified Files in the Working Dir of a Stash Commit
 
 Here is how to **list modified files in the Working Dir** of the most recent 
 stash commit:
@@ -279,7 +279,7 @@ Dir**  of the most recent stash commit:
 git log -m --first-parent -1   -p 'stash@{0}'
 ```
 
-# Stashed Files of a Stash Commit
+## Stashed Files of a Stash Commit
 
 The command below **lists** the **staged files** of the most recent stash commit.
 ```shell
@@ -293,7 +293,7 @@ git log  -1  -p 'stash@{0}^2'
 ```
 
 
-# Untracked Files of a Stash Commit
+## Untracked Files of a Stash Commit
 
 Here is how to **list** the **untracked files** in the most recent stash commit.
 
