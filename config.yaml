@@ -70,22 +70,22 @@ menu:
     - name: LinkedIn
       weight: 10
       identifier: linkedin
-      pre: <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+      pre: <i class="sidebar-button-icon fab fa-linkedin-in"></i>
       url: https://linkedin.com/in/ebouchut
     - name: Github
       weight: 20
       identifier: github
-      pre: <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      pre: <i class="sidebar-button-icon fab fa-github"></i>
       url: https://github.com/ebouchut
     - name: Twitter
       weight: 30
       identifier: twitter
-      pre: <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
+      pre: <i class="sidebar-button-icon fab fa-twitter"></i>
       url: https://twitter.com/ebouchut
     - name: Blockchain
       weight: 40
       identifier: blockchain
-      pre: <i class="sidebar-button-icon fa fa-lg fa-bitcoin"></i>
+      pre: <i class="sidebar-button-icon fab fa-bitcoin"></i>
       url: https://github.com/bet-no-loss/bet-no-loss#readme
 
   misc:
