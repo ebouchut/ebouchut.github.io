@@ -279,7 +279,7 @@ Dir**  of the most recent stash commit:
 git log -m --first-parent -1   -p 'stash@{0}'
 ```
 
-## Stashed Files of a Stash Commit
+## Staged Files of a Stash Commit
 
 The command below **lists** the **staged files** of the most recent stash commit.
 ```shell
