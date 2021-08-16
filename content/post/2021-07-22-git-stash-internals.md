@@ -9,11 +9,13 @@ tags:
 - internals
 - difference
 - change
+- backup
 keywords:
 - git
 - stash
 - internals
 - difference
+- backup
 thumbnailImage: /images/git_stash/git-stash-internals-commit_parents.png
 ---
 
@@ -105,9 +107,12 @@ and the Index after running the above shell script.
 
 ## Git Status
 
+Here is the output of `git status` right before running any of the `git stash`
+command.
+
 ![git status](/images/git_stash/git-stash-status.png "git status")
 
-
+Below is the text version of the above image.
 ```shell
 git status
 
@@ -130,12 +135,15 @@ There are 3 sections:
 - **`Changes to be committed`** denotes the content of the
   **Index**.(`CONTRIBUTING.md`)
 - **`Changes not staged for commit`** denotes the **tracked files** that are
- **modified** in the Working Dir.(`README.md`)
+ **modified** in the Working Dir (`README.md`).
 - **`Untracked files`** denotes the files git does not know about yet (`LICENSE`)
 
 
+## Git Stash Command
 
-In this example, I assume that there is only one stash created and I use `stash@{0}` to reference it.
+This section assumes that:
+- Each command starts from the same state described in the `Git Status` section.
+- there is only one stash created and we use `stash@{0}` to reference it.
 
 The table below describes what files are stashed and where (commit) depending on
 which git stash command is used.
@@ -150,16 +158,18 @@ which git stash command is used.
 
 Now, let's take a look at what each `git stash` command does.
 
-```shell
-git stash
-```
+### git stash
 
 By default, `git stash` sets aside:
-- any *tracked* file that is modified and not ignored: `README.md`
-- the Index: `CONTRIBUTING.md`
+- any **tracked** file that is modified and not ignored: `README.md`
+- the **Index**: `CONTRIBUTING.md`
 
 It does not set aside files that are either untracked or ignored 
 like respectively `LICENSE` and `temp/stash.out` .
+
+```shell
+git stash
+```
 
 ```shell
 git status
@@ -174,9 +184,16 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-If instead, I want to stash both tracked **and untracked files**, 
-that is all my current work in progress (both `README.md` and `LICENSE`) 
-plus the content of the index,  (`CONTRIBUTING.md`), then I need to use `git stash -u`, like so:
+### git stash -u
+
+To also stash the untracked files, use the `-u` option.
+
+`git stash -u` sets aside the:
+- **Modified and tracked files**: `README.md`
+- **Index**: `CONTRIBUTING.md`
+- **Untracked files**: `LICENSE`
+
+That is all the files except the ones that are ignored.
 
 ```shell
 git stash -u
@@ -190,7 +207,17 @@ Your branch is up-to-date with 'origin/master'.
 nothing to commit, working directory clean
 ```
 
-To also stash the ignored files, you can use `git stash -a` instead.
+### git stash -a
+
+To also stash the ignored files use the `-a`option instead of `-u`.
+
+`git stash -a` sets aside **all** the files, that is:
+- **Modified files** that git is tracking: `README.md`, `LICENSE`
+- **Index**: `CONTRIBUTING.md`
+- **Untracked files**:  `LICENSE`
+- **Ignored files**: `temp/stash.out`
+
+
 
 ## Stash Stack
 
@@ -207,7 +234,7 @@ Now that we know what is stashed, let's take a look at the way it is stored inte
 ## What is in a stash?
 
 Let's figure out what is in our most recent stash.  
-This section assumes we ran `git stash -u` in the example's repository so we end up with this log.
+Let's assume that we ran `git stash -u` in the example's repository so we end up with this log.
 
 ![git stash - log](/images/git_stash/git-stash-internals-graph_log.png)
 
@@ -252,7 +279,17 @@ Up until version 2.32, git did not offer a simple way to list and show the untra
 This is why we need to know the `git stash` internals to do this. 
 You are now ready to understand what is next.
 
-## Modified Files in the Working Dir of a Stash Commit
+We will now list the content of the stash.
+
+## Files of a Stash Commit
+
+Now, let's use the command line to list the files saved in a stash:
+- modified files in the Working Dir
+- staged "files"
+- untracked and ignored files 
+
+
+### Modified Files in the Working Dir of a Stash Commit
 
 Here is how to **list modified files in the Working Dir** of the most recent 
 stash commit:
@@ -280,7 +317,7 @@ Dir**  of the most recent stash commit:
 git log -m --first-parent -1   -p 'stash@{0}'
 ```
 
-## Staged Files of a Stash Commit
+### Staged Files of a Stash Commit
 
 The command below **lists** the **staged files** of the most recent stash commit.
 ```shell
@@ -294,7 +331,7 @@ git log  -1  -p 'stash@{0}^2'
 ```
 
 
-## Untracked Files of a Stash Commit
+### Untracked Files of a Stash Commit
 
 Here is how to **list** the **untracked files** in the most recent stash commit.
 
