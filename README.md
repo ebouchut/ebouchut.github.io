@@ -1,11 +1,11 @@
 
 
 This git repository, hosted on Github.com, is composed of 2 main branches:
-- **`master`** contains the source of my blog (https://EricBouchut.com)
+- **`main`** contains the source of my blog (https://EricBouchut.com)
 - **`gh-pages`** contains the published version of my blog.
 
 The **publishing process:** consists of using Hugo to transform the source into the published version:  
-`master`branch (source version) → `hugo` → `gh-pages` branch (published version)  
+`main` branch (source version) → `hugo` → `gh-pages` branch (published version)  
 I use [Hugo](https://gohugo.io) to generate my blog. It is a fast CLI blogging engine.
 
 The **deployment process** consists of:
@@ -29,7 +29,7 @@ cd ebouchut/github.io
 This needs to be done once after the clone (or if you remove the publish worktree).
 
 ```shell
-git checkout master
+git checkout main
 
 # make sure no `public` folder is present or else remove it
 
@@ -40,7 +40,7 @@ I use the `worktree` git subcommand here, to create the `public` folder.
 Git populates it with the content of the `gh-pages` as if we cloned the repository inside then checked out the `gh-pages`branches.
 The main advantage of using git worktree is to have the ability to work on multiple branches at the same time depending on the folder we are in:
 - under `public/` we work on the `gh-pages` branch, the published version of the blog.
-- everywhere else (in the working area) we work on the checked out branch (`master`in this case) the source version of the blog.
+- everywhere else (in the working area) we work on the checked out branch (`main`in this case) the source version of the blog.
 
 The benefit here is to have the `publish` folder handy with a cloned version of the repository with the target branch `gh-pages` checked out.
 Once I generate the published version of the blog using `hugo` I then only need to cd into `publish` commit the changes and push the `gh-pages` branch to github. Github then automatically notices a push occurred and replicates the published site on its servers.
@@ -50,7 +50,7 @@ Once I generate the published version of the blog using `hugo` I then only need 
 ### Preview the blog
 
 ```shell
-git checkout master
+git checkout main
 hugo serve
 ```
 
@@ -60,7 +60,7 @@ The changes are updated live.
 ### Write a new Blog Post
 
 ```
-# git checkout master # If not on the master branch
+# git checkout main # If not on the main branch
 
 # Generate a new blog post named xxx.md under content/
 hugo new post/2021-07-17-xxx.md
@@ -68,13 +68,13 @@ hugo new post/2021-07-17-xxx.md
 # Edit content/post/2021-07-17-xxx.md
 
 git add content/post/2021-07-17-xxx.md
-git push  # origin master
+git push  # origin main
 ```
 
 ### Publish the Blog
 
 ```shell
-git checkout master
+git checkout main
 
 
 # => Generate the published version of the blog in the `publish` folder.
