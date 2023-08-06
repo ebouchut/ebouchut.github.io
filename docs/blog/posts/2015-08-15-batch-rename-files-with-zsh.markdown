@@ -1,5 +1,5 @@
 ---
-date: 2015-08-15T20:44:39Z
+date: 2015-08-15
 title: Batch File Renaming With Zsh
 categories:
 - shell

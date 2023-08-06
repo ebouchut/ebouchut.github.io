@@ -1,5 +1,5 @@
 ---
-date: 2017-02-12T16:17:18
+date: 2017-02-12
 title: My Bookmarking Workflow
 categories:
   - workflow

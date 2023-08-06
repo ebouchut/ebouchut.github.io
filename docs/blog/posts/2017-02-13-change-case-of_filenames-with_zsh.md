@@ -1,5 +1,5 @@
 ---
-date: 2017-02-13T13:14:15Z
+date: 2017-02-13
 title: Change the case of filenames with Zsh
 categories:
   - shell

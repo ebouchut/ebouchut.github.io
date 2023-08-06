@@ -1,5 +1,5 @@
 ---
-date: 2012-02-10T00:00:00Z
+date: 2012-02-10
 title: Baked With Octopress
 tags:
 - octopress

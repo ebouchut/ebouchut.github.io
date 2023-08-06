@@ -1,6 +1,6 @@
 ---
 title: "Git stash Internals"
-date: 2021-07-22T13:30:03+02:00
+date: 2021-07-22
 categories:
 - git
 tags:
