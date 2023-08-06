@@ -12,6 +12,16 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ebouchut
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/ebouchut
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ebouchut
+    - icon: fontawesome/brands/mastodon
+      link: https://ruby.social/@ebouchut
 
 plugins:
   - search
