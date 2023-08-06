@@ -1,4 +1,2 @@
-# Eric Bouchut
+# Blog
 
-
-My new blog is here.

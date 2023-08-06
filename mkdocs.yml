@@ -16,6 +16,7 @@ theme:
 plugins:
   - search
   - blog:
+      blog_toc: true
       post_date_format: long
       post_url_date_format: yyyy/MM/dd
       post_url_format: "{date}/{slug}"
@@ -23,7 +24,8 @@ plugins:
       tags_file: blog/tags.md
 
 nav:
-  - Home: blog/index.md
+  - Home: index.md
+  - Blog: blog/index.md
   - About: blog/about.md
   - Contact: blog/contact.md
   - Tags: blog/tags.md
