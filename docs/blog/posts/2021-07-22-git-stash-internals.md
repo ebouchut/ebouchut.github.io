@@ -21,7 +21,7 @@ thumbnailImage: /images/git_stash/git-stash-internals-commit_parents.png
 
 How does `git stash` work under the hood?  
 How to view the untracked files in a stash?
-<!--more-->
+<!-- more -->
 
 {{< toc >}}
 

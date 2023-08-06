@@ -11,7 +11,7 @@ tags:
 
 I recently discovered `zmv`, a builtin feature of zsh that makes batch file renaming, a breeze. 
 
-<!--more-->
+<!-- more -->
 
 To use it you need to add this to your zsh configuration file (`.zshrc`).
 {{< highlight shell >}}

@@ -9,7 +9,7 @@ categories:
 ---
 
 I finally decided to make the move to [Octopress][].
-<!--more-->
+<!-- more -->
 
 A lot has been said about this new blogging framework, 
 since last year when I first read about it on [Hacker News][].

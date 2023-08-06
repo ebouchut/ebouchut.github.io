@@ -24,7 +24,7 @@ thumbnailImage: /images/my_bookmarking_workflow/overview.png
 
 Here is how I set aside links to read them when I have time
 and classify them with tags to find them easily later on.
-<!--more-->
+<!-- more -->
 
 <!-- toc -->
 

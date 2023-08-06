@@ -23,7 +23,7 @@ You are used to use `cd` in the shell (*bash*, *zsh*) to change folder then
 
 Good news, `git` offers a similar shorthand when switching branches.
 
-<!--more-->
+<!-- more -->
 Below, we first change directory to go from `folderA` to `folderB`, 
 then go back to `folderA` using `cd -`.
 ```
