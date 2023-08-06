@@ -37,5 +37,10 @@ nav:
   - Home: index.md
   - Blog: blog/index.md
   - About: blog/about.md
-  - Contact: blog/contact.md
+  - Contact: 
+      - Contact:  blog/contact.md
+      - LinkedIn: https://linkedin.com/in/ebouchut
+      - GitHub:   https://github.com/ebouchut
+      - Mastodon: https://ruby.social/@ebouchut
+      - Twitter:  https://twitter.com/ebouchut
   - Tags: blog/tags.md

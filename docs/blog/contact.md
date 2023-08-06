@@ -1,6 +1,4 @@
 ---
-hide:
-  - navigation
 keywords:
 - Eric Bouchut
 - email Eric Bouchut
