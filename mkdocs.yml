@@ -19,8 +19,11 @@ plugins:
       post_date_format: long
       post_url_date_format: yyyy/MM/dd
       post_url_format: "{date}/{slug}"
+  - tags:
+      tags_file: blog/tags.md
 
 nav:
   - Home: blog/index.md
   - About: blog/about.md
   - Contact: blog/contact.md
+  - Tags: blog/tags.md
