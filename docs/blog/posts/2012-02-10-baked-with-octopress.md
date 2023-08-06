@@ -1,12 +1,13 @@
 ---
 date: 2012-02-10
-title: Baked With Octopress
 tags:
 - octopress
 - blog
 categories:
 - blog
 ---
+
+# Baked with Octopress
 
 I finally decided to make the move to [Octopress][].
 <!-- more -->

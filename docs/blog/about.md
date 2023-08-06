@@ -1,11 +1,6 @@
 ---
-title: "About me"
-type: page
-comments: false
-showDate: false
-showPagination: false
-showSocial: false
-showTags: false
+hide:
+  - navigation
 keywords:
 - Eric Bouchut
 - ruby developer
@@ -26,6 +21,8 @@ keywords:
 - BMC Software
 - S4M
 ---
+
+# About Me
 
 I'm Eric Bouchut.
 I write software and I'm really fond of dance, Blockchain and Ruby on Rails.
@@ -53,4 +50,4 @@ and *Miyowa*
   I'm also undergoing a **"Blockchain and Smart Contracts Developer"** training 
   at [Alyra](https://alyra.fr).
 
- [Contact me](/contact).
+ [Contact me](blog/contact).

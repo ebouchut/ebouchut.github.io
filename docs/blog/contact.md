@@ -1,10 +1,6 @@
 ---
-type: page
-comments: false
-showDate: false
-showPagination: false
-showSocial: false
-showTags: false
+hide:
+  - navigation
 keywords:
 - Eric Bouchut
 - email Eric Bouchut
@@ -15,8 +11,10 @@ keywords:
 - Eric Bouchut LinkedIn
 - Eric Bouchut Twitter
 - Eric Bouchut Github
-title: "Contact Eric Bouchut"
 ---
+
+# Contact Eric Bouchut
+
 You can get in touch with me via [email][], 
 <br />consult my professional profile on [LinkedIn][] 
 <br />and keep up with my news on  [Twitter][], [Github][].

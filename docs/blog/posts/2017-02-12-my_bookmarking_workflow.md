@@ -1,6 +1,5 @@
 ---
 date: 2017-02-12
-title: My Bookmarking Workflow
 categories:
   - workflow
 keywords:
@@ -18,9 +17,10 @@ tags:
   - workflow
   - pinboard
   - pocket
-comments: true
 thumbnailImage: /images/my_bookmarking_workflow/overview.png
 ---
+
+# My Bookmarking Workflow
 
 Here is how I set aside links to read them when I have time
 and classify them with tags to find them easily later on.
@@ -28,8 +28,7 @@ and classify them with tags to find them easily later on.
 
 <!-- toc -->
 
-Introduction
-============
+## Introduction
 
 ![bookmarking workflow overview][overview]
 
@@ -48,8 +47,7 @@ The bookmarking toolset I use both on Mac and iPhone is composed of 2 online ser
 * [Pinboard][pinboard] is my tagging tool.
 
 
-Collect with Pocket
-===================
+## Collect with Pocket
 
 When I find a Web page interesting at first glance, I add it to
 [Pocket][pocket] without taking  too much time reading it thoroughly at this
@@ -92,8 +90,7 @@ For those of you more visually inclined here is a review of Pocket by Steve Dott
 {{< youtube zGeF5XaQ2tU >}}
 
 
-Tag with Pinboard
-=================
+## Tag with Pinboard
 
 I configured **[Pinboard][pinboard]** to automatically import new links from *Pocket* several
 times a day. Hence, every time I save a link to Pocket it also ends up in Pinboard.
@@ -105,8 +102,7 @@ to classify it.
 I may also remove links that I have already read in Pocket or do not want to archive.
 
 
-Choose tags
------------
+### Choose tags
 
 Here are my guiding principles for **choosing tags**:
 
@@ -147,8 +143,7 @@ Here are my guiding principles for **choosing tags**:
     you need to experiment and adjust your taxonomy over time according to your
     domain and usage.
 
-Pinboard
---------
+### Pinboard
 
 **Pinboard** is a paid online bookmarking service. 
 I switched to Pinboard because *del.icio.us*
@@ -172,15 +167,13 @@ Back in 2010, Leo Laporte and Amber MacArthur interviewed Maciej Ceglowski the c
 of Pinboard. You can [watch the interview on Youtube][pinboard_interview]
 
 
-Read
-====
+## Read
 
 I open the links afterwards in Pinboard, when I have plenty of time to read the
 the bookmarked web pages entirely this time. This gives me the opportunity to
 refine existing tags or add new ones.
 
-Listen
-=======
+## Listen
 
 The reason why I keep using **Pocket** as an intermediary in between me and
 Pinboard is two folds.
@@ -207,16 +200,14 @@ This is the only thing that keeps me from using Pinboard exclusively, such
 a handy functionality!
 
 
-Search
-======
+## Search
 
 You can use Pinboard to search for links by tags, title,
 description or a combination of those.
 The search is case insensitive and match partial words.
 
 
-Conclusion
-==========
+## Conclusion
 
 I hope you picked something new to discover in this article wether it is a tool 
 or a way to collect and process your bookmarks that may improve your workflow.
