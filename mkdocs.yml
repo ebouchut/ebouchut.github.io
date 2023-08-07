@@ -78,14 +78,14 @@ nav:
     - blog/about/index.md
     - LinkedIn: https://linkedin.com/in/ebouchut
     - GitHub:   https://github.com/ebouchut
-    - Mastodon: https://ruby.social/@ebouchut
     - Twitter:  https://twitter.com/ebouchut
+    - Mastodon: https://ruby.social/@ebouchut
   - Contact: 
       - blog/contact/index.md
       - LinkedIn: https://linkedin.com/in/ebouchut
       - GitHub:   https://github.com/ebouchut
-      - Mastodon: https://ruby.social/@ebouchut
       - Twitter:  https://twitter.com/ebouchut
+      - Mastodon: https://ruby.social/@ebouchut
   - Tags: blog/tags.md
 
 repo_url: https://github.com/ebouchut/ebouchut.github.io
