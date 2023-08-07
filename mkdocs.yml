@@ -63,6 +63,9 @@ extra:
     - icon: fontawesome/brands/mastodon
       link: https://ruby.social/@ebouchut
 
+extra_css:
+  - css/extra.css
+  
 nav:
   - Home: index.md
   - Blog: blog/index.md
@@ -73,7 +76,7 @@ nav:
     - Mastodon: https://ruby.social/@ebouchut
     - Twitter:  https://twitter.com/ebouchut
   - Contact: 
-      - Contact:  blog/contact.md
+      - blog/contact/index.md
       - LinkedIn: https://linkedin.com/in/ebouchut
       - GitHub:   https://github.com/ebouchut
       - Mastodon: https://ruby.social/@ebouchut
