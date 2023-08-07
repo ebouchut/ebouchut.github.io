@@ -14,6 +14,10 @@ theme:
     - search.highlight
     - search.share
     - toc.follow
+  palette:
+    primary: deep purple
+    accent: deep purple
+
 
 plugins:
   - search
