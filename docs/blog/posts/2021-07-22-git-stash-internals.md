@@ -1,29 +1,28 @@
 ---
-title: "Git stash Internals"
-date: 2021-07-22T13:30:03+02:00
+date: 2021-07-22
 categories:
-- git
+  - git
 tags:
-- git
-- stash
-- internals
-- difference
-- change
-- backup
+  - git
+  - stash
+  - internals
+  - difference
+  - change
+  - backup
 keywords:
-- git
-- stash
-- internals
-- difference
-- backup
+  - git
+  - stash
+  - internals
+  - difference
+  - backup
 thumbnailImage: /images/git_stash/git-stash-internals-commit_parents.png
 ---
 
+# Git stash Internals
+
 How does `git stash` work under the hood?  
 How to view the untracked files in a stash?
-<!--more-->
-
-{{< toc >}}
+<!-- more -->
 
 ## Definition
 

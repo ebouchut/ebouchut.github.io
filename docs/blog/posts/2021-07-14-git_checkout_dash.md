@@ -1,6 +1,5 @@
 ---
-title: "Go to the previous branch with git checkout"
-date: 2021-07-14T11:02:48+02:00
+date: 2021-07-14
 categories:
 - git
 tags:
@@ -18,12 +17,14 @@ keywords:
 thumbnailImage: /images/git_checkout_dash.png
 ---
 
+# Go to the previous branch with git checkout
+
 You are used to use `cd` in the shell (*bash*, *zsh*) to change folder then 
 `cd -` to go back to the folder you were previously in.
 
 Good news, `git` offers a similar shorthand when switching branches.
 
-<!--more-->
+<!-- more -->
 Below, we first change directory to go from `folderA` to `folderB`, 
 then go back to `folderA` using `cd -`.
 ```

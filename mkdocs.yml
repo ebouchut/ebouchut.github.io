@@ -1,0 +1,92 @@
+site_name: Eric Bouchut
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - toc.follow
+  palette:
+    primary: deep purple
+    accent: deep purple
+
+
+plugins:
+  - search
+  - blog:
+      blog_toc: true
+      post_date_format: long
+      post_url_date_format: yyyy/MM/dd
+      post_url_format: "{date}/{slug}"
+  - tags:
+      tags_file: blog/tags.md
+
+markdown_extensions:
+    - abbr
+    - admonition
+    - attr_list
+    - meta
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji 
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.highlight
+    - pymdownx.inlinehilite
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.snippets:
+        auto_append:
+          - includes/abbreviations.md
+    - pymdownx.superfences:
+        custom_fences:
+          - name:  mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
+    - pymdownx.tilde
+    - toc:
+        permalink: true
+        permalink_title: Link to this Header
+        title: Headers on this Page
+        toc_depth: 3
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ebouchut
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/ebouchut
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ebouchut
+    - icon: fontawesome/brands/mastodon
+      link: https://ruby.social/@ebouchut
+
+extra_css:
+  - css/extra.css
+  
+nav:
+  - Home: index.md
+  - Blog: blog/index.md
+  - About:
+    - blog/about/index.md
+    - LinkedIn: https://linkedin.com/in/ebouchut
+    - GitHub:   https://github.com/ebouchut
+    - Twitter:  https://twitter.com/ebouchut
+    - Mastodon: https://ruby.social/@ebouchut
+  - Contact: 
+      - blog/contact/index.md
+      - LinkedIn: https://linkedin.com/in/ebouchut
+      - GitHub:   https://github.com/ebouchut
+      - Twitter:  https://twitter.com/ebouchut
+      - Mastodon: https://ruby.social/@ebouchut
+  - Tags: blog/tags.md
+
+repo_url: https://github.com/ebouchut/ebouchut.github.io
+repo_name: ebouchut/ebouchut.github.io

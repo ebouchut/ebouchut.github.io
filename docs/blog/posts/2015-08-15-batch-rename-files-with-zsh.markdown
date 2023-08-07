@@ -1,17 +1,18 @@
 ---
-date: 2015-08-15T20:44:39Z
-title: Batch File Renaming With Zsh
+date: 2015-08-15
 categories:
-- shell
+  - shell
 tags:
-- zsh
-- rename
-- file
+  - zsh
+  - rename
+  - file
 ---
+
+# Batch File Renaming With Zsh
 
 I recently discovered `zmv`, a builtin feature of zsh that makes batch file renaming, a breeze. 
 
-<!--more-->
+<!-- more -->
 
 To use it you need to add this to your zsh configuration file (`.zshrc`).
 {{< highlight shell >}}

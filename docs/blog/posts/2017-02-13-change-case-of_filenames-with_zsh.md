@@ -1,6 +1,5 @@
 ---
-date: 2017-02-13T13:14:15Z
-title: Change the case of filenames with Zsh
+date: 2017-02-13
 categories:
   - shell
 keywords:
@@ -23,10 +22,12 @@ tags:
 thumbnailImage: /images/change_case_filenames_ with_zsh.png
 ---
 
+# Change the case of filenames with Zsh
+
 Today, after importing photos from my iPhone to my Mac, I noticed 
 their filenames were all uppercase whereas I want them to be all lowercase.
 This is a task `zsh` can perform easily with a oneliner.
-<!--more-->
+<!-- more -->
 
 The files before the renaming.
 ``` bash
