@@ -22,30 +22,25 @@ keywords:
 
 # About Me
 
-I'm Eric Bouchut.
-I write software and I'm really fond of dance, Blockchain and Ruby on Rails.
-I also have a solid hands-on experience in Java and a real knack for the art 
-of teaching and sharing what I learned.
+I'm Eric Bouchut, a dedicated software developer with a deep passion for both coding and dancing.  
+My expertise lies in *Ruby on Rails* and *Blockchain*.  
+Additionally, I thrive on sharing knowledge and fostering growth.
 
-I’m a software developer with over 15 years of experience:</p>
+With over 15 years in the software development industry, my journey spans a diverse array of roles:
 
-* 3+ years as a Ruby on Rails and Java developer for LD Mobile  editor 
-of [netADge](http://www.netadge.com/"), a mobile DSP in the Real Time Bid arena 
-(programmatic advertising).
-* 3 years as a Web developer Java, GWT for [Antidot](https://www.antidot.net), 
-a search engine company.
-* 5 years of Java and Web development for 2 startups: *Perform* (acquired by BMC) 
-and *Miyowa*
-* extensive work with Java including 7 years for 
-[BMC Software](https://www.bmc.com), a fortune 500 company 
-* 3 years of Unix/C/C++ development  for an IT consulting firm
-* Computer science teacher for *Axis Digital*:
-    * Taught 4 different training classes to groups of 15 people for 3 years.
-    * Developped and gave the computer science class "Utilisation Unix avancée"
+- 6+ years as a **Ruby on Rails** and Java developer at *LD Mobile* (acquired by *S4M*, now [*Ask Locala*](https://asklocala.com/)), contributing to a mobile DSP in the Real-Time Bid sector for programmatic advertising. I also worked for [HostnFly](https://hostnfly.com/) as a Ruby on Rails and Java Developer.  
+- 3 years as a **Web developer** using Java and GWT at [Antidot](https://www.antidot.net), a private search engine company. 
+- 5 years of experience in Java and web development for 2 startups: *Perform* (acquired by BMC) and *Miyowa*. 
+- Engaged in extensive **Java**-related projects, including a significant 7-year tenure at [BMC Software](https://www.bmc.com), a Fortune 500 company. 
+- 3 years of Unix/C/C++ development at an IT consulting firm.
+- Computer science **teacher** at *Axis Digital*, where I: 
+	- Conducted 4 distinct training classes for groups of up to 15 individuals over a span of 3 years. 
+	- Created and delivered a computer science course focused on advanced Unix usage, titled *'Utilisation Unix avancée"*. 
+ 
+My commitment to professional growth led me to enroll in an online training program at [Alyra](https://alyra.fr), where I successfully graduated as a [*Blockchain and Smart Contracts Developer*](https://certificate.bcdiploma.com/check/8AEFB8EA0140B750A45B5C30C13E2F320F2D746A07337296DAB5FF4D23789757ZmlaRlRBZHB6NTJtVEdObFQ1RUt4MEllUFJQRVRGYWxnZEx4Qjl6QmF1Y2Y0Wkll).
 
-  I'm currently working for [S4M](https://www.s4m.io/)
-  as a Ruby on Rails and Java Developer.  
-  I'm also undergoing a **"Blockchain and Smart Contracts Developer"** training 
-  at [Alyra](https://alyra.fr).
+Moreover, I'm actively engaged in the **open-source** community, contributing to the [**Loop**](https://loopkit.github.io/loopdocs/)) Open Source project. Specifically, I focus on enhancing the project's **technical documentation**, a critical aspect of ensuring its usability and accessibility. You can explore my contributions on the [LoopDocs](https://github.com/LoopKit/loopdocs) platform, where I collaborate with a diverse team distributed across geographical locations. My responsibilities involve improving product documentation and configuring the necessary tools for seamless website development and publishing, leveraging technologies like *mkdocs* and *mkdocs-material*.
 
- [Contact me](blog/contact).
+This open-source initiative aims to provide comprehensive resources for users of *Loop*—an advanced *Automated Insulin Delivery* system for individuals with diabetes.
+
+Feel free to [reach out](../contact) if you'd like to connect or learn more about my journey!
