@@ -33,6 +33,34 @@ plugins:
   - tags:
       tags_file: blog/tags.md
 
+markdown_extensions:
+    - abbr
+    - admonition
+    - attr_list
+    - meta
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji 
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.highlight
+    - pymdownx.inlinehilite
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.snippets:
+        auto_append:
+          - includes/abbreviations.md
+    - pymdownx.superfences:
+        custom_fences:
+          - name:  mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
+    - pymdownx.tilde
+    - toc:
+        permalink: true
+        permalink_title: Link to this Header
+        title: Headers on this Page
+        toc_depth: 3
+
 nav:
   - Home: index.md
   - Blog: blog/index.md
