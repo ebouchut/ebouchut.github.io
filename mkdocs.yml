@@ -44,3 +44,6 @@ nav:
       - Mastodon: https://ruby.social/@ebouchut
       - Twitter:  https://twitter.com/ebouchut
   - Tags: blog/tags.md
+
+repo_url: https://github.com/ebouchut/ebouchut.github.io
+repo_name: ebouchut/ebouchut.github.io
