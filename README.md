@@ -1,61 +1,89 @@
 
 
+My blog uses *Mkdocs* and *mkdocs-material* as a blogging platform.
+
 This git repository, hosted on Github.com, is composed of 2 main branches:
-- **`main`** contains the source of my blog (https://EricBouchut.com)
-- **`gh-pages`** contains the published version of my blog.
+- **`main`** contains the source of my blog
+- **`gh-pages`** contains the published version of [my blog](https://EricBouchut.com).
 
-The **publishing process:** consists of using Hugo to transform the source into the published version:  
-`main` branch (source version) → `hugo` → `gh-pages` branch (published version)  
-I use [Hugo](https://gohugo.io) to generate my blog. It is a fast CLI blogging engine.
-
-The **deployment process** consists of:
-- committing the changes of the published version to the the `gh-pages`branch
-- pushing the `gh-pages` branch to the repository on Github
-
-`gh-pages` branch (published version) → Push changes to Github  
-Github notices I pushed to the `gh-pages` branch and automatically replicates it to its Web servers.
+I can publish the blog either locally or via remotely via *Github* *Continuous Deployment*.
  
-## Configuration
-
-### Clone
+## Installation
+I use `venv` as a Python virtual environment, but feel free to use the one you are used to.
 
 ```shell
+# ⓵
 git clone git@github.com:ebouchut/ebouchut.github.io.git
-cd ebouchut/github.io
+cd ebouchut.github.io
+
+# Create a Python virtual environment in your project
+# IMPORTANT: Do this once
+python3 -m venv venv 
+  
+# Activate the virtual environment 
+# IMPORTANT: Do this each time you open a new shell/window/tab
+source venv/bin/activate
 ```
 
-### Create the public folder
+- [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this project
+- Install _Python_ 3.  
+  Review [Properly Installing Python](http://docs.python-guide.org/en/latest/starting/installation/) for help on getting *Python* installed.
+- Install Python Virtual Environment.  
+   In this example, I use [`venv`](https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment), but use whichever you prefer.
+- Install the project's required _Python_ packages
+## Add a Blog Post
 
-This needs to be done once after the clone (or if you remove the publish worktree).
+To create a new blog post:
+
+- Create a new Markdown file under `docs/blog/posts`  with this naming convention  `YYYY-MM-DD-post_title_here.md`,  where:
+	- `YYYY` denotes the year number in a four-digit format (for instance `2023`) 
+	- `MM` denotes the month number in a two-digit format  (`01` is January and `12` is December)
+	- `DD` denotes the day of the month in two-digit format within the  range `01` to `31`
+	- `post_title_here` denotes the title of the blog post. Separate each word with an underscore (`_`)
+	- `.md`  is the Markdown file suffix
+- Edit the blog post using:
+  -  [Python Markdown](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/)
+  - [Python Markown Extensions](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/)
+  - [mkdocs-material extensions](https://squidfunk.github.io/mkdocs-material/reference/)
+
+Most of these extensions are already installed and configured in `mkdocs.yml`.
+Once you are done with the changes make sure the commits end up on the `main` branch.
+## Preview 
+
+You can preview blog and your changes  as you edit the files.
+
+- Run the command below
+  ```shell
+  mkdocs serve
+  ```
+  This builds the website locally then runs a local web server listening on port `8000` . 
+  
+  If the default port (`8000`) is already used, you can use another one like `8080` for example:
+  ```shell
+  mkdocs serve -a 127.0.0.1:8080
+  ```
+
+  ℹ️ Keep this command running  as you make changes to the blog because it will continuously watch for file changes, build the changed files, and ask the browser to reload the updated pages.
+  However, If you change the configuration file (`mkdocs.yml`), you will need to restart `mkdocs serve`.
+- **Open** this URL in your **web browser**: http://127.0.0.1:8000/  
+  
+## Publish
+
+There are 2 ways to publish your blog: locally or remotely.  
+You can publish your blog from your local clone or set up and use *GitHub* *Continuous Deployment* that automatically triggers a remote deployment each time you push the `main` branch to your *GitHub* repository.
+### Publish Locally
+
+This needs to be done once after the clone.
 
 ```shell
-git checkout main
-
-# make sure no `public` folder is present or else remove it
-
-git worktree add public gh-pages
+git switch main
+mkdocs gh-deploy
 ```
 
-I use the `worktree` git subcommand here, to create the `public` folder.
-Git populates it with the content of the `gh-pages` as if we cloned the repository inside then checked out the `gh-pages`branches.
-The main advantage of using git worktree is to have the ability to work on multiple branches at the same time depending on the folder we are in:
-- under `public/` we work on the `gh-pages` branch, the published version of the blog.
-- everywhere else (in the working area) we work on the checked out branch (`main`in this case) the source version of the blog.
-
-The benefit here is to have the `publish` folder handy with a cloned version of the repository with the target branch `gh-pages` checked out.
-Once I generate the published version of the blog using `hugo` I then only need to cd into `publish` commit the changes and push the `gh-pages` branch to github. Github then automatically notices a push occurred and replicates the published site on its servers.
-
-## Usage
-
-### Preview the blog
-
-```shell
-git checkout main
-hugo serve
-```
-
-You can then view the blog locally at http://localhost:1313/  
-The changes are updated live.
+Let's break down what is happening here:
+1. First we switch to the `main` branch.
+2. This builds the blog from the `main` folder and store the output in the `site` folder.
+3. 
 
 ### Write a new Blog Post
 
