@@ -6,7 +6,7 @@ This git repository, hosted on Github.com, is composed of 2 main branches:
 - **`main`** contains the source of my blog
 - **`gh-pages`** contains the published version of [my blog](https://EricBouchut.com).
 
-I can publish the blog either locally or via remotely via *Github* *Continuous Deployment*.
+I can publish the blog either locally or  remotely via *Github* *Continuous Deployment*.
  
 ## Installation
 
@@ -31,7 +31,7 @@ source venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-Let's break down each of the step above:
+Let's break down each of the steps above:
 1. Install _Python_ 3.  
    Review [Properly Installing Python](http://docs.python-guide.org/en/latest/starting/installation/) for help on getting *Python* installed.
 2. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this project
@@ -80,6 +80,8 @@ To create a new blog post:
 - Commit your changes on the `main` branch and push to your `origin` repository when you are done.
   ```shell
   git add docs/blog/post/2023-08-14-post_title_here.md
+  git commit -m "Add a new blog post..."
+  
   git push  # origin main
   ```
 ### Publish
@@ -88,10 +90,10 @@ There are 2 ways to publish/deploy the blog:
 - **locally**  
   We use the  `mkdocs` command from the local clone to build the blog from the current branch and deploy it to the repository website hosted on *GitHub* .
 - **remotely**  
-  This requires that you first set up *Continuous Deployment* using a *GitHub Action*.
+  This requires that you first set up (one-time) *Continuous Deployment* using a [*GitHub Action*](.github/workflows/publish.yml).
   Once configured, each time the `main` branch is pushed to the *GitHub* repository, this will automatically trigger the deployment of the blog to the GitHub repository website.
 
-Both methods require [GitHub Pages to be enabled and configured](#github-pages-configuration) beforehand. 
+Both methods require [GitHub Pages to be enabled and configured](#github-pages-configuration) (one-time) beforehand. 
 
 Local deployment is a manual process. It requires you to jump on the `main` branch and run a command to trigger the deployment.  
 Remote deployment is an automated process (Continuous Deployment) that is triggered every time you push  the `main`  branch to the repository.
@@ -115,10 +117,10 @@ mkdocs gh-deploy
 ```
 
 Let's break down what is happening here:
-1. `git switch main` 
+1. `git switch main`  
    Switch to the `main` branch which contains the source of the blog.
 2. Make sure you are in the project's root folder
-3. `mkdocs gh-deploy`
+3. `mkdocs gh-deploy`  
    - Build the blog from the current branch (`main`)
    - Place the build output in the `site` folder
    - Commit the contents of the `site` folder to the `gh-pages` branch
@@ -130,11 +132,13 @@ This remote deployment method is triggered each time you push the `main` branch 
 
 **Requirement**:  
 - You must first [configure *GitHub Pages* for your repository](#configure-github-pages).
-- You need this *GitHub Action* script to automate things.
+- You need the [`publish.yml`](.github/workflows/publish.yml) *GitHub Action* script to automate things.  
+  You already have it if you cloned this repository.
   
-==TODO: Describe:==
-- what the GH Action automates and how,
-- How it differs from "local" deployment.
+This method is **fully automated** and runs server-side.  
+It installs everything, builds and deploys the site.
+The difference with `Publish Locally` is that it runs on GitHub servers.
+The only thing that you need to do is push the `main` branch and the magic happens.
 
 ```shell
 # ⓵ Configure and enable (one-time) GitHub Pages 
@@ -143,7 +147,7 @@ This remote deployment method is triggered each time you push the `main` branch 
 # You already have it if you cloned this repository.
 
 # ③ Push the main branch
-git push main
+git push # origin main
 
 # ④ Open your reporisoty "GitHub Actions" tab on GitHub Web 
 #  and watch the GitHub Action do the work for you on GitHub https://github.com/YOUR_GITHUB_USERNAME_HERE/YOUR_GITHUB_USERNAME_HERE.github.io/actions
