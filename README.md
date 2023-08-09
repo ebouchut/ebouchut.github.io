@@ -66,7 +66,8 @@ You can **preview** the blog **locally**  as you edit the files.
 
 To create a new blog post:
 
-- **Create** a new Markdown **file** under `docs/blog/posts`  with this naming convention  `YYYY-MM-DD-post_title_here.md`,  where:  
+- **Create** a new Markdown **file** under `docs/blog/posts`  with this naming convention  
+  `YYYY-MM-DD-post_title_here.md`,  where:  
 	- `YYYY` denotes the year number in a four-digit format (for instance `2023`) 
 	- `MM` denotes the month number in a two-digit format within the `01` to `12` range (where `01` is January and `12` is December)
 	- `DD` denotes the day of the month in two-digit format within the  range `01` to `31`
@@ -88,26 +89,25 @@ To create a new blog post:
 
 ### Publish
 
-There are 2 ways to publish/deploy the blog: 
-- **locally**  
-  We use the  `mkdocs` command from the local clone to build the blog from the current branch and deploy it to the repository website hosted on *GitHub* .
-- **remotely**  
-  This requires that you first set up (one-time) *Continuous Deployment* using a [*GitHub Action*](.github/workflows/publish.yml).
-  Once configured, each time the `main` branch is pushed to the *GitHub* repository, this will automatically trigger the deployment of the blog to the GitHub repository website.
+There are 2 ways to publish/deploy the blog, using one of the following methods: 
+- [Command Line Interface (**CLI**)](#publish-with-cli)  
+  CLI deployment is a **manual** process.  
+  You must run a command to trigger the deployment.  
+  You run the  `mkdocs gh-deploy` command from the local repository to build the blog from the current branch and deploy it to the repository website hosted on *GitHub*. 
+- [**Continuous Integration**](#publish-with-CI)  
+  CI deployment is an **automated** process that is triggered every time you push  the `main`  branch to the repository. It deploys the blog to the GitHub repository website.
 
-Both methods require [GitHub Pages to be enabled and configured](#github-pages-configuration) (one-time) beforehand. 
+**IMPORTANT**: Both methods require [GitHub Pages to be enabled and configured](#github-pages-configuration) (one-time) beforehand. 
 
-Local deployment is a manual process. It requires you to jump on the `main` branch and run a command to trigger the deployment.  
-Remote deployment is an automated process (Continuous Deployment) that is triggered every time you push  the `main`  branch to the repository.
+The following sections describe these two deployment methods.
 
-We will explain each of these in detail in the next sections.
-
-#### Publish Locally
+#### Publish with CLI
 
 **Requirement**: You must first [configure *GitHub Pages* for your repository](#configure-github-pages).
  
 Deployment consists of using *Mkdocs* to convert the source to the published version and sending it to GitHub, which will deploy it to your repository's GitHub website.
 
+**Summary**  
 ```shell
 # ⓵ Switch to the branch containing the source of the blog 
 git switch main
@@ -115,7 +115,7 @@ git switch main
 # ② Go to the project's root directory 🤓
 cd $(git rev-parse --show-toplevel)
 
-# ③ Trigger the deployment
+# ③ Trigger the deployment of the current branch
 mkdocs gh-deploy
 ```
 
@@ -130,20 +130,30 @@ Let's break down what is happening here:
    - Push `gh-pages` to the `origin` remote repository on *GitHub*
    - *GitHub Pages* will notice the `gh-pages` branch has been pushed  and will automatically deploy its latest commit to your GitHub repository  website.
 
-#### Publish Remotely
+#### Publish with CI
 
-This remote deployment method is triggered each time you push the `main` branch to your repository.
-
-**Requirement**:  
+**Requirements**:  
 - You must first [configure *GitHub Pages* for your repository](#configure-github-pages).
 - You need the [`publish.yml`](.github/workflows/publish.yml) *GitHub Action* script to automate things.  
   You already have it if you cloned this repository.
-  
-The only thing you have to do is push the `main` branch to trigger the build.  
-This method is **fully automated** and runs server-side.  
-This is the main difference with `Publish Locally`.  It is basically a `mkdocs-deploy` launched on the GitHub servers.
-It clones the repository, installs the required packages, builds and deploys the site.  
 
+This method is **fully automated** and runs **server-side**.  
+The only thing you have to do is push the `main` branch to trigger the deployment. 
+```shell
+git push origin main
+```
+
+**When** is CI triggered?  
+This remote deployment method is triggered each time you push the `main` branch to the repository. 
+
+**Wha**t does the CI do?  
+It clones the repository, installs the required packages, builds and commit the site to the `gh-pages` branch and push `gh-pages` to the repository, which triggers its deployment to the repository Website.  
+
+**How long** does the CI run?
+Deploying the blog with the CI may take from 1 to several minutes.
+To monitor what is happening, take a look at the [Github Actions](https://github.com/ebouchut/ebouchut.github.io/actions).
+
+**Summary**  
 ```shell
 # ⓵ Configure and enable (one-time) GitHub Pages 
 
@@ -151,11 +161,13 @@ It clones the repository, installs the required packages, builds and deploys the
 # You already have it if you cloned this repository.
 
 # ③ Push the main branch
-git push # origin main
+git push origin main
 
 # ④ Open your repository "GitHub Actions" tab on GitHub Web 
 #  and watch the GitHub Action do the work for you on GitHub https://github.com/YOUR_GITHUB_USERNAME_HERE/YOUR_GITHUB_USERNAME_HERE.github.io/actions
 ```
+
+The main **difference** with [`Publish with CLI`](#publish-with-cli)  is that `mkdocs-deploy` is **automatically** **launched** on the **GitHub servers** without any manual action on your part.  
 
 #### Configure GitHub Pages
 
