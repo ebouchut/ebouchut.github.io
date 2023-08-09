@@ -1,13 +1,11 @@
 
 [![publish status][publish-image]][publish-url]
 
-My blog uses *Mkdocs* and *mkdocs-material* as a blogging platform.
+[My blog](https://EricBouchut.com) uses [*Mkdocs*](https://github.com/mkdocs/mkdocs) and [*mkdocs-material*](https://squidfunk.github.io/mkdocs-material/) as a blogging platform.
 
-This git repository, hosted on Github.com, is composed of 2 main branches:
+This git repository has 2 branches:
 - **`main`** contains the source of my blog
-- **`gh-pages`** contains the published version of [my blog](https://EricBouchut.com).
-
-I can publish the blog either locally or  remotely via *Github* *Continuous Deployment*.
+- **`gh-pages`** contains the published version of my blog.
  
 ## Installation
 
@@ -42,7 +40,9 @@ Let's break down each of the steps above:
      Do not forget this step  or else you will get errors saying that a command or a package cannot be found.  
      IMPORTANT: Activate the virtual environment once **each time you open a new shell window/tab**.
 5. Install the project's required _Python_ packages
+
 ## Run
+
 ### Preview 
 
 You can **preview** the blog **locally**  as you edit the files.
@@ -85,6 +85,7 @@ To create a new blog post:
   
   git push  # origin main
   ```
+
 ### Publish
 
 There are 2 ways to publish/deploy the blog: 
@@ -100,6 +101,7 @@ Local deployment is a manual process. It requires you to jump on the `main` bran
 Remote deployment is an automated process (Continuous Deployment) that is triggered every time you push  the `main`  branch to the repository.
 
 We will explain each of these in detail in the next sections.
+
 #### Publish Locally
 
 **Requirement**: You must first [configure *GitHub Pages* for your repository](#configure-github-pages).
@@ -129,6 +131,7 @@ Let's break down what is happening here:
    - *GitHub Pages* will notice the `gh-pages` branch has been pushed  and will automatically deploy its latest commit to your GitHub repository  website.
 
 #### Publish Remotely
+
 This remote deployment method is triggered each time you push the `main` branch to your repository.
 
 **Requirement**:  
