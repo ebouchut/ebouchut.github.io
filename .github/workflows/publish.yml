@@ -1,4 +1,7 @@
-name: ci 
+# Build and Deploy the blog every time the main branch is pushed
+#
+name: publish
+
 on:
   push:
     branches:
