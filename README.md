@@ -1,4 +1,5 @@
 
+[![publish status][publish-image]][publish-url]
 
 My blog uses *Mkdocs* and *mkdocs-material* as a blogging platform.
 
@@ -179,4 +180,10 @@ Now, that you know what it is and how it works, let's **configure** and enable *
 7. Click **`Save`** 
 
 >    ![GitHub Pages Configuration](img/gh-pages-configuration.png)
+
+
+<!-- Github Badges: Images and URLs -->
+
+[publish-image]: https://github.com/ebouchut/ebouchut.github.io/actions/workflows/publish.yml/badge.svg?branch=main
+[publish-url]:   https://github.com/ebouchut/ebouchut.github.io/actions/workflows/publish.yml
 
