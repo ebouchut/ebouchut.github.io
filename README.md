@@ -30,7 +30,7 @@ source venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-Let's break down each of the steps above:
+Let's break down each of the above steps:
 1. Install _Python_ 3.  
    Review [Properly Installing Python](http://docs.python-guide.org/en/latest/starting/installation/) for help on getting *Python* installed.
 2. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this project
@@ -94,10 +94,10 @@ There are 2 ways to publish/deploy the blog, using one of the following methods:
   CLI deployment is a **manual** process.  
   You must run a command to trigger the deployment.  
   You run the  `mkdocs gh-deploy` command from the local repository to build the blog from the current branch and deploy it to the repository website hosted on *GitHub*. 
-- [**Continuous Integration**](#publish-with-CI)  
+- [**Continuous Integration**](#publish-with-ci)  
   CI deployment is an **automated** process that is triggered every time you push  the `main`  branch to the repository. It deploys the blog to the GitHub repository website.
 
-**IMPORTANT**: Both methods require [GitHub Pages to be enabled and configured](#github-pages-configuration) (one-time) beforehand. 
+**IMPORTANT**: Both methods require [GitHub Pages to be enabled and configured](#configure-github-pages) (one-time) beforehand. 
 
 The following sections describe these two deployment methods.
 
@@ -144,13 +144,13 @@ git push origin main
 ```
 
 **When** is CI triggered?  
-This remote deployment method is triggered each time you push the `main` branch to the repository. 
+> This remote deployment method is triggered each time you push the `main` branch to the repository. 
 
 **Wha**t does the CI do?  
-It clones the repository, installs the required packages, builds and commit the site to the `gh-pages` branch and push `gh-pages` to the repository, which triggers its deployment to the repository Website.  
+> It clones the repository, installs the required packages, builds and commit the site to the `gh-pages` branch and push `gh-pages` to the repository, which triggers its deployment to the repository Website.  
 
-**How long** does the CI run?
-Deploying the blog with the CI may take from 1 to several minutes.
+**How long** does the CI run?  
+> Deploying the blog with the CI may take from 1 to several minutes.
 To monitor what is happening, take a look at the [Github Actions](https://github.com/ebouchut/ebouchut.github.io/actions).
 
 **Summary**  
