@@ -135,10 +135,10 @@ This remote deployment method is triggered each time you push the `main` branch 
 - You need the [`publish.yml`](.github/workflows/publish.yml) *GitHub Action* script to automate things.  
   You already have it if you cloned this repository.
   
+The only thing you have to do is push the `main` branch to trigger the build.  
 This method is **fully automated** and runs server-side.  
-It installs everything, builds and deploys the site.
-The difference with `Publish Locally` is that it runs on GitHub servers.
-The only thing that you need to do is push the `main` branch and the magic happens.
+This is the main difference with `Publish Locally`.  It is basically a `mkdocs-deploy` launched on the GitHub servers.
+It clones the repository, installs the required packages, builds and deploys the site.  
 
 ```shell
 # ⓵ Configure and enable (one-time) GitHub Pages 
@@ -149,7 +149,7 @@ The only thing that you need to do is push the `main` branch and the magic happe
 # ③ Push the main branch
 git push # origin main
 
-# ④ Open your reporisoty "GitHub Actions" tab on GitHub Web 
+# ④ Open your repository "GitHub Actions" tab on GitHub Web 
 #  and watch the GitHub Action do the work for you on GitHub https://github.com/YOUR_GITHUB_USERNAME_HERE/YOUR_GITHUB_USERNAME_HERE.github.io/actions
 ```
 
