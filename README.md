@@ -150,7 +150,7 @@ git push origin main
 > It clones the repository, installs the required packages, builds and commit the site to the `gh-pages` branch and push `gh-pages` to the repository, which triggers its deployment to the repository Website.  
 
 **How long** does the CI run?  
-> Deploying the blog with the CI may take from 1 to several minutes.
+> Deploying the blog with the CI can take from 1 to several minutes.
 To monitor what is happening, take a look at the [Github Actions](https://github.com/ebouchut/ebouchut.github.io/actions).
 
 **Summary**  
