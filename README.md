@@ -194,7 +194,7 @@ Now, that you know what it is and how it works, let's **configure** and enable *
 6. **Second** drop-down: Select **`"/(root)"`**
 7. Click **`Save`** 
 
->    ![GitHub Pages Configuration](img/gh-pages-configuration.png)
+>    ![GitHub Pages Configuration](/ebouchut/ebouchut.github.io/raw/main/img/gh-pages-configuration.png)
 
 
 <!-- Github Badges: Images and URLs -->
