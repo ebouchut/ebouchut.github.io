@@ -109,7 +109,7 @@ and the Index after running the above shell script.
 Here is the output of `git status` right before running any of the `git stash`
 command.
 
-![git status](/images/git_stash/git-stash-status.png "git status")
+![git status](../../images/git_stash/git-stash-status.png "git status")
 
 Below is the text version of the above image.
 ```shell
@@ -235,7 +235,7 @@ Now that we know what is stashed, let's take a look at the way it is stored inte
 Let's figure out what is in our most recent stash.  
 Let's assume that we ran `git stash -u` in the example's repository so we end up with this log.
 
-![git stash - log](/images/git_stash/git-stash-internals-graph_log.png)
+![git stash - log](../../images/git_stash/git-stash-internals-graph_log.png)
 
 
 Now let's take a look at the stash@{0} commit.
@@ -254,7 +254,7 @@ committer Eric Bouchut <ebouchut@gmail.com> 1627056522 +0200
     WIP on master: 031ca10 Add README
 ```
 
-![git stash commit parents](/images/git_stash/git-stash-internals-commit_parents.png)
+![git stash commit parents](../../images/git_stash/git-stash-internals-commit_parents.png)
 
 The **stash commit `stash@{0}`** (`49482a`) is a **merge commit** with 3 parents 
 in this case because we stashed the untracked files, (2 parents by default).  

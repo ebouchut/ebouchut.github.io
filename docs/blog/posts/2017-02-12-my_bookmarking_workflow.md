@@ -204,17 +204,17 @@ a handy functionality!
 
 You can use Pinboard to search for links by tags, title,
 description or a combination of those.
-The search is case insensitive and match partial words.
+The search is case-insensitive and matches partial words.
 
 
 ## Conclusion
 
-I hope you picked something new to discover in this article wether it is a tool 
+I hope you picked something new to discover in this article whether it is a tool 
 or a way to collect and process your bookmarks that may improve your workflow.
 
 
 [inoreader]: https://inoreader.com "Inoreader"
-[overview]: /images/my_bookmarking_workflow/overview.png 
+[overview]: ../../images/my_bookmarking_workflow/overview.png 
             "Bookmarking Workflow Overview"
 [pinboard]:  https://pinboard.in "Pinboard"
 [pinboard_interview]: https://youtu.be/rQ6lW3WlA8s?t=30m30s

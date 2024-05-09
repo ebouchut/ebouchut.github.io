@@ -39,8 +39,8 @@ With over 15 years in the software development industry, my journey spans a dive
  
 My commitment to professional growth led me to enroll in an online training program at [Alyra](https://alyra.fr), where I successfully graduated as a [*Blockchain and Smart Contracts Developer*](https://certificate.bcdiploma.com/check/8AEFB8EA0140B750A45B5C30C13E2F320F2D746A07337296DAB5FF4D23789757ZmlaRlRBZHB6NTJtVEdObFQ1RUt4MEllUFJQRVRGYWxnZEx4Qjl6QmF1Y2Y0Wkll).
 
-Moreover, I'm actively engaged in the **open-source** community, contributing to the [**Loop**](https://loopkit.github.io/loopdocs/) Open Source project. Specifically, I focus on enhancing the project's **technical documentation**, a critical aspect of ensuring its usability and accessibility. You can explore my contributions on the [LoopDocs](https://github.com/LoopKit/loopdocs) repository, where I collaborate with a diverse team distributed across geographical locations. My responsibilities involve improving product documentation and configuring the necessary tools for seamless website development and publishing, leveraging technologies like *mkdocs* and *mkdocs-material*.
+Moreover, I'm actively engaged in the **open-source** community, contributing to the [**Loop**](https://loopkit.github.io/loopdocs/) Open Source project. Specifically, I focus on enhancing the project's **technical documentation**, a critical aspect of ensuring its usability and accessibility. You can explore my contributions on the [LoopDocs](https://github.com/LoopKit/loopdocs) repository, where I collaborate with a diverse team distributed across geographical locations. My responsibilities involve improving product documentation and configuring seamless website development and publishing tools, leveraging technologies like *mkdocs* and *`mkdocs-material`*.
 
 This open-source initiative aims to provide comprehensive resources for users of *Loop*—an advanced *Automated Insulin Delivery* system for individuals with diabetes.
 
-Feel free to [reach out](../contact) if you'd like to connect or learn more about my journey!
+Feel free to [reach out](../contact/index.md) if you'd like to connect or learn more about my journey!
