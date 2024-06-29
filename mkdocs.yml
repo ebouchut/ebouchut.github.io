@@ -1,4 +1,5 @@
 site_name: Eric Bouchut
+site_url: https://ericbouchut.com
 
 theme:
   name: material
@@ -18,7 +19,6 @@ theme:
     primary: deep purple
     accent: deep purple
 
-
 plugins:
   - search
   - blog:
@@ -30,32 +30,32 @@ plugins:
       tags_file: blog/tags.md
 
 markdown_extensions:
-    - abbr
-    - admonition
-    - attr_list
-    - meta
-    - pymdownx.details
-    - pymdownx.emoji:
-        emoji_index: !!python/name:material.extensions.emoji.twemoji 
-        emoji_generator: !!python/name:material.extensions.emoji.to_svg
-    - pymdownx.highlight
-    - pymdownx.inlinehilite
-    - pymdownx.keys
-    - pymdownx.mark
-    - pymdownx.snippets:
-        auto_append:
-          - includes/abbreviations.md
-    - pymdownx.superfences:
-        custom_fences:
-          - name:  mermaid
-            class: mermaid
-            format: !!python/name:pymdownx.superfences.fence_code_format
-    - pymdownx.tilde
-    - toc:
-        permalink: true
-        permalink_title: Link to this Header
-        title: Headers on this Page
-        toc_depth: 3
+  - abbr
+  - admonition
+  - attr_list
+  - meta
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+      permalink_title: Link to this Header
+      title: Headers on this Page
+      toc_depth: 3
 
 extra:
   social:
@@ -70,23 +70,24 @@ extra:
 
 extra_css:
   - css/extra.css
-  
+
 nav:
   - Home: index.md
   - Blog: blog/index.md
   - About:
-    - blog/about/index.md
-    - LinkedIn: https://linkedin.com/in/ebouchut
-    - GitHub:   https://github.com/ebouchut
-    - Twitter:  https://twitter.com/ebouchut
-    - Mastodon: https://ruby.social/@ebouchut
-  - Contact: 
+      - blog/about/index.md
+      - LinkedIn: https://linkedin.com/in/ebouchut
+      - GitHub: https://github.com/ebouchut
+      - Twitter: https://twitter.com/ebouchut
+      - Mastodon: https://ruby.social/@ebouchut
+  - Contact:
       - blog/contact/index.md
       - LinkedIn: https://linkedin.com/in/ebouchut
-      - GitHub:   https://github.com/ebouchut
-      - Twitter:  https://twitter.com/ebouchut
+      - GitHub: https://github.com/ebouchut
+      - Twitter: https://twitter.com/ebouchut
       - Mastodon: https://ruby.social/@ebouchut
   - Tags: blog/tags.md
 
 repo_url: https://github.com/ebouchut/ebouchut.github.io
 repo_name: ebouchut/ebouchut.github.io
+

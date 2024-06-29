@@ -91,7 +91,7 @@ menu:
   misc:
     - name: "Categories"
       identifier: "categories"
-      pre: "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
+      pre: '<i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>'
       url: "/categories"
       weight: 10
     - name: "Tags"
@@ -104,4 +104,3 @@ menu:
       pre: <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
       url: "/index.xml"
       weight: 99
-...
