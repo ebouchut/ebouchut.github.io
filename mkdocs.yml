@@ -1,5 +1,5 @@
 site_name: Eric Bouchut
-site_url: https://ericbouchut.com
+site_url: https://www.ericbouchut.com
 
 theme:
   name: material
@@ -90,4 +90,3 @@ nav:
 
 repo_url: https://github.com/ebouchut/ebouchut.github.io
 repo_name: ebouchut/ebouchut.github.io
-
