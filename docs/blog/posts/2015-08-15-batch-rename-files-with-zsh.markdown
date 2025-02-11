@@ -86,8 +86,3 @@ mv posts/2015-08-15-octopress-3-0.markdown posts/2015-08-15-octopress-3-0.md
 mv about/index.markdown about/index.md
 mv contact/index.markdown contact/index.md
 ```
-
-I only scratched the surface of this feature.  
-If you want to read more I recommend you [Seth Brown's post][source].
-
-[source]: http://www.drbunsen.org/batch-file-renaming/
