@@ -63,8 +63,8 @@ extra:
       link: https://github.com/ebouchut
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/ebouchut
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/ebouchut
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/ebouchut
     - icon: fontawesome/brands/mastodon
       link: https://ruby.social/@ebouchut
 
