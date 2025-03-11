@@ -51,7 +51,7 @@ With over 15 years in the software development industry, my journey spans a dive
  
 My commitment to **professional growth** led me to enroll in an online training program at [Alyra](https://alyra.fr), where I graduated as a [*Blockchain and Smart Contracts Developer*](https://certificate.bcdiploma.com/check/8AEFB8EA0140B750A45B5C30C13E2F320F2D746A07337296DAB5FF4D23789757ZmlaRlRBZHB6NTJtVEdObFQ1RUt4MEllUFJQRVRGYWxnZEx4Qjl6QmF1Y2Y0Wkll).
 
-Moreover, I'm actively engaged in the **open-source** community, contributing to the [Loop](https://loopkit.github.io/loopdocs/) and [Trio](https://docs.diy-trio.org/) open-source projects. Specifically, I focus on enhancing their **technical documentation**.  
+Moreover, I'm actively engaged in the **open-source** community, contributing to the [Loop](https://loopkit.github.io/loopdocs/) and [Trio](https://docs.diy-trio.org/) projects. Specifically, I focus on enhancing their **technical documentation**.  
 You can explore my contributions in the [LoopDocs](https://github.com/LoopKit/loopdocs) and [TrioDocs](https://github.com/nightscout/trio-docs) repositories, where I collaborate in English with a diverse team distributed across various geographical locations.  
 My responsibilities include improving product documentation as well as **configuring and maintaining website publishing platforms** leveraging technologies such as *[MkDocs](https://www.mkdocs.org/)* and [mkdocs-material](https://squidfunk.github.io/mkdocs-material/).
 
