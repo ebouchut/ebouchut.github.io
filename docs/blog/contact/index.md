@@ -13,10 +13,10 @@ keywords:
 
 # Contact Eric Bouchut
 
-[:material-email:{ .ebouchut-color-gmail }][email] You can get in touch with me via [email][],  
-[:simple-linkedin:{ .ebouchut-color-linkedin }][linkedin] consult my professional profile on [LinkedIn][],  
-[:simple-github:][github] explore my projects and open source contributions on [Github][],  
-[:simple-x:][x] and keep up with my news on [X][].
+[:material-email:{ .ebouchut-color-gmail }][email] You can get in touch with me via **[email][]**,  
+[:material-linkedin:{ .ebouchut-color-linkedin }][linkedin] consult my professional profile on **[LinkedIn][]**,  
+[:simple-github:][github] explore my projects and open source contributions on **[Github][]**,  
+[:simple-x:][x] and keep up with my news on **[X][]**.
 
 [email]: mailto:EricBouchut@gmail.com
 [linkedin]: https://www.linkedin.com/in/ebouchut
