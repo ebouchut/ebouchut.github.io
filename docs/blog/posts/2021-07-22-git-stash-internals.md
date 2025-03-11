@@ -52,7 +52,7 @@ Feel free to skip ahead and come back later if needed.
 - **Ignored files** are declared as such in either `.gitignore` or
   `.git/info/exclude`. `git stash` ignores them by default unless you use the
   `-a` option.
-- **Working Directory**: TODO
+- **Working Directory**: the directory where you can see and edit files, containing the latest checked-out version of the project from the repository.
 - The **Index** aka. *cache* or *staging area* is a temporary storage location
 `.git/index` where git stores each file (in whole or in parts) ready to be
 committed later on.
