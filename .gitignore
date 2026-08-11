@@ -4,4 +4,6 @@
 !/themes/hugo-tranquilpeak-theme/.gitrepo
 
 /venv
+/.venv
 /site
+/dist
