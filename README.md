@@ -10,38 +10,28 @@ This git repository has 2 branches:
 
 ## Installation
 
-You need[ Python3](http://docs.python-guide.org/en/latest/starting/installation/) installed
+Dependencies are managed with [`uv`](https://docs.astral.sh/uv/).
 
 ```shell
-# ⓵ Install Python3 (see link above)
+# 1. Install uv (see https://docs.astral.sh/uv/getting-started/installation/)
 
-# ② Clone the Project
+# 2. Clone the Project
 git clone git@github.com:ebouchut/ebouchut.github.io.git
 cd ebouchut.github.io
 
-# ③ Create a Python virtual environment in your project
-# IMPORTANT: Do this once
-python3 -m venv venv
-
-# ④ Activate the virtual environment
-# IMPORTANT: Do this each time you open a new shell/window/tab
-source venv/bin/activate
-
-# ⓹ Install the project's required packages
-python -m pip install -r requirements.txt
+# 3. Install Python, create the virtual environment, and install dependencies
+uv sync
 ```
 
 Let's break down each of the above steps:
 
-1. Install *Python* 3.  
-   Review [Properly Installing Python](http://docs.python-guide.org/en/latest/starting/installation/) for help on getting *Python* installed.
-2. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this project
-3. Install Python Virtual Environment.  
-   In this example, I use [`venv`](https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment), but use whichever you prefer.
-4. Activate the Virtual Environment.
-   Do not forget this step or else you will get errors saying that a command or a package cannot be found.  
-    IMPORTANT: Activate the virtual environment once **each time you open a new shell window/tab**.
-5. Install the project's required *Python* packages
+1. Install [`uv`](https://docs.astral.sh/uv/getting-started/installation/).
+2. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this project.
+3. Run `uv sync`. It reads `.python-version` and `pyproject.toml`, downloads the
+   pinned *Python* if needed, creates `.venv/`, and installs the locked
+   dependencies from `uv.lock`.
+   Run project commands with `uv run <command>` (no activation required), or
+   activate the environment yourself with `source .venv/bin/activate`.
 
 ## Run
 
@@ -52,7 +42,7 @@ You can **preview** the blog **locally** as you edit the files.
 - Run the command below
 
   ```shell
-  mkdocs serve
+  uv run mkdocs serve
   ```
 
   This builds the website locally then runs a local web server listening on port `8000` .
@@ -60,11 +50,11 @@ You can **preview** the blog **locally** as you edit the files.
   If the default port (`8000`) is already used, you can use another one like `8080` for example:
 
   ```shell
-  mkdocs serve -a 127.0.0.1:8080
+  uv run mkdocs serve -a 127.0.0.1:8080
   ```
 
   ℹ️ Keep this command running as you make changes to the blog because it will continuously watch for file changes, build the changed files, and ask the browser to reload the updated pages.
-  However, If you change the configuration file (`mkdocs.yml`), you will need to restart `mkdocs serve`.
+  However, If you change the configuration file (`mkdocs.yml`), you will need to restart `uv run mkdocs serve`.
 
 - **Open** this URL in your **web browser**: http://127.0.0.1:8000/
 
@@ -101,7 +91,7 @@ There are 2 ways to publish/deploy the blog, using one of the following methods:
 - [Command Line Interface (**CLI**)](#publish-with-cli)  
   CLI deployment is a **manual** process.  
   You must run a command to trigger the deployment.  
-  You run the `mkdocs gh-deploy` command from the local repository to build the blog from the current branch and deploy it to the repository website hosted on _GitHub_.
+  You run the `uv run mkdocs gh-deploy` command from the local repository to build the blog from the current branch and deploy it to the repository website hosted on _GitHub_.
 - [**Continuous Integration**](#publish-with-ci)  
   CI deployment is an **automated** process that is triggered every time you push the `main` branch to the repository. It deploys the blog to the GitHub repository website.
 
@@ -125,7 +115,7 @@ git switch main
 cd $(git rev-parse --show-toplevel)
 
 # ③ Trigger the deployment of the current branch
-mkdocs gh-deploy
+uv run mkdocs gh-deploy
 ```
 
 Let's break down what is happening here:
@@ -133,7 +123,7 @@ Let's break down what is happening here:
 1. `git switch main`  
    Switch to the `main` branch which contains the source of the blog.
 2. Make sure you are in the project's root folder
-3. `mkdocs gh-deploy`
+3. `uv run mkdocs gh-deploy`
    - Build the blog from the current branch (`main`)
    - Place the build output in the `site` folder
    - Commit the contents of the `site` folder to the `gh-pages` branch

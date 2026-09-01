@@ -26,8 +26,7 @@ plugins:
       post_date_format: long
       post_url_date_format: yyyy/MM/dd
       post_url_format: "{date}/{slug}"
-  - tags:
-      tags_file: blog/tags.md
+  - tags
 
 markdown_extensions:
   - abbr
@@ -56,6 +55,9 @@ markdown_extensions:
       permalink_title: Link to this Header
       title: Headers on this Page
       toc_depth: 3
+
+exclude_docs: |
+  adr/
 
 extra:
   social:
