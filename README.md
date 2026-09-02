@@ -13,11 +13,11 @@ This git repository has 2 branches:
 Dependencies are managed with [`uv`](https://docs.astral.sh/uv/).
 
 ```shell
-# 1. Install uv (see https://docs.astral.sh/uv/getting-started/installation/)
+# 1. Install `uv`  (See https://docs.astral.sh/uv/getting-started/installation/)
 
 # 2. Clone the Project
-git clone git@github.com:ebouchut/ebouchut.github.io.git
-cd ebouchut.github.io
+   git clone git@github.com:ebouchut/ebouchut.github.io.git
+   cd ebouchut.github.io
 
 # 3. Install Python, create the virtual environment, and install dependencies
 uv sync
@@ -27,11 +27,13 @@ Let's break down each of the above steps:
 
 1. Install [`uv`](https://docs.astral.sh/uv/getting-started/installation/).
 2. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this project.
-3. Run `uv sync`. It reads `.python-version` and `pyproject.toml`, downloads the
-   pinned *Python* if needed, creates `.venv/`, and installs the locked
-   dependencies from `uv.lock`.
-   Run project commands with `uv run <command>` (no activation required), or
-   activate the environment yourself with `source .venv/bin/activate`.
+3. Run **`uv sync`** that does the following tasks in a single swoop:
+   - Reads `.python-version` and `pyproject.toml`,
+   - Downloads the pinned _Python_ (declared in `python-version`) if needed,
+   - Creates `.venv/`, and installs the locked dependencies from `uv.lock`.
+
+Run project commands with `uv run <command>` (no activation required), or
+activate the environment yourself with `source .venv/bin/activate`.
 
 ## Run
 
@@ -108,13 +110,13 @@ Deployment consists of using _Mkdocs_ to convert the source to the published ver
 **Summary**
 
 ```shell
-# ⓵ Switch to the branch containing the source of the blog
+# 1. Switch to the branch containing the source of the blog
 git switch main
 
-# ② Go to the project's root directory 🤓
+# 2. Go to the project's root directory 🤓
 cd $(git rev-parse --show-toplevel)
 
-# ③ Trigger the deployment of the current branch
+# 3. Trigger the deployment of the current branch
 uv run mkdocs gh-deploy
 ```
 
@@ -124,6 +126,7 @@ Let's break down what is happening here:
    Switch to the `main` branch which contains the source of the blog.
 2. Make sure you are in the project's root folder
 3. `uv run mkdocs gh-deploy`
+   This:
    - Build the blog from the current branch (`main`)
    - Place the build output in the `site` folder
    - Commit the contents of the `site` folder to the `gh-pages` branch
@@ -160,18 +163,16 @@ git push origin main
 
 **Summary**
 
-```shell
-# ⓵ Configure and enable (one-time) GitHub Pages
-
-# ② You need the `.github/workflow/publish.yml` GitHub Action.
-# You already have it if you cloned this repository.
-
-# ③ Push the main branch
-git push origin main
-
-# ④ Open your repository "GitHub Actions" tab on GitHub Web
-#  and watch the GitHub Action do the work for you on GitHub https://github.com/YOUR_GITHUB_USERNAME_HERE/YOUR_GITHUB_USERNAME_HERE.github.io/actions
-```
+1. Configure and enable (one-time) GitHub Pages
+2. You need the `.github/workflow/publish.yml` GitHub Action.
+   (You already have it if you cloned this repository).
+3. Push the `main` branch
+   ```shell
+   git push origin main
+   ```
+4. Open your repository "GitHub Actions" tab on GitHub Web
+   and watch the GitHub Action do the work for you on GitHub
+   `https://github.com/YOUR_GITHUB_USERNAME_HERE/YOUR_GITHUB_USERNAME_HERE.github.io/actions`
 
 The main **difference** with [`Publish with CLI`](#publish-with-cli) is that `mkdocs-deploy` is **automatically** **launched** on the **GitHub servers** without any manual action on your part.
 
@@ -194,8 +195,8 @@ It is disabled by default and can be enabled per repository.
 Now, that you know what it is and how it works, let's **configure** and enable _GitHub Pages_:
 
 1. Open your [blog repository](https://github.com/ebouchut/ebouchut.github.io) on GitHub  
-    If you are using your own repo, the URL should rather look like so:
-   `https://github.com/YOUR_GITHUB_USERNAME_HERE/YOUR_GITHUB_USERNAME_HERE.github.io`
+   If you are using your own repo, the URL should rather look like so:
+   `https://github.com/YOUR_GITHUB_USERNAME_HERE/YOUR_GITHUB_USERNAME_REPO_HERE.github.io`
 2. Click the ⚙️ **`"Settings"`** tab (last one on the right)
 3. Click **`Pages`** located under the `Code and Automation` section
 4. In the **`Source`** field, select **`Deploy from a Branch`**
