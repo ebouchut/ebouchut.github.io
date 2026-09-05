@@ -2,7 +2,7 @@ site_name: Eric Bouchut
 site_url: https://www.ericbouchut.com
 
 theme:
-  name: material
+  variant: classic
   language: en
   features:
     - navigation.indexes
