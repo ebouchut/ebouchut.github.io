@@ -433,7 +433,7 @@ Compétences :
 - programmation Shell, 
 - système Unix, 
 - réseaux et TCP/IP.
-<div>
+</div>
 
 
 ## Langues
