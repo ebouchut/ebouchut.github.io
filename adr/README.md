@@ -33,6 +33,7 @@ NNNN-short-title-in-kebab-case.md
 
 ## Index
 
-| ADR                                                     | Title                                   | Status   |
-| ------------------------------------------------------- | --------------------------------------- | -------- |
-| [0001](0001-use-uv-for-python-dependency-management.md) | Use uv for Python dependency management | accepted |
+| ADR                                                        | Title                                   | Status   |
+| ---------------------------------------------------------- | --------------------------------------- | -------- |
+| [0001](0001-use-uv-for-python-dependency-management.md)    | Use uv for Python dependency management | accepted |
+| [0002](0002-use-zensical-as-the-blogging-engine.md)        | Use Zensical as the blogging engine     | accepted |
