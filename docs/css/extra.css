@@ -10,3 +10,21 @@
 .ebouchut-color-twitter {
   color: #1DA1F2;
 }
+
+/*
+ * Multi-column lists:
+ * the theme gives `ul` a `margin-top: 1em`, which offsets the first item of
+ * column 1 but not the list fragment that flows into column 2 (block margins
+ * don't re-apply at a column break), so the columns' first items don't align.
+ * Zero the list's block margins inside any `column-count` container, and keep
+ * a wrapping item from splitting across the gap.
+ */
+.md-typeset div[style*="column-count"] > ul,
+.md-typeset div[style*="column-count"] > ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.md-typeset div[style*="column-count"] > ul > li,
+.md-typeset div[style*="column-count"] > ol > li {
+  break-inside: avoid;
+}
