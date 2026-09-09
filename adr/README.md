@@ -37,3 +37,4 @@ NNNN-short-title-in-kebab-case.md
 | ---------------------------------------------------------- | --------------------------------------- | -------- |
 | [0001](0001-use-uv-for-python-dependency-management.md)    | Use uv for Python dependency management | accepted |
 | [0002](0002-use-zensical-as-the-blogging-engine.md)        | Use Zensical as the blogging engine     | accepted |
+| [0003](0003-deploy-pages-via-artifact-upload.md)           | Deploy the site as a GitHub Pages artifact | accepted |
