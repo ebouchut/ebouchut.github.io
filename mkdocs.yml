@@ -18,24 +18,24 @@ theme:
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
-      primary: deep purple
-      accent:  light blue
+      primary: custom
+      accent:  custom
       toggle:
         icon: lucide/sun
         name: Switch to light mode
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep purple
-      accent: light blue
+      scheme:  default
+      primary: custom
+      accent:  custom
       toggle:
         icon: lucide/moon
         name: Switch to dark mode
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: deep purple
-      accent: light blue
+      scheme:  slate
+      primary: custom
+      accent:  custom
       toggle:
         icon: lucide/sun-moon
         name: Switch to auto (use System Preferences)
