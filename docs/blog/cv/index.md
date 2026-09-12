@@ -1,10 +1,10 @@
 ---
-hide: navigation
-keywords:
-  - eric bouchut
-  - CV eric bouchut
-  - resume eric bouchut
-  - eric bouchut profile
+hide:
+  - navigation
+  - tags
+tags:
+  - CV 
+  - resume 
 ---
 
 # CV Eric Bouchut
@@ -24,12 +24,12 @@ keywords:
 
 Ingénieur logiciel principalement backend, avec plusieurs années d'expérience en Java. Habitué au travail en équipe distribuée et virtuelle, j'ai évolué dans tous types de structures et contribué à des projets open source. J'aime expliquer, partager mes connaissances, apprendre en public et rester au fait des évolutions technologiques, notamment l'architecture logicielle qui prend tout son sens avec l'IA.
 
-Je recherche une opportunité d'ingénieur logiciel.
+Je recherche une opportunité d'ingénieur logiciel en CDI sur la zone Aix-en-Provence - Marseille.
 
 J'ai l'expérience de **Java** et **Ruby on Rails**.  
 
-Depuis <time datetime="2023">2023</time>, j'ai rejoint les projets **open-source** 
-[Loop](https://loopdocs.org/), puis Trio où je travaille avec une équipe distribuée mondiale virtuelle 
+Depuis <time datetime="2023">2023</time>, je contribue aux projets **open-source** 
+[Loop](https://loopdocs.org/), puis Trio avec une équipe distribuée mondiale virtuelle 
 pour améliorer la **documentation technique** 
 et configurer les outils utilisés pour sa création.
 
@@ -37,7 +37,7 @@ En <time datetime="2021">2021</time>, en tant que développeur Solidity pour le 
 j'ai co-écrit et documenté un smart-contract pour la **Blockchain** Ethereum pour miser sur un pari sportif sans perdre sa mise.
 
 En tant que **professeur d'informatique** pour Axis-Digital, 
-j'ai enseigné le langage C, les Appel Systèmes **Unix** et le **Shell**  
+j'ai enseigné le langage C, les Appels Système **Unix** et le **Shell** 
 à des groupes de 15 personnes, ainsi que le cours "*Utilisation Unix avancée*" 
 que j'ai co-écrit.
 
@@ -50,21 +50,30 @@ j'ai obtenu la certification **Développeur Web et Web Mobile**.
 **Compétences clés** :
 
 <div style="column-count: 2; column-gap: 1.5em;" markdown>
-- Java, Shell, Ruby,
-- Spring Boot, Spring MVC, Spring Security, 
-- CI/CD GitHub, 
-- Git, 
-- documentation technique.
+- Java, Spring Boot, Spring MVC, 
+- Ruby, Ruby on Rails,
+- Programmation Shell,
+- Git, Conventional Commits, 
+- intégration et déploiement en continu, GitHub workflows,
+- documentation technique, formation.
 </div>
 
+**Soft Skills** :
+
+<div style="column-count: 2; column-gap: 1em;" markdown>
+- Curiosité technique, 
+- rigueur et organisation,
+- pédagogie et communication écrite,
+- esprit d'équipe.
+</div>
 
 ## Expériences professionnelles
 
 
-### Contributeur Open Source
+### Contributeur Open Source pour Loop et Trio
 
+- **Projets open-source** :  *Loop* et *Trio* 🌐
 - **Dates** : Depuis <time datetime="2023">2023</time>
-- **Entreprise** : projets open-source Loop et Trio
 
 > La documentation de *Loop* et *Trio* a pour but 
 > de fournir des instructions et ressources 
@@ -78,17 +87,17 @@ Contributions aux projets [LoopDocs](https://loopdocs.org) et [TrioDocs](https:/
 - configuration des outils utilisés pour construire et publier les sites Web,
 - collaboration à distance avec une équipe géographiquement distribuée dans le monde entier.
 
-Compétences utilisées :
+**Compétences utilisées** :
 
 - [mkdocs](https://www.mkdocs.org/) le moteur utilisé pour générer les sites Web statiques qui documentent ces projets,
 - [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) pour les chromes au-dessus du moteur *mkdocs*: thème, moteur de recherche, 
 - [pip](https://github.com/pypa/pip#readme) pour la **gestion des dépendances** *Python*,
 - [venv](https://realpython.com/python-virtual-environments-a-primer/#how-can-you-work-with-a-python-virtual-environment): un **environnement virtuel Python** pour isoler les dépendances du projet.
-- [GitHub Workflows](https://github.com/nightscout/trio-docs/tree/dev/.github/workflows) (**CI, CD**) pour l'intégration et le déploiement en continu, 
-- **GitHub Project**, [Issues](https://github.com/nightscout/trio-docs/issues?q=is:issue%20state:closed%20author:ebouchut) et [PRs](https://github.com/nightscout/trio-docs/pulls?q=is:pr+is:closed+author:ebouchut)
+- [GitHub Workflows](https://github.com/nightscout/trio-docs/tree/dev/.github/workflows) (**CI, CD**) pour l'intégration et le déploiement en continu de la documentation, 
+- **GitHub Project**, [Issues](https://github.com/nightscout/trio-docs/issues?q=is:issue%20state:closed%20author:ebouchut) et [PRs](https://github.com/nightscout/trio-docs/pulls?q=is:pr+is:closed+author:ebouchut).
 
 
-### Développeur Backend Rails
+### Développeur Backend
 
 - **Entreprise** : [HostnFly](https://www.hostnfly.com/) (Paris 🌐)
 - **Dates** : <time datetime="2022-04">Avril 2022</time> - 
@@ -97,14 +106,10 @@ Compétences utilisées :
 > *HostnFly* est une startup B2C dans l'industrie de l'hébergement de voyage.
 
 Développement et maintenance du Back-Office de conciergerie
-pour mettre des logements en location sur AirBnb et BookingSync,
+pour mettre des logements en location sur Airnbnb et BookingSync,
 avec une IA qui optimise le prix de la location et sa durée.
 
-Compétences utilisées : 
-
-- Ruby, 
-- Ruby on Rails.
-
+**Compétences utilisées** : Ruby on Rails.
 
 
 ### Développeur Solidity
@@ -116,23 +121,26 @@ Compétences utilisées :
 > Contribution au projet open-source **[Bet-No-Loss](https://github.com/bet-no-loss/bet-no-loss#readme)** constitué de 5 personnes.  
 > Création d'une application distribuée sur la Blockchain Ethereum pour parier 
 > sur un évènement sportif sans perdre sa mise.
+> Ce projet a été réalisé dans le cadre de la formation *Développeur Blockchain*  chez Alyra.
+
 
 - développement du backend en Solidity,
 - documentation du projet,
 - configuration du build et de la CI/CD avec des GitHub Workflows et **Heroku**
 
-Compétences utilisées :
+**Compétences utilisées** :
 
-- Solidity, x
+<div style="column-count: 2; column-gap: 1em;" markdown>
+- Solidity,
 - Smart Contracts Ethereum, 
 - GitHub Workflows, 
 - Heroku.
-
+</div>
 
 ### Développeur Ruby on Rails et Java — Locala
 
-- **Entreprise** : [Locala]() (Marseille)
-- **Dates** : <time datetime="2017-03">Mars 2017</time> -
+- **Entreprise** : [Locala](https://asklocala.com/fr) (Marseille)
+- **Dates** : <time datetime="2017-03">Mars 2017</time> - 
       <time datetime="2020-10">Octobre 2020</time> (3 ans et 10 mois)
 
 > Locala (anciennement S4M) apporte des solutions publicitaires
@@ -141,16 +149,17 @@ Compétences utilisées :
 
 - Réalisation d'une API REST pour exposer le DSP comme un service,
 - amélioration de la documentation,
-- création d'une base de connaissances technique ainsi qu'un manuel *git-flow* qui servi de référence aux développeurs.
+- création d'une base de connaissances technique ainsi qu'un manuel *git-flow* qui a servi de référence aux développeurs.
 - support de niveau 3 chargé de diagnostiquer les problèmes techniques
 
-Compétences utilisées :
+**Compétences utilisées** :
 
+<div style="column-count: 2; column-gap: 1em;" markdown>
 - Java,
 - Ruby,
 - Ruby on Rails,
 - Confluence.
-
+</div>
 
 ### Développeur Ruby on Rails et Java — LDMobile
 
@@ -164,11 +173,12 @@ Compétences utilisées :
 
 En tant que développeur full-stack dans une équipe de 9 personnes,
 j'ai travaillé à la fois sur le front-office avec Ruby on Rails et sur le back-end en Java.
-Vu que le RTB implique le traitement d'un très grand nombre de requêtes et données,
-j'ai également utilisé des outils et frameworks big-data tels que Storm, Cassandra et Kafka.
+Vu que la publicité programmatique (RTB) implique le traitement d'un très grand nombre de requêtes et données,
+j'ai également utilisé des outils et frameworks big-data tels que *Storm*, *Cassandra* et *Kafka*.
 
-Compétences utilisées : 
+**Compétences utilisées** : 
 
+<div style="column-count: 2; column-gap: 1em" markdown>
 - Open-RTB (publicité programmatique),
 - Ruby,
 - Java,
@@ -177,12 +187,13 @@ Compétences utilisées :
 - Storm,
 - Cassandra,
 - Kafka.
+</div>
 
 
 ### Développeur Web
 
 - **Entreprise** : Antidot (Lambesc)
-- **Dates** : <time datetime="2010-06">Juin  2010</time> -
+- **Dates** : <time datetime="2010-06">Juin 2010</time> -
       <time datetime="2013-12">Décembre 2013</time> (3 ans et 7 mois)
 
 > Antidot est un moteur de recherche privé qui fournit aux entreprises 
@@ -194,19 +205,21 @@ Compétences utilisées :
   Le produit phare d'Antidot, [Fluid Topics](http://fluidtopics.com),
   utilise à l'heure actuelle cette technologie.
 
-Compétences utilisées : 
+**Compétences utilisées** : 
 
+<div style="column-count: 2; column-gap: 1em;" markdown>
 - Java,
 - GWT (Google Web Toolkit),
 - XSL,
 - PHP,
 - JIRA.
+</div>
 
 
 <details markdown>
-<summary>Expériences antérieures (1991 - 2009)</summary>
+<summary>1991 - 2009</summary>
 
-### Expériences antérieures (1991–2009)
+### Expériences antérieures (1991 – 2009)
 
 
 #### Software Developer
@@ -221,11 +234,7 @@ Compétences utilisées :
   reliant les applications mobiles (SFR, NRJ) aux services de messagerie instantanée, 
   e-mails et réseaux sociaux.
 
-Compétences utilisées :
-
-- Java,
-- JMS,
-- Jira.
+**Compétences utilisées** : Java, JMS, Jira.
 
 
 #### Product Developer
@@ -243,16 +252,17 @@ Compétences utilisées :
     - J2EE (WebLogic et WebSphere) via JMX,
     - Web services,
     - Business Processes (Oracle BPEL Manager),
-- Travail en équipe géographiquement distribuée (Etats-Unis, Israel, Inde, France).
+- Travail en équipe géographiquement distribuée (Etats-Unis, Israël, Inde, France).
 
-Compétences utilisées : 
+**Compétences utilisées** : 
 
+<div style="column-count: 2; column-gap: 1em" markdown>
 - Java,
 - JMX, 
 - Jenkins, 
 - travail en équipe distribuée, 
 - anglais.
-
+</div>
 
 #### Développeur Web, Webmaster, Ingénieur logiciel Java
 
@@ -266,13 +276,14 @@ Compétences utilisées :
 - gestion et évolution du site Web,
 - contribution au développement d'un logiciel de découverte et visualisation de la topologie réseau TCP/IP.
 
-Compétences utilisées :
+**Compétences utilisées** :
 
+<div style="column-count: 2; column-gap: 1em" markdown>
 -  Java,
 -  HTML,
 -  développement du site et d'applications Web,
 -  ColdFusion
-
+</div>
 
 #### Ingénieur logiciel C++ et Java
 
@@ -285,11 +296,7 @@ Compétences utilisées :
 Développement d'une application qui préfigurait ce qui est devenu plus tard 
 la gestion du dossier médical informatisé.
 
-Compétences utilisées : 
-
-- C++, 
-- Java, 
-- X11.
+**Compétences utilisées** : C++, Java, X11.
 
 
 #### Ingénieur logiciel MINITEL et Audiotel
@@ -305,15 +312,16 @@ Compétences utilisées :
 Réalisation d'applications back-end MINITEL et Audiotel ainsi qu'un moteur de traitement des requêtes en *langage
   naturel* à l'aide de Lex et Yacc.
 
-Compétences utilisées :
+**Compétences utilisées** :
 
+<div style="column-count: 2; column-gap: 1em" markdown>
 - C, 
 - Perl, 
 - Awk, 
 - Lex, 
 - Yacc, 
 - Shell Unix.
-
+</div>
 
 #### Formateur informatique
 
@@ -329,11 +337,11 @@ Compétences utilisées :
 - conception puis enseignement du cours *Utilisation – Unix avancé*,
 - maintenance et évolution d'un logiciel d'émulation MINITEL.
 
-Compétences utilisées :
+**Compétences utilisées** :
 
 <div style="column-count: 2; column-gap: 1em" markdown>
 - C, 
-- appels système Unnix, 
+- appels système Unix, 
 - Shell, 
 - documentation technique.
 </div>
@@ -341,39 +349,39 @@ Compétences utilisées :
 </details>
 
 
-## Formations
+## Formations et diplômes
 
 
-### Certification Développeur Web et Web mobile
+### Formation Développeur Web et Web mobile
 
-- **Dates** : Juin 2025 - Septembre 2026 (16 mois)
 - **Organisme** : [La Plateforme](https://laplateforme.io/)
-- 
+- **Dates** : Juin 2025 - Octobre 2026 (16 mois)
+
 > Formation en alternance menant au titre professionnel de Développeur Web et Web Mobile (RNCP niveau 5).
 
-- Programme : 
-    - front-end Web: [HTML, CSS](https://github.com/ebouchut-laplateforme/project-html-css-form#layout), Javascript, 
-    - back-end: Java, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, API REST, 
-    - base de données: MySQL et [PostgreSQL](https://github.com/ebouchut/learn-dev?tab=contributing-ov-file#database), 
-    - Conteneurisation avec **[Docker](https://github.com/ebouchut/learn-dev?tab=readme-ov-file#package-for-production-docker)** et **[Docker Compose](https://github.com/ebouchut/learn-dev?tab=readme-ov-file#docker-terminology)**, 
-    - gestion de projet: [GitHub Project](https://github.com/users/ebouchut/projects/7), [Issues](https://github.com/ebouchut/learn-dev/issues?q=is:issue%20state:closed), [Pull-Requests](https://github.com/ebouchut/learn-dev/pulls?q=is:pr+is:closed).
+**Compétences** : 
 
+<div style="column-count: 2; column-gap: 1.5em" markdown>
+- front-end Web: [HTML, CSS](https://github.com/ebouchut-laplateforme/project-html-css-form#layout), Javascript, 
+- back-end: Java, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, API REST, 
+- base de données: MySQL et [PostgreSQL](https://github.com/ebouchut/learn-dev?tab=contributing-ov-file#database), 
+- Conteneurisation avec **[Docker](https://github.com/ebouchut/learn-dev?tab=readme-ov-file#package-for-production-docker)** et **[Docker Compose](https://github.com/ebouchut/learn-dev?tab=readme-ov-file#docker-terminology)**, 
+- gestion de projet: [GitHub Project](https://github.com/users/ebouchut/projects/7), [Issues](https://github.com/ebouchut/learn-dev/issues?q=is:issue%20state:closed), [Pull-Requests](https://github.com/ebouchut/learn-dev/pulls?q=is:pr+is:closed)
+- Méthodologie Agile, Scrum, KanBan.
+</div>
 
-### Formation certifiante Développeur Cybersécurité
+### Formation Développeur Cybersécurité
 
-- **Dates** : <time datetime="2024-03">Mars 2024</time> - <time datetime="2024-06">Juin 2024</time>
 - **Organisme** : [M2i Formation](https://www.m2iformation.fr)
-- **Certification** : TOSA Python
+- **Dates** : <time datetime="2024-03">Mars 2024</time> - <time datetime="2024-06">Juin 2024</time>
 
-> La formation certifiante  **Développeur en Cybersécurité** (POEC) chez *M2i Formation* 
+> La formation certifiante  **Développeur Cybersécurité** (POEC) chez *M2i Formation* 
 > m'a permis d'appréhender les techniques de sécurisation des systèmes et des applications.
-> Cette formation couvre un large éventail de compétences, allant des bonnes pratiques 
+> Elle couvre un large éventail de compétences, allant des bonnes pratiques 
 > de sécurité (DevSecOps) à l'administration des systèmes Linux et Windows, le Pentest 
 > et la programmation sécurisée en Python.
->
-> J'ai obtenu la **certification [TOSA Python](https://www.tosa.org/FR/Index?param=azRnM2xNUHBkQjJyelEyVmMzRWlrdVVWUVIyeDY2d3JYbVRIMHM0YWFxSGo3THRxMmtoMnl5OFV5TWhGcWl5dU1VcjBWU0R5a3VLZkpBM2wrWUxnWnc9PTo6p7f1rU0XpWZtu8CsGdXzCA)** en juin 2024.
 
-Compétences :
+**Compétences** :
 
 <div style="column-count: 2; column-gap: 1.5em" markdown>
 - Cybersécurité, 
@@ -382,50 +390,50 @@ Compétences :
 - sécurisation des serveurs et applications Web
 </div>
 
-### Certification Développeur Blockchain
 
-- **Dates** : <time datetime="2020-10">Octobre 2020</time> - <time datetime="2021-05">Mai 2021</time>
+### Formation Développeur Blockchain
+
 - **Organisme** : [Alyra l'école Blockchain et IA](https://www.alyra.fr/)
-- **Certification** : [Développeur Blockchain](https://certificate.bcdiploma.com/check/8AEFB8EA0140B750A45B5C30C13E2F320F2D746A07337296DAB5FF4D23789757ZmlaRlRBZHB6NTJtVEdObFQ1RUt4MEllUFJQRVRGYWxnZEx4Qjl6QmF1Y2Y0Wkll)
+- **Dates** : <time datetime="2020-10">Octobre 2020</time> - <time datetime="2021-05">Mai 2021</time>
 
 
 > Développement d'applications distribuées sur la Blockchain Ethereum.
 
-Compétences : Blockchain, Ethereum,  Smart Contracts.
+**Compétences** : Blockchain Ethereum, Smart Contracts.
 
 
-### Certification Web Developer
+### Formation Web Developer
 
-- **Dates** : <time datetime="2010-03">Mars 2010</time> - <time datetime="2010-05">Mai 2010</time>
 - **Organisme** : Mach3 (Groupe Ingenium)
-- **Certification**: Web Developer
+- **Dates** : <time datetime="2010-03">Mars 2010</time> - <time datetime="2010-05">Mai 2010</time>
 
 > Acquisition des fondamentaux du développement Web avec HTML, CSS et Javascript
 
-Compétences : HTML, CSS, JavaScript.
+**Compétences** : HTML, CSS, JavaScript.
 
 
-### Diplôme Universitaire mention Interface Hommes Machines et Réseaux (DU IHMR)
+### Diplôme Universitaire mention Interface Hommes Machines et Réseaux
 
-- **Dates** : <time datetime="1989">1989</time> - <time datetime="1990">1990</time>
 - **Organisme** : Université Aix Marseille
+- **Dates** : <time datetime="1989">1989</time> - <time datetime="1990">1990</time>
 
 
-Compétences :
+**Compétences** :
 
 <div style="column-count: 2; column-gap: 1.5em" markdown>
 - Appels systèmes Unix, 
 - Programmation Shell, 
-- fondamentaux des protocoles IP et TCP
+- fondamentaux des protocoles IP et TCP.
 </div>
+
 
 ### DUT Informatique
 
-- **Dates** : <time datetime="1987">1987</time> - <time datetime="1989">1989</time>
 - **Organisme** : IUT Aix Marseille
+- **Dates** : <time datetime="1987">1987</time> - <time datetime="1989">1989</time>
 
 
-Compétences :
+**Compétences** :
 
 <div style="column-count: 2; column-gap: 1.5em" markdown>
 - Algorithmie, 
@@ -436,7 +444,16 @@ Compétences :
 </div>
 
 
+## Certifications
+
+- **Développeur Web et Web Mobile**, RNCP-37674 (2026),
+- [**Python**](https://www.tosa.org/FR/Index?param=azRnM2xNUHBkQjJyelEyVmMzRWlrdVVWUVIyeDY2d3JYbVRIMHM0YWFxSGo3THRxMmtoMnl5OFV5TWhGcWl5dU1VcjBWU0R5a3VLZkpBM2wrWUxnWnc9PTo6p7f1rU0XpWZtu8CsGdXzCA) (*TOSA* 2024),
+- [**Anglais**](https://cert.efset.org/4ybGYX)  (*EFSET* 2024),
+- [**Développeur Blockchain**](https://certificate.bcdiploma.com/check/8AEFB8EA0140B750A45B5C30C13E2F320F2D746A07337296DAB5FF4D23789757ZmlaRlRBZHB6NTJtVEdObFQ1RUt4MEllUFJQRVRGYWxnZEx4Qjl6QmF1Y2Y0Wkll) (*Alyra* 2021),
+- **Web Developer** (*Mach3* 2010).
+
+
 ## Langues
 
-- **Anglais** niveau C1 [EFSET](https://cert.efset.org/4ybGYX)
+- **Anglais**  (niveau C1)
 - **Français** (langue natale)
