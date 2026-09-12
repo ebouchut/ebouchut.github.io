@@ -1,16 +1,13 @@
 [![publish status][publish-image]][publish-url]
-[![Built with Material for MkDocs][mkdocs_material-image]][mkdocs_material-url]
+[![Built with Zensical][zensical-image]][zensical-url]
 
-[My blog](https://EricBouchut.com) uses [_Mkdocs_](https://github.com/mkdocs/mkdocs) and [_mkdocs-material_](https://squidfunk.github.io/mkdocs-material/) as a blogging platform.
+[My blog](https://EricBouchut.com) uses [_Zensical_](https://zensical.org) — a static site generator built by the Material for MkDocs team — as its blogging platform. Content is written in Markdown.
 
-This git repository has 2 branches:
-
-- **`main`** contains the source of my blog
-- **`gh-pages`** contains the published version of my blog.
+This git repository's **`main`** branch contains the source of the blog. Publishing goes straight through GitHub Actions to GitHub Pages (see [Publish](#publish)); it no longer pushes to a `gh-pages` branch.
 
 ## Installation
 
-Dependencies are managed with [`uv`](https://docs.astral.sh/uv/).
+Dependencies — including [Zensical](https://zensical.org) itself — are managed with [`uv`](https://docs.astral.sh/uv/).
 
 ```shell
 # 1. Install `uv`  (See https://docs.astral.sh/uv/getting-started/installation/)
@@ -30,7 +27,7 @@ Let's break down each of the above steps:
 3. Run **`uv sync`** that does the following tasks in a single swoop:
    - Reads `.python-version` and `pyproject.toml`,
    - Downloads the pinned _Python_ (declared in `python-version`) if needed,
-   - Creates `.venv/`, and installs the locked dependencies from `uv.lock`.
+   - Creates `.venv/`, and installs the locked dependencies (including `zensical`) from `uv.lock`.
 
 Run project commands with `uv run <command>` (no activation required), or
 activate the environment yourself with `source .venv/bin/activate`.
@@ -44,7 +41,7 @@ You can **preview** the blog **locally** as you edit the files.
 - Run the command below
 
   ```shell
-  uv run mkdocs serve
+  uv run zensical serve
   ```
 
   This builds the website locally then runs a local web server listening on port `8000` .
@@ -52,11 +49,13 @@ You can **preview** the blog **locally** as you edit the files.
   If the default port (`8000`) is already used, you can use another one like `8080` for example:
 
   ```shell
-  uv run mkdocs serve -a 127.0.0.1:8080
+  uv run zensical serve -a 127.0.0.1:8080
   ```
 
-  ℹ️ Keep this command running as you make changes to the blog because it will continuously watch for file changes, build the changed files, and ask the browser to reload the updated pages.
-  However, If you change the configuration file (`mkdocs.yml`), you will need to restart `uv run mkdocs serve`.
+  ℹ️ **Keep this command running as you make changes to the blog** 
+  because it will continuously watch for file changes, build the changed files, and ask the browser to reload the updated pages.
+
+  However, if you change the configuration file (`mkdocs.yml`), you will need to restart `uv run zensical serve`.
 
 - **Open** this URL in your **web browser**: http://127.0.0.1:8000/
 
@@ -72,10 +71,12 @@ To create a new blog post:
   - `post_title_here` denotes the title of the blog post. Separate each word with an underscore (`_`)
   - `.md` is the Markdown file suffix
 - **Edit** the blog post (for instance `docs/blog/posts/2023-08-14-post_title_here.md`).  
-  Use the below documentation to learn more:
+  The blog is built with [Zensical](https://zensical.org), which reads the same `mkdocs.yml` and
+  supports the Python-Markdown extensions configured there. Use the below documentation to learn
+  more:
+  - [Zensical documentation](https://zensical.org/docs/)
   - [Python Markdown](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/)
-  - [Python Markown Extensions](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/)
-  - [mkdocs-material extensions](https://squidfunk.github.io/mkdocs-material/reference/)
+  - [Python Markdown Extensions](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/)
     Most of the extensions mentioned in the docs are already installed and configured in `mkdocs.yml`.
 - Commit your changes on the `main` branch and push to your `origin` repository when you are done.
 
@@ -88,93 +89,36 @@ To create a new blog post:
 
 ### Publish
 
-There are 2 ways to publish/deploy the blog, using one of the following methods:
+Publishing is **fully automated**: push the `main` branch, and [`publish.yml`](.github/workflows/publish.yml) builds the blog and deploys it to GitHub Pages. There is no separate manual/CLI deploy step anymore.
 
-- [Command Line Interface (**CLI**)](#publish-with-cli)  
-  CLI deployment is a **manual** process.  
-  You must run a command to trigger the deployment.  
-  You run the `uv run mkdocs gh-deploy` command from the local repository to build the blog from the current branch and deploy it to the repository website hosted on _GitHub_.
-- [**Continuous Integration**](#publish-with-ci)  
-  CI deployment is an **automated** process that is triggered every time you push the `main` branch to the repository. It deploys the blog to the GitHub repository website.
-
-**IMPORTANT**: Both methods require [GitHub Pages to be enabled and configured](#configure-github-pages) (one-time) beforehand.
-
-The following sections describe these two deployment methods.
-
-#### Publish with CLI
-
-**Requirement**: You must first [configure _GitHub Pages_ for your repository](#configure-github-pages).
-
-Deployment consists of using _Mkdocs_ to convert the source to the published version and sending it to GitHub, which will deploy it to your repository's GitHub website.
-
-**Summary**
-
-```shell
-# 1. Switch to the branch containing the source of the blog
-git switch main
-
-# 2. Go to the project's root directory 🤓
-cd $(git rev-parse --show-toplevel)
-
-# 3. Trigger the deployment of the current branch
-uv run mkdocs gh-deploy
-```
-
-Let's break down what is happening here:
-
-1. `git switch main`  
-   Switch to the `main` branch which contains the source of the blog.
-2. Make sure you are in the project's root folder
-3. `uv run mkdocs gh-deploy`
-   This:
-   - Build the blog from the current branch (`main`)
-   - Place the build output in the `site` folder
-   - Commit the contents of the `site` folder to the `gh-pages` branch
-   - Push `gh-pages` to the `origin` remote repository on _GitHub_
-   - _GitHub Pages_ will notice the `gh-pages` branch has been pushed and will automatically deploy its latest commit to your GitHub repository website.
-
-#### Publish with CI
-
-**Requirements**:
-
-- You must first [configure _GitHub Pages_ for your repository](#configure-github-pages).
-- You need the [`publish.yml`](.github/workflows/publish.yml) _GitHub Action_ script to automate things.  
-  You already have it if you cloned this repository.
-
-This method is **fully automated** and runs **server-side**.  
-The only thing you have to do is push the `main` branch to trigger the deployment.
+**IMPORTANT**: This requires [GitHub Pages to be enabled and configured](#configure-github-pages) (one-time) beforehand.
 
 ```shell
 git push origin main
 ```
 
-**When** is CI triggered?
+**When** is it triggered?
 
-> This remote deployment method is triggered each time you push the `main` branch to the repository.
+> Every push to the `main` branch.
 
-**Wha**t does the CI do?
+**What** does it do?
 
-> It clones the repository, installs the required packages, builds and commit the site to the `gh-pages` branch and push `gh-pages` to the repository, which triggers its deployment to the repository Website.
+> It checks out the repository, installs `uv` and the locked dependencies, builds the site with
+> `uv run zensical build --strict`, uploads the result as a **GitHub Pages artifact**, then deploys
+> that artifact directly — no `gh-pages` branch is pushed to or read from.
 
-**How long** does the CI run?
+**How long** does it take?
 
-> Deploying the blog with the CI can take from 1 to several minutes.
-> To monitor what is happening, take a look at the [Github Actions](https://github.com/ebouchut/ebouchut.github.io/actions).
+> From under a minute to a few minutes.
+> To monitor what is happening, take a look at the [GitHub Actions](https://github.com/ebouchut/ebouchut.github.io/actions) tab.
 
-**Summary**
+If you just want to build the site locally without deploying it — for instance to sanity-check before pushing:
 
-1. Configure and enable (one-time) GitHub Pages
-2. You need the `.github/workflow/publish.yml` GitHub Action.
-   (You already have it if you cloned this repository).
-3. Push the `main` branch
-   ```shell
-   git push origin main
-   ```
-4. Open your repository "GitHub Actions" tab on GitHub Web
-   and watch the GitHub Action do the work for you on GitHub
-   `https://github.com/YOUR_GITHUB_USERNAME_HERE/YOUR_GITHUB_USERNAME_HERE.github.io/actions`
+```shell
+uv run zensical build --strict
+```
 
-The main **difference** with [`Publish with CLI`](#publish-with-cli) is that `mkdocs-deploy` is **automatically** **launched** on the **GitHub servers** without any manual action on your part.
+The rendered site is written to `site/`.
 
 #### Configure GitHub Pages
 
@@ -186,11 +130,11 @@ The main **difference** with [`Publish with CLI`](#publish-with-cli) is that `mk
 
 It is disabled by default and can be enabled per repository.
 
-**How** does _GitHub Pages_ work?
+**How** does _GitHub Pages_ work with this project?
 
-> Whenever the `gh-pages` branch is pushed to your repository, _GitHub Pages_ will automatically deploy its latest commit to your personal GitHub website:
-
-     `https://YOUR_GITHUB_USERNAME_HERE.github.io/`
+> [`publish.yml`](.github/workflows/publish.yml) builds the site and deploys it as a **Pages
+> artifact** straight to GitHub Pages, so Pages must be told to accept deployments from GitHub
+> Actions rather than from a branch.
 
 Now, that you know what it is and how it works, let's **configure** and enable _GitHub Pages_:
 
@@ -199,16 +143,12 @@ Now, that you know what it is and how it works, let's **configure** and enable _
    `https://github.com/YOUR_GITHUB_USERNAME_HERE/YOUR_GITHUB_USERNAME_REPO_HERE.github.io`
 2. Click the ⚙️ **`"Settings"`** tab (last one on the right)
 3. Click **`Pages`** located under the `Code and Automation` section
-4. In the **`Source`** field, select **`Deploy from a Branch`**
-5. **First** drop-down under the **`Branch`** section: Select **`gh-pages`**
-6. **Second** drop-down: Select **`"/(root)"`**
-7. Click **`Save`**
-
-> ![GitHub Pages Configuration](https://raw.githubusercontent.com/ebouchut/ebouchut.github.io/main/img/gh-pages-configuration.png)
+4. In the **`Source`** field, select **`GitHub Actions`**
+5. That's it — there is no branch or folder to pick. The next run of `publish.yml` publishes the site.
 
 <!-- Github Badges: Images and URLs -->
 
 [publish-image]: https://github.com/ebouchut/ebouchut.github.io/actions/workflows/publish.yml/badge.svg?branch=main
 [publish-url]: https://github.com/ebouchut/ebouchut.github.io/actions/workflows/publish.yml
-[mkdocs_material-image]: https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white
-[mkdocs_material-url]: https://squidfunk.github.io/mkdocs-material/
+[zensical-image]: https://img.shields.io/badge/Built_with-Zensical-6E56CF?style=for-the-badge
+[zensical-url]: https://zensical.org/
