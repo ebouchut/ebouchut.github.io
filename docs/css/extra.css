@@ -1,3 +1,56 @@
+/*
+ * Lavender palette — paired with `primary: custom` / `accent: custom` in
+ * mkdocs.yml. See: https://zensical.org/docs/setup/colors/#custom-colors
+ *
+ * `default` (light) and `slate` (dark) are the theme's ONLY two schemes;
+ * each ships a full token set. We redefine only the accent colors and the
+ * header wash, and inherit everything else.
+ *
+ * Light: primary #6E56CF gives ~5.4:1 link contrast on white (WCAG AA).
+ * Dark:  primary #C4B5FD reads clearly on the slate background.
+ */
+
+/* Light scheme */
+:root > * {
+  --md-primary-fg-color:        #6E56CF;
+  --md-primary-fg-color--light: #8B78DC;
+  --md-primary-fg-color--dark:  #574AA8;
+  --md-accent-fg-color:         #7C3AED;
+}
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #faf9f6; /* blanc cassé chaud */
+}
+
+[data-md-color-scheme="default"] .md-header,
+[data-md-color-scheme="default"] .md-tabs {
+  background-color: #F5F3FF;            /* faint lavender wash */
+}
+
+/* Dark scheme */
+[data-md-color-scheme="slate"] {
+  --md-hue: 265;                        /* violet-tinted dark surfaces (210 = blue) */
+  --md-primary-fg-color:        #C4B5FD;
+  --md-primary-fg-color--light: #D6C9FE;
+  --md-primary-fg-color--dark:  #A78BFA;
+  --md-accent-fg-color:         #D0BCFF;
+  --md-typeset-a-color:         #C4B5FD;
+}
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: #17151F;
+}
+
+/* Lavender underline + label on the active tab (both schemes). */
+.md-tabs__item--active {
+  border-bottom-color: var(--md-primary-fg-color);
+}
+.md-tabs__item--active > .md-tabs__link {
+  color: var(--md-primary-fg-color);
+}
+
+/**
+ * Colors of social buttons
+ */
 .ebouchut-color-gmail {
   color: #C71610;
 }
@@ -9,4 +62,22 @@
 }
 .ebouchut-color-twitter {
   color: #1DA1F2;
+}
+
+/*
+ * Multi-column lists:
+ * the theme gives `ul` a `margin-top: 1em`, which offsets the first item of
+ * column 1 but not the list fragment that flows into column 2 (block margins
+ * don't re-apply at a column break), so the columns' first items don't align.
+ * Zero the list's block margins inside any `column-count` container, and keep
+ * a wrapping item from splitting across the gap.
+ */
+.md-typeset div[style*="column-count"] > ul,
+.md-typeset div[style*="column-count"] > ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.md-typeset div[style*="column-count"] > ul > li,
+.md-typeset div[style*="column-count"] > ol > li {
+  break-inside: avoid;
 }

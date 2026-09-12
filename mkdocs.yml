@@ -2,7 +2,7 @@ site_name: Eric Bouchut
 site_url: https://www.ericbouchut.com
 
 theme:
-  name: material
+  variant: modern
   language: en
   features:
     - navigation.indexes
@@ -16,8 +16,29 @@ theme:
     - search.share
     - toc.follow
   palette:
-    primary: deep purple
-    accent: deep purple
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: custom
+      accent:  custom
+      toggle:
+        icon: lucide/sun
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme:  default
+      primary: custom
+      accent:  custom
+      toggle:
+        icon: lucide/moon
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme:  slate
+      primary: custom
+      accent:  custom
+      toggle:
+        icon: lucide/sun-moon
+        name: Switch to auto (use System Preferences)
 
 plugins:
   - search
@@ -32,6 +53,7 @@ markdown_extensions:
   - abbr
   - admonition
   - attr_list
+  - md_in_html
   - meta
   - pymdownx.details
   - pymdownx.emoji:
@@ -82,6 +104,7 @@ nav:
       - GitHub: https://github.com/ebouchut
       - Twitter: https://twitter.com/ebouchut
       - Mastodon: https://ruby.social/@ebouchut
+  - CV: blog/cv/index.md
   - Contact:
       - blog/contact/index.md
       - LinkedIn: https://linkedin.com/in/ebouchut

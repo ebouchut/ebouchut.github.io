@@ -1,5 +1,7 @@
-# Build and Deploy the blog every time the main branch is pushed
+# Build the blog and deploy it to GitHub Pages on every push to main.
 #
+# Pages "Source" must be set to "GitHub Actions" (repo Settings > Pages).
+# The gh-pages branch is not used by this workflow.
 name: publish
 
 on:
@@ -7,24 +9,54 @@ on:
     branches:
       - main
 
+# Least privilege: no `contents: write`. A short-lived OIDC token plus the
+# Pages deploy scope are all this workflow needs.
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; do not cancel a run already in progress.
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - name: Install uv
+      - name: Check out the repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up uv
         uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
         with:
           enable-cache: true
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+
+      - name: Install locked dependencies
+        run: uv sync --locked
+
+      - name: Build the site (strict)
+        run: uv run zensical build --strict
+
+      # Pack site/ and store it as a workflow artifact instead of pushing to gh-pages.
+      - name: Upload the site as a Pages artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
-      - run: uv sync --locked
-      - run: uv run mkdocs gh-deploy --force
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # Hand the uploaded artifact to the Pages service; authenticates with the
+      # OIDC token, so no repository write access is required.
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+
+# Note: actions/configure-pages is not needed here — zensical takes the base
+# path from `site_url` in mkdocs.yml.
