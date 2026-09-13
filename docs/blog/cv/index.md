@@ -24,7 +24,7 @@ tags:
 
 Ingénieur logiciel principalement backend, avec plusieurs années d'expérience en Java. Habitué au travail en équipe distribuée et virtuelle, j'ai évolué dans tous types de structures et contribué à des projets open source. J'aime expliquer, partager mes connaissances, apprendre en public et rester au fait des évolutions technologiques, notamment l'architecture logicielle qui prend tout son sens avec l'IA.
 
-Je recherche une opportunité d'ingénieur logiciel en CDI sur la zone Aix-en-Provence - Marseille.
+Je recherche une opportunité d'ingénieur logiciel en CDI dans la zone Aix en Provence — Marseille.
 
 J'ai l'expérience de **Java** et **Ruby on Rails**.  
 
@@ -33,7 +33,7 @@ Depuis <time datetime="2023">2023</time>, je contribue aux projets **open-source
 pour améliorer la **documentation technique** 
 et configurer les outils utilisés pour sa création.
 
-En <time datetime="2021">2021</time>, en tant que développeur Solidity pour le projet open-source [Bet-no-loss](https://github.com/bet-no-loss/bet-no-loss#readme) (5 personnes),
+En <time datetime="2021">2021</time>, en tant que développeur Solidity pour le projet open-source [Bet-no-loss](https://github.com/bet-no-loss/bet-no-loss#readme),
 j'ai co-écrit et documenté un smart-contract pour la **Blockchain** Ethereum pour miser sur un pari sportif sans perdre sa mise.
 
 En tant que **professeur d'informatique** pour Axis-Digital, 
@@ -41,10 +41,10 @@ j'ai enseigné le langage C, les Appels Système **Unix** et le **Shell**
 à des groupes de 15 personnes, ainsi que le cours "*Utilisation Unix avancée*" 
 que j'ai co-écrit.
 
-J'ai rédigé  plusieurs articles sur **Git**, tels que  [*Git Stash Internals*](https://www.ericbouchut.com/blog/2021/07/22/git-stash-internals/) et 
+J'ai rédigé plusieurs articles sur **Git**, tels que [*Git Stash Internals*](https://www.ericbouchut.com/blog/2021/07/22/git-stash-internals/) et 
 [*Git Flow*](https://github.com/ebouchut/learn-git/wiki/Git-Flow).
 
-A l'issue d'une formation en alternance de 16 mois, 
+À l'issue d'une formation en alternance de 16 mois, 
 j'ai obtenu la certification **Développeur Web et Web Mobile**.
 
 **Compétences clés** :
@@ -54,7 +54,7 @@ j'ai obtenu la certification **Développeur Web et Web Mobile**.
 - Ruby, Ruby on Rails,
 - Programmation Shell,
 - Git, Conventional Commits, 
-- intégration et déploiement en continu, GitHub workflows,
+- intégration et déploiement en continu avec des GitHub Workflows,
 - documentation technique, formation.
 </div>
 
@@ -72,7 +72,7 @@ j'ai obtenu la certification **Développeur Web et Web Mobile**.
 
 ### Contributeur Open Source pour Loop et Trio
 
-- **Projets open-source** :  *Loop* et *Trio* 🌐
+- **Projets open-source** : *Loop* et *Trio* :globe_with_meridians:{ title="Télétravail" }
 - **Dates** : Depuis <time datetime="2023">2023</time>
 
 > La documentation de *Loop* et *Trio* a pour but 
@@ -99,14 +99,14 @@ Contributions aux projets [LoopDocs](https://loopdocs.org) et [TrioDocs](https:/
 
 ### Développeur Backend
 
-- **Entreprise** : [HostnFly](https://www.hostnfly.com/) (Paris 🌐)
+- **Entreprise** : [HostnFly](https://www.hostnfly.com/) (Paris :globe_with_meridians:{ title="Télétravail" })
 - **Dates** : <time datetime="2022-04">Avril 2022</time> - 
           <time datetime="2022-10">Octobre 2022</time>
 
 > *HostnFly* est une startup B2C dans l'industrie de l'hébergement de voyage.
 
 Développement et maintenance du Back-Office de conciergerie
-pour mettre des logements en location sur Airnbnb et BookingSync,
+pour mettre des logements en location sur Airbnb et BookingSync,
 avec une IA qui optimise le prix de la location et sa durée.
 
 **Compétences utilisées** : Ruby on Rails.
@@ -114,11 +114,11 @@ avec une IA qui optimise le prix de la location et sa durée.
 
 ### Développeur Solidity
 
-- **Entreprise** : [Alyra](https://www.alyra.fr/)  (Paris 🌐)
+- **Entreprise** : [Alyra](https://www.alyra.fr/) (Paris :globe_with_meridians:{ title="Télétravail" })
 - **Dates** : <time datetime="2021-01">Janvier 2021</time> - 
       <time datetime="2021-06">Juin 2021</time>
 
-> Contribution au projet open-source **[Bet-No-Loss](https://github.com/bet-no-loss/bet-no-loss#readme)** constitué de 5 personnes.  
+> Contribution au projet open-source **[Bet-no-loss](https://github.com/bet-no-loss/bet-no-loss#readme)** constitué de 5 personnes.  
 > Création d'une application distribuée sur la Blockchain Ethereum pour parier 
 > sur un évènement sportif sans perdre sa mise.
 > Ce projet a été réalisé dans le cadre de la formation *Développeur Blockchain*  chez Alyra.
@@ -140,8 +140,8 @@ avec une IA qui optimise le prix de la location et sa durée.
 ### Développeur Ruby on Rails et Java — Locala
 
 - **Entreprise** : [Locala](https://asklocala.com/fr) (Marseille)
-- **Dates** : <time datetime="2017-03">Mars 2017</time> - 
-      <time datetime="2020-10">Octobre 2020</time> (3 ans et 10 mois)
+- **Dates** : <time datetime="2017-02">Mars 2017</time> - 
+      <time datetime="2020-11">Novembre 2020</time> (3 ans et 10 mois)
 
 > Locala (anciennement S4M) apporte des solutions publicitaires
 > pour aider les marques à générer des visites supplémentaires
@@ -149,8 +149,8 @@ avec une IA qui optimise le prix de la location et sa durée.
 
 - Réalisation d'une API REST pour exposer le DSP comme un service,
 - amélioration de la documentation,
-- création d'une base de connaissances technique ainsi qu'un manuel *git-flow* qui a servi de référence aux développeurs.
-- support de niveau 3 chargé de diagnostiquer les problèmes techniques
+- création d'une base de connaissances technique ainsi qu'un manuel *git-flow* qui a servi de référence aux développeurs,
+- support de niveau 3 chargé de diagnostiquer les problèmes techniques.
 
 **Compétences utilisées** :
 
@@ -178,7 +178,7 @@ j'ai également utilisé des outils et frameworks big-data tels que *Storm*, *Ca
 
 **Compétences utilisées** : 
 
-<div style="column-count: 2; column-gap: 1em" markdown>
+<div style="column-count: 2; column-gap: 1em;" markdown>
 - Open-RTB (publicité programmatique),
 - Ruby,
 - Java,
@@ -212,14 +212,14 @@ j'ai également utilisé des outils et frameworks big-data tels que *Storm*, *Ca
 - GWT (Google Web Toolkit),
 - XSL,
 - PHP,
-- JIRA.
+- Jira.
 </div>
 
 
 <details markdown>
-<summary>1991 - 2009</summary>
+<summary>1991 — 2009</summary>
 
-### Expériences antérieures (1991 – 2009)
+### Expériences antérieures (1991 — 2009)
 
 
 #### Software Developer
@@ -248,7 +248,7 @@ j'ai également utilisé des outils et frameworks big-data tels que *Storm*, *Ca
 > pour les grandes entreprises.
 
 
-- Réalisation de modules de découverte des environnements:
+- Réalisation de modules de découverte des environnements :
     - J2EE (WebLogic et WebSphere) via JMX,
     - Web services,
     - Business Processes (Oracle BPEL Manager),
@@ -256,7 +256,7 @@ j'ai également utilisé des outils et frameworks big-data tels que *Storm*, *Ca
 
 **Compétences utilisées** : 
 
-<div style="column-count: 2; column-gap: 1em" markdown>
+<div style="column-count: 2; column-gap: 1em;" markdown>
 - Java,
 - JMX, 
 - Jenkins, 
@@ -270,15 +270,15 @@ j'ai également utilisé des outils et frameworks big-data tels que *Storm*, *Ca
 - **Dates** : <time datetime="1997-10">Octobre 1997</time> -
       <time datetime="2001-03">Mars 2001</time> (3 ans et 6 mois)
 
-> Perform  offre des solutions de gestion et de découverte et d’administration de réseaux X25 et TCP/IP.
+> Perform  offre des solutions de découverte et d'administration de réseaux X25 et TCP/IP.
 
-- Conception et réalisation du logiciel de gestion de la clientèle (CRM Web based) en *Cold Fusion*,
+- Conception et réalisation du logiciel de gestion de la clientèle (CRM Web based) en *ColdFusion*,
 - gestion et évolution du site Web,
 - contribution au développement d'un logiciel de découverte et visualisation de la topologie réseau TCP/IP.
 
 **Compétences utilisées** :
 
-<div style="column-count: 2; column-gap: 1em" markdown>
+<div style="column-count: 2; column-gap: 1em;" markdown>
 -  Java,
 -  HTML,
 -  développement du site et d'applications Web,
@@ -301,7 +301,7 @@ la gestion du dossier médical informatisé.
 
 #### Ingénieur logiciel MINITEL et Audiotel
 
-- **Entreprise** : CLV Maintenance Systeme (Paris)
+- **Entreprise** : CLV Maintenance Système (Paris)
 - **Dates** : <time datetime="1994-04">Avril 1994</time> -
       <time datetime="1994-10">Octobre 1994</time> (7 mois)
 
@@ -314,7 +314,7 @@ Réalisation d'applications back-end MINITEL et Audiotel ainsi qu'un moteur de t
 
 **Compétences utilisées** :
 
-<div style="column-count: 2; column-gap: 1em" markdown>
+<div style="column-count: 2; column-gap: 1em;" markdown>
 - C, 
 - Perl, 
 - Awk, 
@@ -327,10 +327,10 @@ Réalisation d'applications back-end MINITEL et Audiotel ainsi qu'un moteur de t
 
 - **Entreprise** : Axis Digital (Boulogne Billancourt)
 - **Dates** : <time datetime="1991-01">Janvier 1991</time> - 
-          <time datetime="1994-04">Mars 1994</time> (3 ans et 3 mois)
+          <time datetime="1994-03">Mars 1994</time> (3 ans et 3 mois)
 
 > *Axis Digital* est un organisme de formation en informatique,
-> spécialisé dans les langages de programmation et le système Unix.
+> spécialisé dans les langages de programmation, le système Unix, X11 et TCP/IP.
 
 
 - Enseignement des cours *Langage C*, *Utilisation Unix* et *Appels Système Unix*,
@@ -339,7 +339,7 @@ Réalisation d'applications back-end MINITEL et Audiotel ainsi qu'un moteur de t
 
 **Compétences utilisées** :
 
-<div style="column-count: 2; column-gap: 1em" markdown>
+<div style="column-count: 2; column-gap: 1em;" markdown>
 - C, 
 - appels système Unix, 
 - Shell, 
@@ -352,16 +352,16 @@ Réalisation d'applications back-end MINITEL et Audiotel ainsi qu'un moteur de t
 ## Formations et diplômes
 
 
-### Formation Développeur Web et Web mobile
+### Formation Développeur Web et Web Mobile
 
 - **Organisme** : [La Plateforme](https://laplateforme.io/)
-- **Dates** : Juin 2025 - Octobre 2026 (16 mois)
+- **Dates** : <time datetime="2025-01">Juin 2025"</time> - <time datetime="2026-10">Octobre 2026</time> (16 mois)
 
 > Formation en alternance menant au titre professionnel de Développeur Web et Web Mobile (RNCP niveau 5).
 
 **Compétences** : 
 
-<div style="column-count: 2; column-gap: 1.5em" markdown>
+<div style="column-count: 2; column-gap: 1em;" markdown>
 - front-end Web: [HTML, CSS](https://github.com/ebouchut-laplateforme/project-html-css-form#layout), Javascript, 
 - back-end: Java, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, API REST, 
 - base de données: MySQL et [PostgreSQL](https://github.com/ebouchut/learn-dev?tab=contributing-ov-file#database), 
@@ -375,7 +375,7 @@ Réalisation d'applications back-end MINITEL et Audiotel ainsi qu'un moteur de t
 - **Organisme** : [M2i Formation](https://www.m2iformation.fr)
 - **Dates** : <time datetime="2024-03">Mars 2024</time> - <time datetime="2024-06">Juin 2024</time>
 
-> La formation certifiante  **Développeur Cybersécurité** (POEC) chez *M2i Formation* 
+> La formation certifiante **Développeur Cybersécurité** (POEC) chez *M2i Formation* 
 > m'a permis d'appréhender les techniques de sécurisation des systèmes et des applications.
 > Elle couvre un large éventail de compétences, allant des bonnes pratiques 
 > de sécurité (DevSecOps) à l'administration des systèmes Linux et Windows, le Pentest 
@@ -383,7 +383,7 @@ Réalisation d'applications back-end MINITEL et Audiotel ainsi qu'un moteur de t
 
 **Compétences** :
 
-<div style="column-count: 2; column-gap: 1.5em" markdown>
+<div style="column-count: 2; column-gap: 1em;" markdown>
 - Cybersécurité, 
 - Python, 
 - SQL,
@@ -417,10 +417,13 @@ Réalisation d'applications back-end MINITEL et Audiotel ainsi qu'un moteur de t
 - **Organisme** : Université Aix Marseille
 - **Dates** : <time datetime="1989">1989</time> - <time datetime="1990">1990</time>
 
+> Formation universitaire post-DUT approfondissant la programmation système 
+> sous Unix, l’écriture de scripts Shell 
+> et les fondamentaux des réseaux TCP/IP.
 
 **Compétences** :
 
-<div style="column-count: 2; column-gap: 1.5em" markdown>
+<div style="column-count: 2; column-gap: 1em;" markdown>
 - Appels systèmes Unix, 
 - Programmation Shell, 
 - fondamentaux des protocoles IP et TCP.
@@ -432,10 +435,11 @@ Réalisation d'applications back-end MINITEL et Audiotel ainsi qu'un moteur de t
 - **Organisme** : IUT Aix Marseille
 - **Dates** : <time datetime="1987">1987</time> - <time datetime="1989">1989</time>
 
+>Formation supérieure de deux ans posant les fondamentaux de l'informatique : algorithmique, programmation en C et Pascal, système Unix et réseaux TCP/IP. Ces fondations me sont toujours utiles aujourd’hui.
 
 **Compétences** :
 
-<div style="column-count: 2; column-gap: 1.5em" markdown>
+<div style="column-count: 2; column-gap: 1em;" markdown>
 - Algorithmie, 
 - langages C et Pascal, 
 - programmation Shell, 
@@ -448,12 +452,13 @@ Réalisation d'applications back-end MINITEL et Audiotel ainsi qu'un moteur de t
 
 - **Développeur Web et Web Mobile**, RNCP-37674 (2026),
 - [**Python**](https://www.tosa.org/FR/Index?param=azRnM2xNUHBkQjJyelEyVmMzRWlrdVVWUVIyeDY2d3JYbVRIMHM0YWFxSGo3THRxMmtoMnl5OFV5TWhGcWl5dU1VcjBWU0R5a3VLZkpBM2wrWUxnWnc9PTo6p7f1rU0XpWZtu8CsGdXzCA) (*TOSA* 2024),
-- [**Anglais**](https://cert.efset.org/4ybGYX)  (*EFSET* 2024),
+- [**Anglais**](https://cert.efset.org/4ybGYX) (*EFSET* 2024),
 - [**Développeur Blockchain**](https://certificate.bcdiploma.com/check/8AEFB8EA0140B750A45B5C30C13E2F320F2D746A07337296DAB5FF4D23789757ZmlaRlRBZHB6NTJtVEdObFQ1RUt4MEllUFJQRVRGYWxnZEx4Qjl6QmF1Y2Y0Wkll) (*Alyra* 2021),
 - **Web Developer** (*Mach3* 2010).
 
 
 ## Langues
 
-- **Anglais**  (niveau C1)
-- **Français** (langue natale)
+- **Anglais** (niveau C1)
+- **Français** (langue maternelle)
+
