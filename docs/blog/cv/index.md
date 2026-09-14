@@ -352,10 +352,10 @@ Réalisation d'applications back-end MINITEL et Audiotel ainsi qu'un moteur de t
 ## Formations et diplômes
 
 
-### Formation Développeur Web et Web Mobile
+### Formation en alternance Développeur Web et Web Mobile
 
 - **Organisme** : [La Plateforme](https://laplateforme.io/)
-- **Dates** : <time datetime="2025-01">Juin 2025"</time> - <time datetime="2026-10">Octobre 2026</time> (16 mois)
+- **Dates** : <time datetime="2025-06">Juin 2025</time> - <time datetime="2026-10">Octobre 2026</time> (16 mois)
 
 > Formation en alternance menant au titre professionnel de Développeur Web et Web Mobile (RNCP niveau 5).
 
@@ -426,7 +426,8 @@ Réalisation d'applications back-end MINITEL et Audiotel ainsi qu'un moteur de t
 <div style="column-count: 2; column-gap: 1em;" markdown>
 - Appels systèmes Unix, 
 - Programmation Shell, 
-- fondamentaux des protocoles IP et TCP.
+- fondamentaux des protocoles IP et TCP,
+- X11.
 </div>
 
 
@@ -435,7 +436,9 @@ Réalisation d'applications back-end MINITEL et Audiotel ainsi qu'un moteur de t
 - **Organisme** : IUT Aix Marseille
 - **Dates** : <time datetime="1987">1987</time> - <time datetime="1989">1989</time>
 
->Formation supérieure de deux ans posant les fondamentaux de l'informatique : algorithmique, programmation en C et Pascal, système Unix et réseaux TCP/IP. Ces fondations me sont toujours utiles aujourd’hui.
+>Formation supérieure de deux ans posant les fondamentaux de l'informatique : 
+>algorithmique, programmation en C et Pascal, système Unix et réseaux TCP/IP. 
+>Certaines de ces fondations me sont toujours utiles aujourd’hui.
 
 **Compétences** :
 
@@ -450,11 +453,11 @@ Réalisation d'applications back-end MINITEL et Audiotel ainsi qu'un moteur de t
 
 ## Certifications
 
-- **Développeur Web et Web Mobile**, RNCP-37674 (2026),
-- [**Python**](https://www.tosa.org/FR/Index?param=azRnM2xNUHBkQjJyelEyVmMzRWlrdVVWUVIyeDY2d3JYbVRIMHM0YWFxSGo3THRxMmtoMnl5OFV5TWhGcWl5dU1VcjBWU0R5a3VLZkpBM2wrWUxnWnc9PTo6p7f1rU0XpWZtu8CsGdXzCA) (*TOSA* 2024),
-- [**Anglais**](https://cert.efset.org/4ybGYX) (*EFSET* 2024),
-- [**Développeur Blockchain**](https://certificate.bcdiploma.com/check/8AEFB8EA0140B750A45B5C30C13E2F320F2D746A07337296DAB5FF4D23789757ZmlaRlRBZHB6NTJtVEdObFQ1RUt4MEllUFJQRVRGYWxnZEx4Qjl6QmF1Y2Y0Wkll) (*Alyra* 2021),
-- **Web Developer** (*Mach3* 2010).
+- **Développeur Web et Web Mobile**, titre professionnel RNCP-37674 (août 2026),
+- [**Python**](https://www.tosa.org/FR/Index?param=azRnM2xNUHBkQjJyelEyVmMzRWlrdVVWUVIyeDY2d3JYbVRIMHM0YWFxSGo3THRxMmtoMnl5OFV5TWhGcWl5dU1VcjBWU0R5a3VLZkpBM2wrWUxnWnc9PTo6p7f1rU0XpWZtu8CsGdXzCA) (*TOSA* juin 2024),
+- [**Anglais**](https://cert.efset.org/4ybGYX) (*EFSET* mars 2024),
+- [**Développeur Blockchain**](https://certificate.bcdiploma.com/check/8AEFB8EA0140B750A45B5C30C13E2F320F2D746A07337296DAB5FF4D23789757ZmlaRlRBZHB6NTJtVEdObFQ1RUt4MEllUFJQRVRGYWxnZEx4Qjl6QmF1Y2Y0Wkll) (*Alyra* mai 2021),
+- **Web Developer** (*Mach3* mai 2010).
 
 
 ## Langues
