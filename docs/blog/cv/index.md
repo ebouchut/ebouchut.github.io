@@ -351,6 +351,21 @@ Réalisation d'applications back-end MINITEL et Audiotel ainsi qu'un moteur de t
 
 ## Formations et diplômes
 
+```mermaid
+timeline
+    title Formations, diplômes et certifications
+
+    section Formation initiale
+        1987 – 1989 : DUT Informatique (IUT Aix Marseille)
+        1989 – 1990 : Diplôme Universitaire IHM et Réseaux (Université Aix Marseille)
+    section Reconversions et spécialisations
+        Mars – Mai 2010 : Formation Web Developer (Mach3) : Certification Web Developer
+        Oct 2020 – Mai 2021 : Formation Développeur Blockchain (Alyra) : Certification Développeur Blockchain
+    section Montée en compétences récente
+        Mars – Juin 2024 : Formation Développeur Cybersécurité (M2i) : Certification Python (TOSA) : Certification Anglais (EFSET)
+        Juin 2025 – Oct 2026 : Formation Développeur Web et Web Mobile (La Plateforme) : Certification Développeur Web et Web Mobile RNCP-37674
+```
+
 
 ### Formation en alternance Développeur Web et Web Mobile
 
