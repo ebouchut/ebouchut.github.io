@@ -1,0 +1,7 @@
+User-agent: *
+Disallow:
+
+# One sitemap per language build; neither build owns this file, so both are
+# declared here by hand.
+Sitemap: https://www.ericbouchut.com/en/sitemap.xml
+Sitemap: https://www.ericbouchut.com/fr/sitemap.xml

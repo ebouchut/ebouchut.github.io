@@ -36,8 +36,21 @@ jobs:
       - name: Install locked dependencies
         run: uv sync --locked
 
-      - name: Build the site (strict)
+      # Two builds, two disjoint source trees. Order matters only in that both
+      # must run before the artifact is packed; neither clears the other's
+      # output, since each writes its own subdirectory of site/.
+      - name: Build the English site (strict)
         run: uv run zensical build --strict
+
+      - name: Build the French site (strict)
+        run: uv run zensical build -f mkdocs.fr.yml --strict
+
+      # Everything that must sit at the site root belongs to neither language
+      # build: the language-detecting landing page, the shared stylesheet, and
+      # the files GitHub Pages and search engines read from the root
+      # (CNAME, robots.txt, the Google verification file).
+      - name: Copy the root files into the site
+        run: cp -R root/. site/
 
       # Pack site/ and store it as a workflow artifact instead of pushing to gh-pages.
       - name: Upload the site as a Pages artifact
