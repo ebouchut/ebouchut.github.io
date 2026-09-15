@@ -217,7 +217,7 @@ j'ai également utilisé des outils et frameworks big-data tels que *Storm*, *Ca
 
 
 <details markdown>
-<summary>1991 — 2009</summary>
+<summary>Expériences antérieures : 1991 — 2009</summary>
 
 ### Expériences antérieures (1991 — 2009)
 
@@ -367,12 +367,14 @@ timeline
 ```
 
 
-### Formation en alternance Développeur Web et Web Mobile
+### Formation Développeur Web et Web Mobile
 
 - **Organisme** : [La Plateforme](https://laplateforme.io/)
 - **Dates** : <time datetime="2025-06">Juin 2025</time> - <time datetime="2026-10">Octobre 2026</time> (16 mois)
 
 > Formation en alternance menant au titre professionnel de Développeur Web et Web Mobile (RNCP niveau 5).
+
+[Dossiers présentés lors du passage du titre](https://github.com/ebouchut/bouchut-eric-dossiers-pros-DWWM#readme)
 
 **Compétences** : 
 
