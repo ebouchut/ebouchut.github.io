@@ -48,6 +48,9 @@ theme:
 
 plugins:
   - search
+  # Zensical has not ported the blog plugin yet, so this block is inert: posts
+  # publish at blog/posts/<filename>/ and post_url_format is ignored. Kept in
+  # sync with mkdocs.yml so both sites behave identically once it lands.
   - blog:
       blog_toc: true
       post_date_format: long
