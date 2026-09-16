@@ -44,19 +44,19 @@ d'une page blanche.
 Un petit rappel de **terminologie** peut être utile pour la suite de ce billet.
 N'hésitez pas à passer directement à la suite et à y revenir au besoin.
 
-- Un **fichier suivi** est un fichier sous gestion de version : git le connaît
+- Un **fichier suivi** (`tracked file`) est un fichier sous gestion de version : git le connaît
   déjà parce que vous l'avez ajouté au dépôt avec `git add` puis `git commit`.
-- Un **fichier non suivi** n'est pas encore sous gestion de version.
+- Un **fichier non suivi** (`untracked file`) n'est pas encore sous gestion de version.
   Il n'est présent ni dans l'Index ni dans le dépôt.
   Autrement dit, vous n'avez pas fait `git add` puis `git commit` dessus.
 - Les **fichiers ignorés** sont déclarés comme tels dans `.gitignore` ou
   `.git/info/exclude`. `git stash` les laisse de côté par défaut, sauf si vous
   employez l'option `-a`.
-- **Répertoire de travail** : le répertoire où vous voyez et modifiez les
+- **Répertoire de travail** (`working directory`), désigne le répertoire où vous voyez et modifiez les
   fichiers, contenant la dernière version du projet extraite du dépôt.
 - L'**Index**, aussi appelé *cache* ou *staging area*, est un emplacement de
   stockage temporaire, `.git/index`, où git conserve chaque fichier (en totalité
-  ou en partie) prêt à être commité.
+  ou en partie) prêt à être commit.
   Voyez-le comme un entrepôt où vous déposez, avec `git add`, une copie de chaque
   colis d'une expédition donnée dès qu'il est prêt.
   Une fois tous les colis nécessaires réunis dans l'entrepôt, on expédie le tout
@@ -132,6 +132,7 @@ Untracked files:
 ```
 
 Il y a trois sections :
+
 - **`Changes to be committed`** désigne le contenu de l'**Index**
   (`CONTRIBUTING.md`).
 - **`Changes not staged for commit`** désigne les **fichiers suivis** qui sont
@@ -143,6 +144,7 @@ Il y a trois sections :
 ## La commande git stash
 
 Cette section suppose que :
+
 - chaque commande part du même état que celui décrit dans la section
   `Git Status` ;
 - un seul stash a été créé, et nous le désignons par `stash@{0}`.
@@ -163,6 +165,7 @@ Voyons maintenant ce que fait chacune de ces commandes.
 ### git stash
 
 Par défaut, `git stash` met de côté :
+
 - tout fichier **suivi** qui est modifié et non ignoré : `README.md` ;
 - l'**Index** : `CONTRIBUTING.md`.
 
@@ -191,6 +194,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 Pour mettre également de côté les fichiers non suivis, utilisez l'option `-u`.
 
 `git stash -u` met de côté :
+
 - les **fichiers suivis et modifiés** : `README.md` ;
 - l'**Index** : `CONTRIBUTING.md` ;
 - les **fichiers non suivis** : `LICENSE`.
@@ -215,6 +219,7 @@ Pour mettre aussi de côté les fichiers ignorés, utilisez l'option `-a` au lie
 de `-u`.
 
 `git stash -a` met de côté **tous** les fichiers, à savoir :
+
 - les **fichiers modifiés** que git suit : `README.md` ;
 - l'**Index** : `CONTRIBUTING.md` ;
 - les **fichiers non suivis** : `LICENSE` ;
@@ -228,6 +233,7 @@ Lorsqu'il ajoute un stash, git crée un *commit de stash* et l'empile au sommet 
 la pile de stashs. Les entrées déjà présentes, s'il y en a, sont décalées vers le
 bas. La référence **`stash@{0}`** désigne toujours le **sommet de la pile**.
 Chaque nouveau stash repousse les précédents vers le bas, d'où :
+
 - `stash@{0}` désigne le stash le plus récent,
 - `stash@{1}` désigne l'avant-dernier stash créé,
 - `stash@{2}` désigne l'antépénultième, et ainsi de suite.
@@ -262,13 +268,14 @@ committer Eric Bouchut <ebouchut@gmail.com> 1627056522 +0200
 
 ![git stash commit parents](../../images/git_stash/git-stash-internals-commit_parents.png)
 
-Le **commit de stash `stash@{0}`** (`49482a`) est un **commit de fusion** à trois
+Le **commit de stash `stash@{0}`** (`49482a`) est un **commit de fusion** (*merge commit*) à trois
 parents dans ce cas, parce que nous avons mis de côté les fichiers non suivis
 (deux parents par défaut).  
 Il contient également les fichiers non ignorés du répertoire de travail qui
 étaient modifiés au moment du stash.
 
 Faisons connaissance avec les parents :
+
 - **`stash@{0}^1`** (`031ca10`) désigne le **premier** parent du commit de stash.  
   C'était le commit courant (`HEAD`) au moment du stash.  
 - **`stash@{0}^2`** (`b558b9e`) désigne le **deuxième** parent du commit de stash.  
@@ -293,6 +300,7 @@ Listons maintenant le contenu du stash.
 
 Voyons comment lister, en ligne de commande, les fichiers enregistrés dans un
 stash :
+
 - les fichiers modifiés du répertoire de travail,
 - les « fichiers » de l'Index,
 - les fichiers non suivis et ignorés.
@@ -306,8 +314,11 @@ de stash le plus récent :
 ```shell
  git log -m --first-parent -1  --format='' --name-only 'stash@{0}'
 ```
-Ici, on détaille le commit de fusion (`-m`) en se limitant au premier commit
-(`-1`) du premier parent (`--first-parent`), c'est-à-dire le commit de stash
+Ici, on détaille :
+
+- **`-m`** le **commit de fusion** (*merge commit*),
+- **`-1`** en se limitant au **premier commit**,
+- **`--first-parent`** du premier parent, c'est-à-dire le commit de stash
 lui-même.
 
 ℹ️  Par défaut, `git log` n'affiche aucun détail sur les parents d'un commit de

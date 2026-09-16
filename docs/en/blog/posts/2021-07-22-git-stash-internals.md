@@ -131,6 +131,7 @@ Untracked files:
 ```
 
 There are 3 sections:
+
 - **`Changes to be committed`** denotes the content of the
   **Index**.(`CONTRIBUTING.md`)
 - **`Changes not staged for commit`** denotes the **tracked files** that are
@@ -141,6 +142,7 @@ There are 3 sections:
 ## Git Stash Command
 
 This section assumes that:
+
 - Each command starts from the same state described in the `Git Status` section.
 - there is only one stash created and we use `stash@{0}` to reference it.
 
@@ -160,6 +162,7 @@ Now, let's take a look at what each `git stash` command does.
 ### git stash
 
 By default, `git stash` sets aside:
+
 - any **tracked** file that is modified and not ignored: `README.md`
 - the **Index**: `CONTRIBUTING.md`
 
@@ -188,6 +191,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 To also stash the untracked files, use the `-u` option.
 
 `git stash -u` sets aside the:
+
 - **Modified and tracked files**: `README.md`
 - **Index**: `CONTRIBUTING.md`
 - **Untracked files**: `LICENSE`
@@ -211,6 +215,7 @@ nothing to commit, working directory clean
 To also stash the ignored files use the `-a`option instead of `-u`.
 
 `git stash -a` sets aside **all** the files, that is:
+
 - **Modified files** that git is tracking: `README.md`
 - **Index**: `CONTRIBUTING.md`
 - **Untracked files**:  `LICENSE`
@@ -224,6 +229,7 @@ When adding a stash, git creates a *stash commit*, pushes it on top of the stash
 This shifts existing stash entries downwards (if any).
 The reference **`stash@{0}`** always denotes the **top of the stash stack**.
 Each time you stash something else it is pushed downwards, hence:
+
 - `stash@{0}` denotes the most recent stash created,
 - `stash@{1}` denotes the second to last stash created,
 - `stash@{2}` denotes the third to last stash created, and so on.
@@ -262,6 +268,7 @@ It also contains the non ignored files of the working dir that were modified
 at the time of the stash.
 
 Let's meet the parents:
+
 - **`stash@{0}^1`** (`031ca10`) denotes the **first** parent of the stash commit.  
  This was the current commit (`HEAD`) at the time of the stash.  
 - **`stash@{0}^2`** (`b558b9e`) denotes the **second** parent of the stash commit.  
@@ -283,6 +290,7 @@ We will now list the content of the stash.
 ## Files of a Stash Commit
 
 Now, let's use the command line to list the files saved in a stash:
+
 - modified files in the Working Dir
 - staged "files"
 - untracked and ignored files 
@@ -296,13 +304,16 @@ stash commit:
 ```shell
  git log -m --first-parent -1  --format='' --name-only 'stash@{0}'
 ```
-Here we drill down on the merge commit (`-m`) and focus only on the first commit
-(`-1`) of the first parent (`--first-parent`), that is the stash commit itself.  
+Here we drill down on:
 
-ℹ️  By default, git log does not display details about any parent of a merge
+-  **`-m`** the **merge commit**,
+- **`-1`** focus only on the **first commit**,
+- **`--first-parent`** of the first parent, that is the stash commit itself.  
+
+ℹ️  By default, `git log` does not display details about any parent of a merge
 commit, unless we use `-m` and when we do use this option, it displays what is
 requested for each and every parent. As this is not what we want here, we
-restrict only to the first parent..
+restrict only to the first parent.
 
 
 For whatever reason, even with `--name-only`, `git log` 
