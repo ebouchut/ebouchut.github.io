@@ -39,3 +39,4 @@ NNNN-short-title-in-kebab-case.md
 | [0002](0002-use-zensical-as-the-blogging-engine.md)        | Use Zensical as the blogging engine     | accepted |
 | [0003](0003-deploy-pages-via-artifact-upload.md)           | Deploy the site as a GitHub Pages artifact | accepted |
 | [0004](0004-build-the-multilingual-site-as-two-sites.md)   | Build the multilingual site as two independent builds | accepted |
+| [0005](0005-use-a-custom-lavender-palette.md)              | Use a custom lavender palette | accepted |
