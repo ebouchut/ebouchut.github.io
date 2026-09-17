@@ -49,7 +49,7 @@ With over 15 years in the software development industry, my journey spans a dive
 	- Conducted four distinct training classes for groups of up to 15 individuals over **three years**. 
 	- Designed and delivered a course on advanced Unix usage.
  
-My commitment to **professional growth** led me to enroll in an online training program at [Alyra](https://alyra.fr), where I graduated as a [*Blockchain and Smart Contracts Developer*](https://certificate.bcdiploma.com/check/8AEFB8EA0140B750A45B5C30C13E2F320F2D746A07337296DAB5FF4D23789757ZmlaRlRBZHB6NTJtVEdObFQ1RUt4MEllUFJQRVRGYWxnZEx4Qjl6QmF1Y2Y0Wkll).
+My commitment to **professional growth** led me to enroll in an online training program at [Alyra](https://alyra.fr), which I completed and received a [*Blockchain Developer*](https://certificate.bcdiploma.com/check/8AEFB8EA0140B750A45B5C30C13E2F320F2D746A07337296DAB5FF4D23789757ZmlaRlRBZHB6NTJtVEdObFQ1RUt4MEllUFJQRVRGYWxnZEx4Qjl6QmF1Y2Y0Wkll) certification.
 
 Moreover, I'm actively engaged in the **open-source** community, contributing to the [Loop](https://loopkit.github.io/loopdocs/) and [Trio](https://triodocs.org/) projects. Specifically, I focus on enhancing their **technical documentation**.  
 You can explore my contributions in the [LoopDocs](https://github.com/LoopKit/loopdocs) and [TrioDocs](https://github.com/nightscout/trio-docs) repositories, where I collaborate in English with a diverse team distributed across various geographical locations.  
@@ -58,5 +58,9 @@ My responsibilities include improving product documentation as well as **configu
 > This open-source initiative aims to provide comprehensive resources for users of *Loop* and *Trio*—advanced *Automated Insulin Delivery* systems for individuals with type 1 diabetes.
 
 In 2024, I successfully completed a certified training program in **Cybersecurity Development** (POEC *Cybersecurity Developer*) and earned the **TOSA Python 3 certification**, strengthening my skills in secure coding and cybersecurity.
+
+More recently, I completed a 16-month work-study program (June 2025 – October 2026) 
+in *[Web and Mobile Web Development](https://github.com/ebouchut/bouchut-eric-dossiers-pros-DWWM#readme)*. 
+Here is my [capstone project](https://github.com/ebouchut/learn-dev#readme) (*learn-dev*).
 
 Feel free to [reach out](../contact/index.md) if you'd like to connect or learn more about my journey!
