@@ -85,9 +85,17 @@ a cool iOS app I use to read my RSS feeds, when I want to clip an interesting
 blog post I can do that from within Inoreader itself without even using the *Pocket
 Share extension*.
 
-For those of you more visually inclined here is a review of Pocket by Steve Dotto.
+For those of you more visually inclined here is a review of *Pocket* by *Steve Dotto*.
 
-{{< youtube zGeF5XaQ2tU >}}
+<div class="video-embed">
+  <iframe src="https://www.youtube-nocookie.com/embed/zGeF5XaQ2tU"
+          title="Pocket - App Review for Web Clipping Fun"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
+
 
 
 ## Tag with Pinboard
@@ -157,11 +165,29 @@ with Pinboard which has been conceived with this in mind from day one and offers
 far more tagging related features as you can see in this  **review** of Pinboard
 by Rhinofeed.
 
-Pinboard Review - Part 1
-{{< youtube mqphSmguiFY >}}
+#### Pinboard Review - Part 1
 
-Pinboard Review - Part 2
-{{< youtube QFTjdEUrYCk >}}
+<div class="video-embed">
+  <iframe src="https://www.youtube-nocookie.com/embed/mqphSmguiFY"
+          title="Pinboard review - Part 1"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
+
+
+#### Pinboard Review - Part 2
+
+<div class="video-embed">
+  <iframe src="https://www.youtube-nocookie.com/embed/QFTjdEUrYCk"
+          title="Pinboard review - Part 2"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
+
 
 Back in 2010, Leo Laporte and Amber MacArthur interviewed Maciej Ceglowski the creator
 of Pinboard. You can [watch the interview on Youtube][pinboard_interview]
@@ -172,6 +198,7 @@ of Pinboard. You can [watch the interview on Youtube][pinboard_interview]
 I open the links afterwards in Pinboard, when I have plenty of time to read the
 the bookmarked web pages entirely this time. This gives me the opportunity to
 refine existing tags or add new ones.
+
 
 ## Listen
 
