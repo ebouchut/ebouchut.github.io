@@ -84,10 +84,17 @@ outre de les consulter **hors ligne**.
   RSS : quand je veux mettre de côté un billet intéressant, je le fais depuis
   Inoreader, sans même passer par l'*extension de partage Pocket*.
 
-Pour les plus visuels d'entre vous, voici une présentation de Pocket par
-Steve Dotto.
+Pour les plus visuels d'entre vous, voici une présentation de *Pocket* par
+*Steve Dotto*.
 
-{{< youtube zGeF5XaQ2tU >}}
+<div class="video-embed">
+  <iframe src="https://www.youtube-nocookie.com/embed/zGeF5XaQ2tU"
+          title="Pocket - App Review for Web Clipping Fun"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
 
 
 ## Étiqueter avec Pinboard
@@ -158,11 +165,27 @@ trouve cela nettement plus simple avec Pinboard, conçu dans cet esprit dès le
 départ et bien plus riche en fonctions d'étiquetage, comme le montre cette
 **présentation** de Pinboard par Rhinofeed.
 
-Présentation de Pinboard — partie 1
-{{< youtube mqphSmguiFY >}}
+#### Présentation de Pinboard — partie 1
 
-Présentation de Pinboard — partie 2
-{{< youtube QFTjdEUrYCk >}}
+<div class="video-embed">
+  <iframe src="https://www.youtube-nocookie.com/embed/mqphSmguiFY"
+          title="Présentation de Pinboard - Partie 1"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
+
+#### Présentation de Pinboard — partie 2
+
+<div class="video-embed">
+  <iframe src="https://www.youtube-nocookie.com/embed/QFTjdEUrYCk"
+          title="Présentation de Pinboard - Partie 2"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+</div>
 
 En 2010, Leo Laporte et Amber MacArthur recevaient Maciej Ceglowski, le créateur
 de Pinboard. L'[entretien est visible sur Youtube][pinboard_interview].
@@ -173,6 +196,7 @@ de Pinboard. L'[entretien est visible sur Youtube][pinboard_interview].
 J'ouvre ensuite les liens dans Pinboard, quand j'ai tout le temps nécessaire pour
 lire les pages en entier, cette fois. C'est l'occasion d'affiner les étiquettes
 existantes ou d'en ajouter de nouvelles.
+
 
 ## Écouter
 
