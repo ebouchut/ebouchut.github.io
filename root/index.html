@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eric Bouchut</title>
+
+<!--
+  Site root. Neither language build owns this file: mkdocs.yml writes site/en
+  and mkdocs.fr.yml writes site/fr, so everything that must sit at the root
+  lives in root/ and is copied into site/ by .github/workflows/publish.yml.
+
+  This page picks a language from the browser and redirects. English is the
+  fallback: anything that is not a French locale lands on /en/.
+-->
+
+<link rel="alternate" hreflang="en" href="https://www.ericbouchut.com/en/">
+<link rel="alternate" hreflang="fr" href="https://www.ericbouchut.com/fr/">
+<link rel="alternate" hreflang="x-default" href="https://www.ericbouchut.com/en/">
+<link rel="canonical" href="https://www.ericbouchut.com/en/">
+
+<!-- Crawlers and JS-less browsers still reach a language; see the <noscript> below. -->
+<meta name="robots" content="noindex, follow">
+
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: #FAFAFA;
+    color: #241F33;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #17151F; color: #EDE9F7; }
+  }
+  .choice { text-align: center; line-height: 1.7; }
+  .choice a { color: #6E56CF; font-weight: 600; }
+  @media (prefers-color-scheme: dark) {
+    .choice a { color: #C4B5FD; }
+  }
+</style>
+
+<script>
+  // Run before paint so the redirect is not visible.
+  // `replace` keeps this page out of the history: Back returns to wherever the
+  // visitor came from, not into a redirect loop.
+  (function () {
+    var langs = navigator.languages && navigator.languages.length
+      ? navigator.languages
+      : [navigator.language || "en"];
+    var isFrench = false;
+    // First of the visitor's preferred languages that we publish wins; anything
+    // else falls through to English.
+    for (var i = 0; i < langs.length; i++) {
+      var tag = String(langs[i]).toLowerCase();
+      if (tag === "fr" || tag.indexOf("fr-") === 0) { isFrench = true; break; }
+      if (tag === "en" || tag.indexOf("en-") === 0) { break; }
+    }
+    location.replace(isFrench ? "/fr/" : "/en/");
+  })();
+</script>
+</head>
+<body>
+  <!-- Shown only if the redirect above did not run. -->
+  <noscript>
+    <div class="choice">
+      <p><a href="/en/">Continue in English</a></p>
+      <p><a href="/fr/">Continuer en français</a></p>
+    </div>
+  </noscript>
+</body>
+</html>

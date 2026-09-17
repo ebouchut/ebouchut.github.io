@@ -1,16 +1,15 @@
 site_name: Eric Bouchut
-site_url: https://www.ericbouchut.com/en/
+site_url: https://www.ericbouchut.com/fr/
 
-# English site. The French one is built separately from mkdocs.fr.yml.
-# The two source trees are disjoint, so neither build can pick up the other's
-# pages; the site root itself (CNAME, robots.txt, the language-detecting
-# landing page) is owned by `root/` and copied in by the publish workflow.
-docs_dir: docs/en
-site_dir: site/en
+# French site. Mirror of mkdocs.yml, which builds the English one.
+# Only the keys that must differ are changed; everything else is kept in sync
+# with mkdocs.yml by hand — there is no include mechanism in mkdocs.yml.
+docs_dir: docs/fr
+site_dir: site/fr
 
 theme:
   variant: modern
-  language: en
+  language: fr
   features:
     - navigation.indexes
     - navigation.instant
@@ -29,7 +28,7 @@ theme:
       accent:  custom
       toggle:
         icon: lucide/sun
-        name: Switch to light mode
+        name: Passer au thème clair
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme:  default
@@ -37,7 +36,7 @@ theme:
       accent:  custom
       toggle:
         icon: lucide/moon
-        name: Switch to dark mode
+        name: Passer au thème sombre
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme:  slate
@@ -45,10 +44,13 @@ theme:
       accent:  custom
       toggle:
         icon: lucide/sun-moon
-        name: Switch to auto (use System Preferences)
+        name: Suivre les préférences du système
 
 plugins:
   - search
+  # Zensical has not ported the blog plugin yet, so this block is inert: posts
+  # publish at blog/posts/<filename>/ and post_url_format is ignored. Kept in
+  # sync with mkdocs.yml so both sites behave identically once it lands.
   - blog:
       blog_toc: true
       post_date_format: long
@@ -65,7 +67,7 @@ markdown_extensions:
   - meta
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:zensical.extensions.emoji.twemoji 
+      emoji_index: !!python/name:zensical.extensions.emoji.twemoji
       emoji_generator: !!python/name:zensical.extensions.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.inlinehilite
@@ -82,13 +84,11 @@ markdown_extensions:
   - pymdownx.tilde
   - toc:
       permalink: true
-      permalink_title: Link to this Header
-      title: Headers on this Page
+      permalink_title: Lien vers ce titre
+      title: Sur cette page
       toc_depth: 3
 
 extra:
-  # Language switcher. Every language is listed, current one included, so the
-  # reader can get back from /fr/ — Material renders nothing useful otherwise.
   alternate:
     - name: English
       link: /en/
@@ -110,9 +110,9 @@ extra_css:
   - css/extra.css
 
 nav:
-  - Home: index.md
+  - Accueil: index.md
   - Blog: blog/index.md
-  - About:
+  - À propos:
       - blog/about/index.md
       - LinkedIn: https://linkedin.com/in/ebouchut
       - GitHub: https://github.com/ebouchut
