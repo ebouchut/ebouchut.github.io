@@ -40,3 +40,4 @@ NNNN-short-title-in-kebab-case.md
 | [0003](0003-deploy-pages-via-artifact-upload.md)           | Deploy the site as a GitHub Pages artifact | accepted |
 | [0004](0004-build-the-multilingual-site-as-two-sites.md)   | Build the multilingual site as two independent builds | accepted |
 | [0005](0005-use-a-custom-lavender-palette.md)              | Use a custom lavender palette | accepted |
+| [0006](0006-embed-videos-as-raw-iframes.md)                | Embed videos as raw iframes | accepted |
