@@ -63,4 +63,6 @@ More recently, I completed a 16-month work-study program (June 2025 – October 
 in *[Web and Mobile Web Development](https://github.com/ebouchut/bouchut-eric-dossiers-pros-DWWM#readme)*. 
 Here is my [capstone project](https://github.com/ebouchut/learn-dev#readme) (*learn-dev*).
 
+My [résumé](../cv/index.md) covers the same journey in detail, role by role.
+
 Feel free to [reach out](../contact/index.md) if you'd like to connect or learn more about my journey!
