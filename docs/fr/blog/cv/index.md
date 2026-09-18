@@ -75,7 +75,7 @@ j'ai obtenu la certification **Développeur Web et Web Mobile**.
 - **Projets open-source** : *Loop* et *Trio* :globe_with_meridians:{ title="Télétravail" }
 - **Dates** : Depuis <time datetime="2023">2023</time>
 
-> La documentation de *Loop* et *Trio* a pour but 
+>   La documentation de *Loop* et *Trio* a pour but 
 > de fournir des instructions et ressources 
 > pour les professionnels de santé et les utilisateurs 
 > de ces système automatisés d'administration d'insuline 
