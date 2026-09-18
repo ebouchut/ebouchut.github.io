@@ -24,8 +24,6 @@ theme:
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
-      primary: custom
-      accent:  custom
       toggle:
         icon: lucide/sun
         name: Passer au thème clair
