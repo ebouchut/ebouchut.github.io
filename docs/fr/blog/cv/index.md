@@ -41,7 +41,7 @@ j'ai enseigné le langage C, les Appels Système **Unix** et le **Shell**
 à des groupes de 15 personnes, ainsi que le cours "*Utilisation Unix avancée*" 
 que j'ai co-écrit.
 
-J'ai rédigé plusieurs articles sur **Git**, tels que [*Git Stash Internals*](https://www.ericbouchut.com/blog/2021/07/22/git-stash-internals/) et 
+J'ai rédigé plusieurs articles sur **Git**, tels que [*Git Stash Internals*](../posts/2021-07-22-git-stash-internals.md) et 
 [*Git Flow*](https://github.com/ebouchut/learn-git/wiki/Git-Flow).
 
 À l'issue d'une formation en alternance de 16 mois, 
