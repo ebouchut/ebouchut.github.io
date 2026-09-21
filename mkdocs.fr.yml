@@ -57,6 +57,11 @@ plugins:
       post_url_date_format: yyyy/MM/dd
       post_url_format: "{date}/{slug}"
   - glightbox
+  - redirects:
+      redirect_maps:
+        blog/2021/07/22/git-stash-internals/index.md: blog/posts/2021-07-22-git-stash-internals.md
+        blog/2021/07/14/git_checkout_dash.md:         blog/posts/2021-07-14-git_checkout_dash.md
+        blog/2021/07/14/go-to-the-previous-branch-with-git-checkout.md: blog/posts/2021-07-14-git_checkout_dash.md 
   - tags
 
 markdown_extensions:
