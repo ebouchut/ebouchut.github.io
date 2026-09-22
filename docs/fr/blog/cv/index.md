@@ -186,7 +186,8 @@ j'ai également utilisé des outils et frameworks big-data tels que *Storm*, *Ca
 - Redis,
 - Storm,
 - Cassandra,
-- Kafka.
+- Kafka
+- ELK (Elasticsearch + Logstash + Kibana).
 </div>
 
 
