@@ -25,8 +25,6 @@ theme:
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
-      primary: custom
-      accent:  custom
       toggle:
         icon: lucide/sun
         name: Switch to light mode
@@ -55,6 +53,11 @@ plugins:
       post_url_date_format: yyyy/MM/dd
       post_url_format: "{date}/{slug}"
   - glightbox
+  - redirects:
+      redirect_maps:
+        blog/2021/07/22/git-stash-internals/index.md:                   blog/posts/2021-07-22-git-stash-internals.md
+        blog/2021/07/14/git_checkout_dash.md:                           blog/posts/2021-07-14-git_checkout_dash.md
+        blog/2021/07/14/go-to-the-previous-branch-with-git-checkout.md: blog/posts/2021-07-14-git_checkout_dash.md 
   - tags
 
 markdown_extensions:
@@ -118,7 +121,7 @@ nav:
       - GitHub: https://github.com/ebouchut
       - Twitter: https://twitter.com/ebouchut
       - Mastodon: https://ruby.social/@ebouchut
-  - CV: blog/cv/index.md
+  - Résumé: blog/cv/index.md
   - Contact:
       - blog/contact/index.md
       - LinkedIn: https://linkedin.com/in/ebouchut

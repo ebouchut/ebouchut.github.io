@@ -62,4 +62,6 @@ Plus récemment, j'ai suivi une formation de 16 mois en alternance (juin 2025 �
 *[Développeur Web et Web Mobile](https://github.com/ebouchut/bouchut-eric-dossiers-pros-DWWM#readme)*. 
 Voici mon [projet de fin de formation](https://github.com/ebouchut/learn-dev#readme) (*learn-dev*).
 
+Mon [CV](../cv/index.md) détaille ce parcours, poste par poste.
+
 N'hésitez pas à [me contacter](../contact/index.md) si vous souhaitez échanger ou en savoir plus sur mon parcours !

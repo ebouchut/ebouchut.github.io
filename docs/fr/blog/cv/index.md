@@ -41,7 +41,7 @@ j'ai enseigné le langage C, les Appels Système **Unix** et le **Shell**
 à des groupes de 15 personnes, ainsi que le cours "*Utilisation Unix avancée*" 
 que j'ai co-écrit.
 
-J'ai rédigé plusieurs articles sur **Git**, tels que [*Git Stash Internals*](https://www.ericbouchut.com/blog/2021/07/22/git-stash-internals/) et 
+J'ai rédigé plusieurs articles sur **Git**, tels que [*Git Stash Internals*](../posts/2021-07-22-git-stash-internals.md) et 
 [*Git Flow*](https://github.com/ebouchut/learn-git/wiki/Git-Flow).
 
 À l'issue d'une formation en alternance de 16 mois, 
@@ -75,7 +75,7 @@ j'ai obtenu la certification **Développeur Web et Web Mobile**.
 - **Projets open-source** : *Loop* et *Trio* :globe_with_meridians:{ title="Télétravail" }
 - **Dates** : Depuis <time datetime="2023">2023</time>
 
-> La documentation de *Loop* et *Trio* a pour but 
+>   La documentation de *Loop* et *Trio* a pour but 
 > de fournir des instructions et ressources 
 > pour les professionnels de santé et les utilisateurs 
 > de ces système automatisés d'administration d'insuline 
@@ -186,7 +186,8 @@ j'ai également utilisé des outils et frameworks big-data tels que *Storm*, *Ca
 - Redis,
 - Storm,
 - Cassandra,
-- Kafka.
+- Kafka
+- ELK (Elasticsearch + Logstash + Kibana).
 </div>
 
 

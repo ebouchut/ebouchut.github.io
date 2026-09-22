@@ -41,7 +41,7 @@ I taught the C language, **Unix** system calls and the **shell**
 to groups of 15, along with the *Advanced Unix Usage* course
 that I co-wrote.
 
-I have written several articles about **Git**, such as [*Git Stash Internals*](https://www.ericbouchut.com/en/blog/posts/2021-07-22-git-stash-internals/) and
+I have written several articles about **Git**, such as [*Git Stash Internals*](../posts/2021-07-22-git-stash-internals.md) and
 [*Git Flow*](https://github.com/ebouchut/learn-git/wiki/Git-Flow).
 
 At the end of a 16-month work-study programme,
@@ -186,7 +186,8 @@ I also used big-data tools and frameworks such as *Storm*, *Cassandra* and *Kafk
 - Redis,
 - Storm,
 - Cassandra,
-- Kafka.
+- Kafka,
+- ELK (Elasticsearch + Logstash + Kibana).
 </div>
 
 
