@@ -51,7 +51,7 @@ Avec plus de 15 ans dans le développement logiciel, mon parcours couvre des rô
 Mon goût pour la **montée en compétences** m'a conduit à suivre une formation en ligne chez [Alyra](https://alyra.fr), dont je suis sorti certifié [*Développeur Blockchain*](https://certificate.bcdiploma.com/check/8AEFB8EA0140B750A45B5C30C13E2F320F2D746A07337296DAB5FF4D23789757ZmlaRlRBZHB6NTJtVEdObFQ1RUt4MEllUFJQRVRGYWxnZEx4Qjl6QmF1Y2Y0Wkll).
 
 Je suis par ailleurs actif dans la communauté **open source**, où je contribue aux projets [Loop](https://loopkit.github.io/loopdocs/) et [Trio](https://triodocs.org/). Je travaille plus particulièrement à l'amélioration de leur **documentation technique**.  
-Mes contributions sont visibles dans les dépôts [LoopDocs](https://github.com/LoopKit/loopdocs) et [TrioDocs](https://github.com/nightscout/trio-docs), où je collabore en anglais avec une équipe répartie aux quatre coins du monde.  
+Mes contributions sont visibles dans les dépôts [LoopDocs](https://github.com/LoopKit/loopdocs/pulls?q=is%3Apr+author%3Aebouchut) et [TrioDocs](https://github.com/nightscout/trio-docs/pulls?q=is:pr+author:ebouchut), où je collabore en anglais avec une équipe répartie aux quatre coins du monde.  
 J'y améliore la documentation produit et je **configure et maintiens les plateformes de publication des sites**, à l'aide de technologies comme *[MkDocs](https://www.mkdocs.org/)* et [mkdocs-material](https://squidfunk.github.io/mkdocs-material/).
 
 Ces projets open source visent à fournir des ressources complètes aux utilisateurs de *Loop* et *Trio* — des systèmes avancés d'*administration automatisée d'insuline* destinés aux personnes atteintes de diabète de type 1.
