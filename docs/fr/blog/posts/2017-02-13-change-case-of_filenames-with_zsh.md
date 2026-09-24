@@ -1,5 +1,6 @@
 ---
 date: 2017-02-13
+slug: changer-la-casse-des-noms-de-fichiers-avec-zsh
 categories:
   - shell
 keywords:

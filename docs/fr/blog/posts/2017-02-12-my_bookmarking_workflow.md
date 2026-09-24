@@ -1,5 +1,6 @@
 ---
 date: 2017-02-12
+slug: ma-methode-de-gestion-des-favoris
 categories:
   - workflow
 keywords:

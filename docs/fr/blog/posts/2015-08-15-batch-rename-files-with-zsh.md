@@ -1,5 +1,6 @@
 ---
 date: 2015-08-15
+slug: renommer-des-fichiers-en-lot-avec-zsh
 categories:
   - shell
 tags:
