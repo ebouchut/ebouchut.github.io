@@ -12,6 +12,7 @@ theme:
   variant: modern
   language: en
   features:
+    - content.tooltips
     - navigation.indexes
     - navigation.instant
     - navigation.tracking

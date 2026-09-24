@@ -11,6 +11,7 @@ theme:
   variant: modern
   language: fr
   features:
+    - content.tooltips
     - navigation.indexes
     - navigation.instant
     - navigation.tracking
