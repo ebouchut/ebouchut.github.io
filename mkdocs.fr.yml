@@ -109,20 +109,15 @@ extra_css:
   - css/extra.css
 
 nav:
-  - Accueil: index.md
-  - Blog: blog/index.md
-  - À propos:
-      - blog/about/index.md
-      - LinkedIn: https://linkedin.com/in/ebouchut
-      - GitHub: https://github.com/ebouchut
-      - Twitter: https://twitter.com/ebouchut
-      - Mastodon: https://ruby.social/@ebouchut
-  - CV: blog/cv/index.md
+  - Accueil:  index.md
+  - Blog:     blog/index.md
+  - À propos: blog/about/index.md
+  - CV:       blog/cv/index.md
   - Contact:
       - blog/contact/index.md
       - LinkedIn: https://linkedin.com/in/ebouchut
-      - GitHub: https://github.com/ebouchut
-      - Twitter: https://twitter.com/ebouchut
+      - GitHub:   https://github.com/ebouchut
+      - Twitter:  https://twitter.com/ebouchut
       - Mastodon: https://ruby.social/@ebouchut
   - Tags: blog/tags.md
 
