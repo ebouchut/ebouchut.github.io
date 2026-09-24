@@ -14,6 +14,7 @@ theme:
     - content.tooltips
     - navigation.indexes
     - navigation.instant
+    - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
