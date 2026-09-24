@@ -55,7 +55,8 @@ plugins:
       post_date_format: long
       post_url_date_format: yyyy/MM/dd
       post_url_format: "{date}/{slug}"
-  - glightbox
+  - glightbox:
+      auto_themed: true
   - tags
 
 markdown_extensions:
