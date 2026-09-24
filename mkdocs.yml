@@ -86,6 +86,12 @@ markdown_extensions:
       permalink_title: Link to this Header
       title: Headers on this Page
       toc_depth: 3
+  - zensical.extensions.preview:
+      configurations:
+        - targets:
+            include:
+              - blog/about/index.md
+              - blog/contact/index.md
 
 extra:
   # Language switcher. Every language is listed, current one included, so the

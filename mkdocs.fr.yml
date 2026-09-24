@@ -88,6 +88,12 @@ markdown_extensions:
       permalink_title: Lien vers ce titre
       title: Sur cette page
       toc_depth: 3
+  - zensical.extensions.preview:
+      configurations:
+        - targets:
+            include:
+              - blog/about/index.md
+              - blog/contact/index.md
 
 extra:
   alternate:
