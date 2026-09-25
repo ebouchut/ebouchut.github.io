@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap index for the whole site.
+
+  Neither language build owns the site root, so this file lives in root/ and is
+  copied into site/ by the publish workflow, like CNAME and robots.txt.
+
+  Its contents are fixed: one entry per language build. It is static on purpose
+  rather than generated, because it only ever changes when a language is added
+  or removed. scripts/gen_sitemaps.py cross-checks it against the sitemaps it
+  writes, so adding a language without updating this file fails the build.
+-->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://www.ericbouchut.com/en/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.ericbouchut.com/fr/sitemap.xml</loc>
+  </sitemap>
+</sitemapindex>
