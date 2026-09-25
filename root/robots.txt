@@ -1,7 +1,6 @@
 User-agent: *
 Disallow:
 
-# One sitemap per language build; neither build owns this file, so both are
-# declared here by hand.
-Sitemap: https://www.ericbouchut.com/en/sitemap.xml
-Sitemap: https://www.ericbouchut.com/fr/sitemap.xml
+# Sitemap index at the site root. It points at the per-language sitemaps, which
+# each build emits and scripts/gen_sitemaps.py completes.
+Sitemap: https://www.ericbouchut.com/sitemap.xml

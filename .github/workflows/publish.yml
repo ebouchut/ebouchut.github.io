@@ -52,6 +52,13 @@ jobs:
       - name: Copy the root files into the site
         run: cp -R root/. site/
 
+      # Zensical's sitemap lists only the pages that exist as Markdown files, so
+      # every page the blog plugin generates is missing from it. This rewrites
+      # the per-language sitemaps from the built output. It runs after the root
+      # copy because it cross-checks root/sitemap.xml against what it writes.
+      - name: Complete the per-language sitemaps
+        run: uv run python scripts/gen_sitemaps.py
+
       # Pack site/ and store it as a workflow artifact instead of pushing to gh-pages.
       - name: Upload the site as a Pages artifact
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
