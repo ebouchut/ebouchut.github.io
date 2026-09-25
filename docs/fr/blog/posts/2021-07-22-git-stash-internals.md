@@ -1,5 +1,6 @@
 ---
 date: 2021-07-22
+slug: le-fonctionnement-interne-de-git-stash
 categories:
   - git
 tags:

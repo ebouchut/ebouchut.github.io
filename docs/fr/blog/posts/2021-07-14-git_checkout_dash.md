@@ -1,5 +1,6 @@
 ---
 date: 2021-07-14
+slug: revenir-a-la-branche-precedente-avec-git-checkout
 categories:
 - git
 tags:

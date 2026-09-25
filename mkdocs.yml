@@ -12,8 +12,10 @@ theme:
   variant: modern
   language: en
   features:
+    - content.tooltips
     - navigation.indexes
     - navigation.instant
+    - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
@@ -52,12 +54,9 @@ plugins:
       post_date_format: long
       post_url_date_format: yyyy/MM/dd
       post_url_format: "{date}/{slug}"
-  - glightbox
-  - redirects:
-      redirect_maps:
-        blog/2021/07/22/git-stash-internals/index.md:                   blog/posts/2021-07-22-git-stash-internals.md
-        blog/2021/07/14/git_checkout_dash.md:                           blog/posts/2021-07-14-git_checkout_dash.md
-        blog/2021/07/14/go-to-the-previous-branch-with-git-checkout.md: blog/posts/2021-07-14-git_checkout_dash.md 
+  - glightbox:
+      auto_themed: true
+  - rss
   - tags
 
 markdown_extensions:
@@ -88,6 +87,12 @@ markdown_extensions:
       permalink_title: Link to this Header
       title: Headers on this Page
       toc_depth: 3
+  - zensical.extensions.preview:
+      configurations:
+        - targets:
+            include:
+              - blog/about/index.md
+              - blog/contact/index.md
 
 extra:
   # Language switcher. Every language is listed, current one included, so the
@@ -113,20 +118,15 @@ extra_css:
   - css/extra.css
 
 nav:
-  - Home: index.md
-  - Blog: blog/index.md
-  - About:
-      - blog/about/index.md
-      - LinkedIn: https://linkedin.com/in/ebouchut
-      - GitHub: https://github.com/ebouchut
-      - Twitter: https://twitter.com/ebouchut
-      - Mastodon: https://ruby.social/@ebouchut
+  - Home:   index.md
+  - Blog:   blog/index.md
+  - About:  blog/about/index.md
   - Résumé: blog/cv/index.md
   - Contact:
       - blog/contact/index.md
       - LinkedIn: https://linkedin.com/in/ebouchut
-      - GitHub: https://github.com/ebouchut
-      - Twitter: https://twitter.com/ebouchut
+      - GitHub:   https://github.com/ebouchut
+      - Twitter:  https://twitter.com/ebouchut
       - Mastodon: https://ruby.social/@ebouchut
   - Tags: blog/tags.md
 
