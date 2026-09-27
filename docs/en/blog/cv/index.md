@@ -70,7 +70,7 @@ I earned the **Web and Mobile Web Developer** qualification.
 ## Professional experience
 
 
-### Open Source Contributor to Loop and Trio
+### Open Source Contributor — Loop and Trio
 
 - **Open-source projects** : *Loop* and *Trio* :globe_with_meridians:{ title="Remote" }
 - **Dates** : Since <time datetime="2023">2023</time>
@@ -97,7 +97,7 @@ Contributions to the [LoopDocs](https://loopdocs.org) and [TrioDocs](https://tri
 - **GitHub Project**, [Issues](https://github.com/nightscout/trio-docs/issues?q=is:issue%20state:closed%20author:ebouchut) and [PRs](https://github.com/nightscout/trio-docs/pulls?q=is:pr+is:closed+author:ebouchut).
 
 
-### Backend Developer
+### Backend Developer — HostnFly
 
 - **Company** : [HostnFly](https://www.hostnfly.com/) (Paris :globe_with_meridians:{ title="Remote" })
 - **Dates** : <time datetime="2022-04">April 2022</time> -
@@ -112,7 +112,7 @@ with an AI optimising rental price and duration.
 **Skills used** : Ruby on Rails.
 
 
-### Solidity Developer
+### Solidity Developer — Bet-no-loss
 
 - **Company** : [Alyra](https://www.alyra.fr/) (Paris :globe_with_meridians:{ title="Remote" })
 - **Dates** : <time datetime="2021-01">January 2021</time> -
@@ -191,7 +191,7 @@ I also used big-data tools and frameworks such as *Storm*, *Cassandra* and *Kafk
 </div>
 
 
-### Web Developer
+### Web Developer — Antidot
 
 - **Company** : Antidot (Lambesc)
 - **Dates** : <time datetime="2010-06">June 2010</time> -
@@ -223,7 +223,7 @@ I also used big-data tools and frameworks such as *Storm*, *Cassandra* and *Kafk
 ### Earlier experience (1991 — 2009)
 
 
-#### Software Developer
+#### Software Developer — Miyowa
 
 - **Company** : Miyowa (Marseille)
 - **Dates** : <time datetime="2008-02">February 2008</time> -
@@ -238,7 +238,7 @@ I also used big-data tools and frameworks such as *Storm*, *Cassandra* and *Kafk
 **Skills used** : Java, JMS, Jira.
 
 
-#### Product Developer
+#### Product Developer — BMC Software
 
 - **Company** : BMC Software (Aix-en-Provence)
 - **Dates** : <time datetime="2001-04">April 2001</time> -
@@ -265,7 +265,7 @@ I also used big-data tools and frameworks such as *Storm*, *Cassandra* and *Kafk
 - English.
 </div>
 
-#### Web Developer, Webmaster, Java Software Engineer
+#### Web Developer, Webmaster, Java Software Engineer — Perform
 
 - **Company** : Perform (Aix-en-Provence)
 - **Dates** : <time datetime="1997-10">October 1997</time> -
@@ -286,7 +286,7 @@ I also used big-data tools and frameworks such as *Storm*, *Cassandra* and *Kafk
 -  ColdFusion
 </div>
 
-#### C++ and Java Software Engineer
+#### C++ and Java Software Engineer — AL'X
 
 - **Company** : AL'X (Lyon)
 - **Dates** : <time datetime="1994-11">November 1994</time> -
@@ -300,7 +300,7 @@ the computerised medical record.
 **Skills used** : C++, Java, X11.
 
 
-#### MINITEL and Audiotel Software Engineer
+#### MINITEL and Audiotel Software Engineer — CLV Maintenance Système
 
 - **Company** : CLV Maintenance Système (Paris)
 - **Dates** : <time datetime="1994-04">April 1994</time> -
@@ -324,7 +324,7 @@ Built MINITEL and Audiotel backend applications as well as a *natural language*
 - Unix shell.
 </div>
 
-#### IT Trainer
+#### IT Trainer — Axis Digital
 
 - **Company** : Axis Digital (Boulogne Billancourt)
 - **Dates** : <time datetime="1991-01">January 1991</time> -
