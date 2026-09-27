@@ -70,7 +70,7 @@ j'ai obtenu la certification **Développeur Web et Web Mobile**.
 ## Expériences professionnelles
 
 
-### Contributeur Open Source pour Loop et Trio
+### Contributeur Open Source — Loop et Trio
 
 - **Projets open-source** : *Loop* et *Trio* :globe_with_meridians:{ title="Télétravail" }
 - **Dates** : Depuis <time datetime="2023">2023</time>
@@ -97,7 +97,7 @@ Contributions aux projets [LoopDocs](https://loopdocs.org) et [TrioDocs](https:/
 - **GitHub Project**, [Issues](https://github.com/nightscout/trio-docs/issues?q=is:issue%20state:closed%20author:ebouchut) et [PRs](https://github.com/nightscout/trio-docs/pulls?q=is:pr+is:closed+author:ebouchut).
 
 
-### Développeur Backend
+### Développeur Backend — HostnFly
 
 - **Entreprise** : [HostnFly](https://www.hostnfly.com/) (Paris :globe_with_meridians:{ title="Télétravail" })
 - **Dates** : <time datetime="2022-04">Avril 2022</time> - 
@@ -112,7 +112,7 @@ avec une IA qui optimise le prix de la location et sa durée.
 **Compétences utilisées** : Ruby on Rails.
 
 
-### Développeur Solidity
+### Développeur Solidity — Bet-no-loss
 
 - **Entreprise** : [Alyra](https://www.alyra.fr/) (Paris :globe_with_meridians:{ title="Télétravail" })
 - **Dates** : <time datetime="2021-01">Janvier 2021</time> - 
@@ -191,7 +191,7 @@ j'ai également utilisé des outils et frameworks big-data tels que *Storm*, *Ca
 </div>
 
 
-### Développeur Web
+### Développeur Web — Antidot
 
 - **Entreprise** : Antidot (Lambesc)
 - **Dates** : <time datetime="2010-06">Juin 2010</time> -
@@ -223,7 +223,7 @@ j'ai également utilisé des outils et frameworks big-data tels que *Storm*, *Ca
 ### Expériences antérieures (1991 — 2009)
 
 
-#### Software Developer
+#### Software Developer — Miyowa
 
 - **Entreprise** : Miyowa (Marseille)
 - **Dates** : <time datetime="2008-02">Février 2008</time> -
@@ -238,7 +238,7 @@ j'ai également utilisé des outils et frameworks big-data tels que *Storm*, *Ca
 **Compétences utilisées** : Java, JMS, Jira.
 
 
-#### Product Developer
+#### Product Developer — BMC Software
 
 - **Entreprise** : BMC Software (Aix-en-Provence)
 - **Dates** : <time datetime="2001-04">Avril 2001</time> -
@@ -265,7 +265,7 @@ j'ai également utilisé des outils et frameworks big-data tels que *Storm*, *Ca
 - anglais.
 </div>
 
-#### Développeur Web, Webmaster, Ingénieur logiciel Java
+#### Développeur Web, Webmaster, Ingénieur logiciel Java — Perform
 
 - **Entreprise** : Perform (Aix-en-Provence)
 - **Dates** : <time datetime="1997-10">Octobre 1997</time> -
@@ -286,7 +286,7 @@ j'ai également utilisé des outils et frameworks big-data tels que *Storm*, *Ca
 -  ColdFusion
 </div>
 
-#### Ingénieur logiciel C++ et Java
+#### Ingénieur logiciel C++ et Java — AL'X
 
 - **Entreprise** : AL'X (Lyon)
 - **Dates** : <time datetime="1994-11">Novembre 1994</time> -
@@ -300,7 +300,7 @@ la gestion du dossier médical informatisé.
 **Compétences utilisées** : C++, Java, X11.
 
 
-#### Ingénieur logiciel MINITEL et Audiotel
+#### Ingénieur logiciel MINITEL et Audiotel — CLV Maintenance Système
 
 - **Entreprise** : CLV Maintenance Système (Paris)
 - **Dates** : <time datetime="1994-04">Avril 1994</time> -
@@ -324,7 +324,7 @@ Réalisation d'applications back-end MINITEL et Audiotel ainsi qu'un moteur de t
 - Shell Unix.
 </div>
 
-#### Formateur informatique
+#### Formateur informatique — Axis Digital
 
 - **Entreprise** : Axis Digital (Boulogne Billancourt)
 - **Dates** : <time datetime="1991-01">Janvier 1991</time> - 
