@@ -1,0 +1,76 @@
+# Build the four CV PDFs from the Typst sources in cv/.
+#
+# This workflow publishes nothing. The PDFs the site serves are the ones
+# committed under root/cv/, built locally with `make -C cv`; the publish
+# workflow copies them to the site root along with the rest of root/.
+#
+# What runs here is a guard, in two parts: it proves the sources still compile
+# on a clean machine that has none of the fonts installed, and it uploads the
+# result so a PDF can be fetched without a local Typst install.
+name: cv
+
+on:
+  # Gives the "Run workflow" button, plus `gh workflow run cv.yml`.
+  workflow_dispatch:
+    inputs:
+      language:
+        description: Which language(s) to build
+        type: choice
+        options:
+          - both
+          - fr
+          - en
+        default: both
+  push:
+    paths:
+      - cv/**
+      - .github/workflows/cv.yml
+
+# Nothing is written back to the repository, so a read-only token suffices.
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # Pinned to the exact version the sources were authored with, not to
+      # 0.15.x: a patch release can change line breaking, and every build has
+      # to stay on a single page.
+      - name: Set up Typst
+        uses: typst-community/setup-typst@fee4b65b091cc546f02ce3be15fad8760f38a108 # v5.3.0
+        with:
+          typst-version: 0.15.1
+
+      # make drives the build so CI and the local command cannot drift: the
+      # flags, the font path and the output names all live in cv/Makefile.
+      #
+      # `clean` first because a fresh checkout stamps every file with the same
+      # mtime, so make would otherwise be free to treat the committed PDFs as
+      # up to date and build nothing at all.
+      #
+      # The choice reaches the shell through the environment rather than being
+      # interpolated into it, which keeps workflow input out of the command.
+      - name: Build the PDFs
+        env:
+          LANGUAGE: ${{ inputs.language || 'both' }}
+        run: |
+          set -euo pipefail
+          make -C cv clean
+          case "$LANGUAGE" in
+            both) make -C cv cv ;;
+            fr|en) make -C cv "$LANGUAGE" ;;
+            *) echo "unknown language: $LANGUAGE" >&2; exit 1 ;;
+          esac
+
+      # if-no-files-found: error, so a build that quietly produced nothing
+      # fails the run instead of uploading an empty artifact.
+      - name: Upload the PDFs
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: cv-pdfs
+          path: root/cv/*.pdf
+          if-no-files-found: error
