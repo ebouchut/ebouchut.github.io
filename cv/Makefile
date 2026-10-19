@@ -10,8 +10,13 @@
 #
 # Each language has one source and two builds, chosen by a compile flag:
 #
-#     (no flag)               vertical timeline, for the blog
-#     --input timeline=false  plain flush-left list, for ATS screening
+#     (no flag)               vertical timeline -- the default CV, named
+#                             CV-Bouchut-Eric-<LANG>.pdf
+#     --input timeline=false  plain flush-left list for applicant-tracking
+#                             systems, named CV-Bouchut-Eric-<LANG>-ATS.pdf
+#
+# The plain name carries the CV you would hand someone; only the special case
+# is labelled.
 #
 # The PDFs are written to root/cv/, which the publish workflow copies to the
 # site root (`cp -R root/. site/`), so they are served from
@@ -41,8 +46,8 @@ TYPST   := typst compile --ignore-system-fonts --font-path fonts
 # 1792281600 = 2026-10-18T00:00:00Z, the day this pipeline landed.
 STAMP   := --creation-timestamp 1792281600
 
-FR := $(OUTDIR)/CV-Bouchut-Eric-FR-timeline.pdf $(OUTDIR)/CV-Bouchut-Eric-FR.pdf
-EN := $(OUTDIR)/CV-Bouchut-Eric-EN-timeline.pdf $(OUTDIR)/CV-Bouchut-Eric-EN.pdf
+FR := $(OUTDIR)/CV-Bouchut-Eric-FR.pdf $(OUTDIR)/CV-Bouchut-Eric-FR-ATS.pdf
+EN := $(OUTDIR)/CV-Bouchut-Eric-EN.pdf $(OUTDIR)/CV-Bouchut-Eric-EN-ATS.pdf
 
 .PHONY: cv fr en watch-fr watch-en clean
 .DEFAULT_GOAL := cv
@@ -52,16 +57,16 @@ fr: $(FR)
 en: $(EN)
 
 # The timeline build is the default one; the ATS build only adds the flag.
-$(OUTDIR)/CV-Bouchut-Eric-FR-timeline.pdf: cv-fr.typ $(FONTS) | $(OUTDIR)
+$(OUTDIR)/CV-Bouchut-Eric-FR.pdf: cv-fr.typ $(FONTS) | $(OUTDIR)
 	$(TYPST) $(STAMP) $< $@
 
-$(OUTDIR)/CV-Bouchut-Eric-FR.pdf: cv-fr.typ $(FONTS) | $(OUTDIR)
+$(OUTDIR)/CV-Bouchut-Eric-FR-ATS.pdf: cv-fr.typ $(FONTS) | $(OUTDIR)
 	$(TYPST) $(STAMP) --input timeline=false $< $@
 
-$(OUTDIR)/CV-Bouchut-Eric-EN-timeline.pdf: cv-en.typ $(FONTS) | $(OUTDIR)
+$(OUTDIR)/CV-Bouchut-Eric-EN.pdf: cv-en.typ $(FONTS) | $(OUTDIR)
 	$(TYPST) $(STAMP) $< $@
 
-$(OUTDIR)/CV-Bouchut-Eric-EN.pdf: cv-en.typ $(FONTS) | $(OUTDIR)
+$(OUTDIR)/CV-Bouchut-Eric-EN-ATS.pdf: cv-en.typ $(FONTS) | $(OUTDIR)
 	$(TYPST) $(STAMP) --input timeline=false $< $@
 
 $(OUTDIR):
