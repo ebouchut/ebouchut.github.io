@@ -26,11 +26,20 @@ FONTS   := $(wildcard fonts/*.ttf)
 # today's output byte-for-byte unchanged, and keeps it that way.
 TYPST   := typst compile --ignore-system-fonts --font-path fonts
 
-# Stamp each PDF with its source's last-modified time rather than "now".
-# Typst honours this (see reproducible-builds.org/specs/source-date-epoch),
-# so rebuilding unchanged sources yields byte-identical PDFs and leaves the
-# working tree clean -- which is what makes committing them bearable.
-stamp    = --creation-timestamp $$(date -r $(1) +%s)
+# Stamp every PDF with one fixed date rather than "now", so that rebuilding
+# unchanged sources yields byte-identical files and leaves the working tree
+# clean -- which is what makes committing the PDFs bearable.
+#
+# It has to be a constant. The obvious candidate, the source's own mtime, is
+# not stable: a checkout, a stash, a rebase or a GitButler commit rewrites the
+# working tree and moves it, and a fresh clone stamps every file with the
+# clone time, so CI could never reproduce what was committed here.
+#
+# The cost is that the PDF metadata reports this date instead of the build
+# date. The CV's real history is in the git log.
+#
+# 1792281600 = 2026-10-18T00:00:00Z, the day this pipeline landed.
+STAMP   := --creation-timestamp 1792281600
 
 FR := $(OUTDIR)/CV-Bouchut-Eric-FR-timeline.pdf $(OUTDIR)/CV-Bouchut-Eric-FR.pdf
 EN := $(OUTDIR)/CV-Bouchut-Eric-EN-timeline.pdf $(OUTDIR)/CV-Bouchut-Eric-EN.pdf
@@ -44,16 +53,16 @@ en: $(EN)
 
 # The timeline build is the default one; the ATS build only adds the flag.
 $(OUTDIR)/CV-Bouchut-Eric-FR-timeline.pdf: cv-fr.typ $(FONTS) | $(OUTDIR)
-	$(TYPST) $(call stamp,$<) $< $@
+	$(TYPST) $(STAMP) $< $@
 
 $(OUTDIR)/CV-Bouchut-Eric-FR.pdf: cv-fr.typ $(FONTS) | $(OUTDIR)
-	$(TYPST) $(call stamp,$<) --input timeline=false $< $@
+	$(TYPST) $(STAMP) --input timeline=false $< $@
 
 $(OUTDIR)/CV-Bouchut-Eric-EN-timeline.pdf: cv-en.typ $(FONTS) | $(OUTDIR)
-	$(TYPST) $(call stamp,$<) $< $@
+	$(TYPST) $(STAMP) $< $@
 
 $(OUTDIR)/CV-Bouchut-Eric-EN.pdf: cv-en.typ $(FONTS) | $(OUTDIR)
-	$(TYPST) $(call stamp,$<) --input timeline=false $< $@
+	$(TYPST) $(STAMP) --input timeline=false $< $@
 
 $(OUTDIR):
 	mkdir -p $@
