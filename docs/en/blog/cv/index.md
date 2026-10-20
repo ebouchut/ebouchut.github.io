@@ -19,6 +19,7 @@ tags:
 
 </div>
 
+**[Download this CV as a PDF](/cv/CV-Bouchut-Eric-EN.pdf)**
 
 ## Profile
 
