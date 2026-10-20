@@ -52,6 +52,29 @@ jobs:
       - name: Copy the root files into the site
         run: cp -R root/. site/
 
+      # `zensical build --strict` validates links within one docs_dir, so a
+      # root-absolute link is invisible to it: its target lives in root/, or
+      # in the other language's tree. That covers the CV pages' links to the
+      # PDFs and the landing page's links to /en/ and /fr/ -- a renamed file
+      # would publish a dead link with both builds reporting no issues.
+      #
+      # This is the first point where the whole site exists, so it is the
+      # only place the question can be asked.
+      - name: Check the root-absolute links
+        run: |
+          set -eu
+          missing=0
+          for link in $(grep -rhoE 'href="/[^"/][^"]*"' --include='*.html' site \
+                        | sed 's/href="//; s/"$//' | sort -u); do
+            target="site${link%%[?#]*}"
+            if [ ! -f "$target" ] && [ ! -f "$target/index.html" ]; then
+              echo "dead root-absolute link: $link"
+              missing=1
+            fi
+          done
+          [ "$missing" -eq 0 ] || exit 1
+          echo "all root-absolute links resolve"
+
       # Pack site/ and store it as a workflow artifact instead of pushing to gh-pages.
       - name: Upload the site as a Pages artifact
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
