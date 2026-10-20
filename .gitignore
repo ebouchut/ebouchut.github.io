@@ -7,3 +7,7 @@
 /.venv
 /site
 /dist
+
+# Typst live previews from `make -C cv watch-fr`.
+# The published PDFs are committed under root/cv/.
+/cv/preview-*.pdf

@@ -19,6 +19,7 @@ tags:
 
 </div>
 
+**[Télécharger ce CV au format PDF](/cv/CV-Bouchut-Eric-FR.pdf)**
 
 ## Présentation
 

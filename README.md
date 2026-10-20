@@ -53,6 +53,7 @@ activate the environment yourself with `source .venv/bin/activate`.
 | `root/`    | Files that belong to the site root, copied over `site/`          |
 | `includes/`| Shared Markdown snippets, appended to every page                 |
 | `scripts/` | Build helpers                                                   |
+| `cv/`      | Typst CV sources and the Makefile that builds the published PDFs |
 | `adr/`     | Architecture Decision Records, kept out of the published site    |
 
 `layouts/` and `img/` are leftovers from the Hugo era and are not part of the
