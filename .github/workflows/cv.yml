@@ -45,6 +45,12 @@ jobs:
         with:
           typst-version: 0.15.1
 
+      # For the check step below, which runs pypdf through `uv run --with`.
+      - name: Set up uv
+        uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
+        with:
+          enable-cache: true
+
       # make drives the build so CI and the local command cannot drift: the
       # flags, the font path and the output names all live in cv/Makefile.
       #
@@ -65,6 +71,12 @@ jobs:
             fr|en) make -C cv "$LANGUAGE" ;;
             *) echo "unknown language: $LANGUAGE" >&2; exit 1 ;;
           esac
+
+      # The invariants the Typst sources cannot enforce: one A4 page, text an
+      # applicant-tracking system can read, and no face outside cv/fonts/.
+      # All three survive a clean compile, so only the built PDF can prove it.
+      - name: Check the PDFs
+        run: make -C cv check
 
       # if-no-files-found: error, so a build that quietly produced nothing
       # fails the run instead of uploading an empty artifact.

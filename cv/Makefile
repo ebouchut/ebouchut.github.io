@@ -5,6 +5,7 @@
 #     make -C cv            # all four PDFs (default goal)
 #     make -C cv fr         # French only
 #     make -C cv watch-fr   # live recompile while editing
+#     make -C cv check      # verify whatever has been built
 #
 # or from this directory with a plain `make`.
 #
@@ -49,7 +50,7 @@ STAMP   := --creation-timestamp 1792281600
 FR := $(OUTDIR)/CV-Bouchut-Eric-FR.pdf $(OUTDIR)/CV-Bouchut-Eric-FR-ATS.pdf
 EN := $(OUTDIR)/CV-Bouchut-Eric-EN.pdf $(OUTDIR)/CV-Bouchut-Eric-EN-ATS.pdf
 
-.PHONY: cv fr en watch-fr watch-en clean
+.PHONY: cv fr en check watch-fr watch-en clean
 .DEFAULT_GOAL := cv
 
 cv: fr en
@@ -71,6 +72,14 @@ $(OUTDIR)/CV-Bouchut-Eric-EN-ATS.pdf: cv-en.typ $(FONTS) | $(OUTDIR)
 
 $(OUTDIR):
 	mkdir -p $@
+
+# Deliberately has no prerequisite: it checks whatever is in $(OUTDIR), so CI
+# can build one language and check exactly that, and the command stays the
+# same in both places. Run a build first.
+#
+# --no-project: the check needs pypdf, not the site's own dependencies.
+check:
+	uv run --quiet --no-project --with pypdf python -I check.py $(OUTDIR)/*.pdf
 
 # Previews are scratch files, never the published PDFs, so that an editing
 # session cannot leave a half-finished CV staged for commit.

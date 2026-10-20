@@ -41,8 +41,14 @@ Needs Typst 0.15.1 (`brew install typst`); CI pins the same version.
 make -C cv          # all four PDFs
 make -C cv fr       # French only
 make -C cv en       # English only
+make -C cv check    # verify what has been built
 make -C cv clean    # remove the generated PDFs
 ```
+
+`check` reads the built PDFs back and fails on the three things a clean
+compile cannot rule out: a build that is no longer exactly one A4 page, text
+an applicant-tracking system could not extract, and any font outside
+`fonts/`. CI runs the same target.
 
 While editing, recompile on every save into a scratch file that is git-ignored
 and never published:
