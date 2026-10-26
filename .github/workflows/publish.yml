@@ -75,6 +75,20 @@ jobs:
           [ "$missing" -eq 0 ] || exit 1
           echo "all root-absolute links resolve"
 
+      # Zensical writes each per-language sitemap itself, and since 0.0.70 it
+      # lists every published page. Nothing proves it still does: before that
+      # release every page the `blog` plugin generated was silently missing --
+      # six entries out of sixteen -- and the only symptom was that search
+      # engines never learned about a single post.
+      #
+      # This compares each sitemap against the canonical URL of every page the
+      # build produced, and checks that root/sitemap.xml lists exactly the
+      # sitemaps built, so adding a language without updating that hand-written
+      # index fails here rather than shipping an index that omits part of the
+      # site.
+      - name: Check the sitemaps
+        run: uv run python scripts/check_sitemaps.py
+
       # Pack site/ and store it as a workflow artifact instead of pushing to gh-pages.
       - name: Upload the site as a Pages artifact
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
