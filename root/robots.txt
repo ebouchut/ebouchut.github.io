@@ -2,5 +2,6 @@ User-agent: *
 Disallow:
 
 # Sitemap index at the site root. It points at the per-language sitemaps, which
-# each build emits and scripts/gen_sitemaps.py completes.
+# each build emits complete; scripts/check_sitemaps.py verifies that at deploy
+# time.
 Sitemap: https://www.ericbouchut.com/sitemap.xml
