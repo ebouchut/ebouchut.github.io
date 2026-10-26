@@ -42,3 +42,4 @@ NNNN-short-title-in-kebab-case.md
 | [0005](0005-use-a-custom-lavender-palette.md)              | Use a custom lavender palette | accepted |
 | [0006](0006-embed-videos-as-raw-iframes.md)                | Embed videos as raw iframes | accepted |
 | [0007](0007-generate-the-cv-from-typst-sources.md)         | Generate the CV from Typst sources | accepted |
+| [0008](0008-keep-the-site-root-out-of-the-search-index.md) | Keep the site root out of the search index | accepted |
