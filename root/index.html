@@ -17,9 +17,22 @@
 <link rel="alternate" hreflang="en" href="https://www.ericbouchut.com/en/">
 <link rel="alternate" hreflang="fr" href="https://www.ericbouchut.com/fr/">
 <link rel="alternate" hreflang="x-default" href="https://www.ericbouchut.com/en/">
-<link rel="canonical" href="https://www.ericbouchut.com/en/">
 
-<!-- Crawlers and JS-less browsers still reach a language; see the <noscript> below. -->
+<!--
+  Deliberately no <link rel="canonical"> here.
+
+  A canonical would declare this URL a duplicate of /en/ and ask for its
+  signals to be merged into that page. The noindex below asks for this URL to
+  be dropped instead. The two contradict each other, Google does not define
+  which one wins, and the documented risk is the noindex being consolidated
+  onto the canonical target -- /en/, the real home page, which carries no
+  noindex of its own.
+
+  So this page sends one instruction only. Crawlers and JS-less browsers still
+  reach a language: noindex keeps the redirect shim itself out of the results,
+  while `follow` lets /en/ and /fr/ be discovered through the <noscript> links
+  below. Both are listed in their own sitemap and are indexable.
+-->
 <meta name="robots" content="noindex, follow">
 
 <style>

@@ -52,7 +52,7 @@ activate the environment yourself with `source .venv/bin/activate`.
 | `docs/fr/` | French pages and posts, built by `mkdocs.fr.yml`                 |
 | `root/`    | Files that belong to the site root, copied over `site/`          |
 | `includes/`| Shared Markdown snippets, appended to every page                 |
-| `scripts/` | Build helpers                                                   |
+| `scripts/` | Deploy-time checks of the built site, e.g. `check_sitemaps.py`   |
 | `cv/`      | Typst CV sources and the Makefile that builds the published PDFs |
 | `adr/`     | Architecture Decision Records, kept out of the published site    |
 

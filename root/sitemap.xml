@@ -7,8 +7,13 @@
 
   Its contents are fixed: one entry per language build. It is static on purpose
   rather than generated, because it only ever changes when a language is added
-  or removed. scripts/gen_sitemaps.py cross-checks it against the sitemaps it
-  writes, so adding a language without updating this file fails the build.
+  or removed. scripts/check_sitemaps.py verifies it against the sitemaps each
+  build actually produced, so adding a language without updating this file
+  fails the build.
+
+  The bare domain is deliberately absent. A sitemap index may hold no <url> at
+  all, but the deeper reason is that root/index.html is noindex: advertising a
+  noindex URL is reported in Search Console as an error. See ADR-0008.
 -->
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
