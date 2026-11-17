@@ -24,7 +24,7 @@ dev = [
 [package.metadata]
 
 [package.metadata.requires-dev]
-dev = [{ name = "zensical", specifier = ">=0.0.58,<1" }]
+dev = [{ name = "zensical", specifier = ">=0.1.2,<1" }]
 
 [[package]]
 name = "jinja2"
